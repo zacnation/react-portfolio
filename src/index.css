@@ -32,6 +32,10 @@ nav ul li a {
   font-weight: bold;
 }
 
+nav.dark ul li a {
+  color: white;
+}
+
 .logo {
   margin: 16px 0;
   font-size: 1.5em;
