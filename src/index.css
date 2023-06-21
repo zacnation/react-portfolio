@@ -29,3 +29,39 @@ nav ul li a {
   font-size: 1.5em;
   cursor: pointer;
 }
+
+main {
+  padding: 5% 30%;
+  background-color: aliceblue;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* .tech-stack {
+  display: flex;
+  align-items: center;
+} */
+
+.mern {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.mern p {
+  margin-right: 12px;
+}
+
+.mern img {
+  width: 40px;
+  height: 40px;
+}
+
+main img {
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+}
