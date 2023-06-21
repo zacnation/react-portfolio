@@ -91,6 +91,39 @@ section.dark {
   color: white;
 }
 
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 25%;
+}
+
+footer.dark {
+  background-color: #282d35;
+  color: white;
+}
+
+footer p {
+  margin: 0 200px;
+  font-size: 1.2rem;
+}
+
+.linkedin-icon,
+.github-icon,
+.galactic-republic-icon {
+  font-size: 2rem;
+}
+
+.linkedin-icon {
+  margin-right: 10px;
+}
+
+.react-icon {
+  color: #61dbfb;
+}
+
 /* Toggler */
 
 .toggler {
