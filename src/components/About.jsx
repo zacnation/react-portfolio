@@ -1,3 +1,8 @@
+import PropTypes from "prop-types";
 export default function About() {
-  return <section id="about"></section>;
+  return;
 }
+
+About.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+};

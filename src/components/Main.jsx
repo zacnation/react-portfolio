@@ -1,6 +1,9 @@
-export default function Main() {
+import PropTypes from "prop-types";
+
+export default function Main(props) {
+  console.log(props.darkMode);
   return (
-    <main>
+    <main className={props.darkMode ? "dark" : ""}>
       <h1>Hi, I&apos;m Zac</h1>
       <p>
         A Full-Stack Web Developer specialising in the MERN stack, based in
@@ -161,3 +164,7 @@ export default function Main() {
     </main>
   );
 }
+
+Main.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+};
