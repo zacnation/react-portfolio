@@ -97,11 +97,19 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3% 25%;
+  padding: 3% 15%;
 }
 
 footer.dark {
   background-color: #282d35;
+  color: white;
+}
+
+.icons a {
+  color: black;
+}
+
+.dark .icons a {
   color: white;
 }
 
