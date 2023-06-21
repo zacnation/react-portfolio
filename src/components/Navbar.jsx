@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="navbar">
+    <nav>
       <h3 className="logo">Zac Nation</h3>
       <ul>
         <li>
@@ -16,6 +16,6 @@ export default function Navbar() {
           <a href="">Contact</a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
