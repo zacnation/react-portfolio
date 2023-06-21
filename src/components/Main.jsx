@@ -1,7 +1,7 @@
 export default function Main() {
   return (
     <main>
-      <h1>Hi, I'm Zac</h1>
+      <h1>Hi, I&apos;m Zac</h1>
       <p>
         A Full-Stack Web Developer specialising in the MERN stack, based in
         London
