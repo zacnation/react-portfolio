@@ -128,6 +128,11 @@ footer p {
   margin-right: 10px;
 }
 
+.heart-icon:hover {
+  transition-duration: 0.25s;
+  color: #e31c79;
+}
+
 .react-icon {
   color: #61dbfb;
 }

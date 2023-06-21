@@ -24,7 +24,7 @@ export default function Footer(props) {
         </a>
       </div>
       <p>
-        Made with <FontAwesomeIcon icon={faHeart} /> (and{" "}
+        Made with <FontAwesomeIcon icon={faHeart} className="heart-icon" /> (and{" "}
         <FontAwesomeIcon icon={faReact} className="react-icon" />)
       </p>
       <FontAwesomeIcon
