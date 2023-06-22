@@ -137,10 +137,12 @@ section.dark {
 
 .lewagon-logo {
   width: 200px;
+  margin-bottom: 1rem;
 }
 
 .udemy-logo {
   width: 150px;
+  margin-bottom: 1rem;
 }
 
 .row {
