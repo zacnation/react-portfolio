@@ -111,13 +111,50 @@ main img {
 
 /* about and projects */
 
-section {
-  margin: 5% 30%;
+.rows {
+  padding: 5% 20%;
 }
 
 section.dark {
   background-color: #282d35;
   color: white;
+}
+
+/* about */
+
+#about {
+  padding: 2% 5%;
+  /* margin: 5% 20%; */
+}
+
+.lewagon-logo {
+  width: 200px;
+}
+
+.row {
+  display: flex;
+}
+#about.dark {
+  background-color: #232930;
+  color: white;
+}
+
+.row img {
+  margin-left: 2rem;
+}
+
+.row:nth-of-type(2) {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.row:nth-of-type(2) img {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.row p {
+  text-align: justify;
 }
 
 /* footer */
@@ -231,10 +268,8 @@ nav.dark .toggler--slider {
 
 /* media */
 
-/* @media (min-width: 992px) {
-  nav,
-  main,
-  footer {
-    padding: 2% 10%;
+@media (min-width: 992px) {
+  #about {
+    padding: 2% 5%;
   }
-} */
+}
