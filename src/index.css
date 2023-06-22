@@ -9,9 +9,11 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #bbbbbb;
-  padding: 0 30px;
+  padding: 1rem 3rem;
   transition-duration: 0.25s;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 nav.dark {
@@ -23,14 +25,15 @@ nav ul {
   display: flex;
   align-items: center;
   list-style: none;
-  padding-left: 15px;
+  padding-left: 2.5rem;
 }
 
 nav ul li a {
   text-decoration: none;
   color: black;
-  margin-right: 15px;
+  margin-right: 1.5rem;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 nav.dark ul li a {
@@ -38,7 +41,6 @@ nav.dark ul li a {
 }
 
 .logo {
-  margin: 16px 0;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -173,7 +175,7 @@ footer p {
 }
 
 .toggler p {
-  font-size: 0.625rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
