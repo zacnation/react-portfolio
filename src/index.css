@@ -51,8 +51,15 @@ nav.dark ul li a {
 
 main {
   padding: 5% 30%;
-  background-color: aliceblue;
+  background-color: #f8f8f8;
   transition-duration: 0.25s;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.3rem;
+  /* margin-top: -20px; */
+  /* padding-top: 20px; */
+  box-sizing: border-box;
 }
 
 main.dark {
@@ -60,8 +67,22 @@ main.dark {
   color: white;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio {
+  max-width: 80%;
+}
+
 h1 {
   margin-top: 0;
+  font-size: 5rem;
 }
 
 .mern {
@@ -76,14 +97,14 @@ h1 {
 }
 
 .mern img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 main img {
   margin-right: 20px;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 /* about and projects */
@@ -205,3 +226,13 @@ nav.dark .toggler-dark {
 nav.dark .toggler--slider {
   justify-content: flex-end;
 }
+
+/* media */
+
+/* @media (min-width: 992px) {
+  nav,
+  main,
+  footer {
+    padding: 2% 10%;
+  }
+} */
