@@ -187,6 +187,11 @@ section.dark {
   color: white;
 }
 
+.coming-soon {
+  width: max-content;
+  margin: 0 auto;
+}
+
 /* footer */
 
 footer {
