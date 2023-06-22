@@ -88,6 +88,10 @@ main img {
 
 /* about and projects */
 
+section {
+  margin: 5% 30%;
+}
+
 section.dark {
   background-color: #282d35;
   color: white;
