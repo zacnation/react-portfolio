@@ -127,8 +127,7 @@ section.dark {
 /* about */
 
 #about {
-  padding: 2% 5%;
-  /* margin: 5% 20%; */
+  /* padding: 2% 5%; */
   background-color: white;
 }
 
@@ -168,6 +167,22 @@ section.dark {
 
 .row p {
   text-align: justify;
+}
+
+/* projects */
+
+#projects {
+  padding: 5% 20%;
+  background-color: #f8f8f8;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+}
+
+#projects.dark {
+  background-color: #282d35;
+  color: white;
 }
 
 /* footer */
