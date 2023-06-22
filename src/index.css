@@ -132,8 +132,16 @@ section.dark {
   background-color: white;
 }
 
+#about h2 {
+  font-size: 2.5rem;
+}
+
 .lewagon-logo {
   width: 200px;
+}
+
+.udemy-logo {
+  width: 150px;
 }
 
 .row {

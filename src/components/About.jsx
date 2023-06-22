@@ -30,7 +30,7 @@ export default function About(props) {
                 : "../../public/udemy-logo.svg"
             }
             alt=""
-            className="lewagon-logo"
+            className="udemy-logo"
           />
           <p>
             Before joining Le Wagon, my self-study involved a lot of Codecademy
