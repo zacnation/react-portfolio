@@ -1,1 +1,9 @@
-<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0, 0, 400,400"><g id="svgg"><path id="path0" d="" stroke="none" fill="#fcfcfc" fill-rule="evenodd"></path><path id="path1" d="" stroke="none" fill="#100fcfc" fill-rule="evenodd"></path><path id="path2" d="" stroke="none" fill="#100fcfc" fill-rule="evenodd"></path><path id="path3" d="" stroke="none" fill="#100fcfc" fill-rule="evenodd"></path><path id="path4" d="" stroke="none" fill="#100fcfc" fill-rule="evenodd"></path></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1000" height="1000" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="rgba(255,255,255,0)"/>
+<g transform="matrix(37.8788 0 0 37.8788 499.5001 499.5001)" id="385501">
+<path style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-12, -12)" d="M 12 0 L 5.81 3.573 v 3.574 l 6.189 -3.574 l 6.191 3.574 V 3.573 z M 5.81 10.148 v 8.144 c 0 1.85 0.589 3.243 1.741 4.234 S 10.177 24 11.973 24 s 3.269 -0.482 4.448 -1.474 c 1.179 -0.991 1.768 -2.439 1.768 -4.314 v -8.064 h -3.242 v 7.85 c 0 2.036 -1.509 3.055 -2.948 3.055 c -1.428 0 -2.947 -0.991 -2.947 -3.027 v -7.878 z" stroke-linecap="round"/>
+</g>
+</svg>

@@ -27,7 +27,7 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../public/untitles.svg"
+              ? "../../public/udemy-icon-inverted.svg"
               : "../../public/udemy-icon.svg"
           }
           alt=""
@@ -36,7 +36,7 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../public/Untitled.svg"
+              ? "../../public/codecademy-icon-inverted.svg"
               : "../../public/codecademy-icon.svg"
           }
           alt=""
