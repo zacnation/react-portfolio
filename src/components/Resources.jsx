@@ -14,6 +14,9 @@ export default function Resources(props) {
           alt=""
           className="lewagon-icon"
         />
+        <ul>
+          <li>The entire team 🥂</li>
+        </ul>
         {/* <p className="break">|</p> */}
         <img
           src={
@@ -24,6 +27,11 @@ export default function Resources(props) {
           alt=""
           className="scrimba-icon"
         />
+        <ul>
+          <li>The free catalogue</li>
+          <li>The podcast!</li>
+        </ul>
+        {/* <p className="break">|</p> */}
         <img
           src={
             props.darkMode
@@ -33,6 +41,11 @@ export default function Resources(props) {
           alt=""
           className="udemy-icon"
         />
+        <ul>
+          <li>Angela Yu</li>
+          <li>Colt Steele</li>
+        </ul>
+        {/* <p className="break">|</p> */}
         <img
           src={
             props.darkMode
@@ -42,6 +55,10 @@ export default function Resources(props) {
           alt=""
           className="codecademy-icon"
         />
+        <ul>
+          <li>Full-Stack career path</li>
+        </ul>
+        {/* <p className="break">|</p> */}
         <img
           src={
             props.darkMode
@@ -51,6 +68,12 @@ export default function Resources(props) {
           alt=""
           className="youtube-icon"
         />
+        <ul>
+          <li>danascript</li>
+          <li>Tiff In Tech</li>
+          <li>Tina Huang</li>
+          <li>FreeCodeCamp</li>
+        </ul>
       </div>
     </section>
   );

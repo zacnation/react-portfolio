@@ -1,6 +1,6 @@
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #fff;
+  background-color: teal;
   /* background-color: #21222a; */
   margin: 0; /* Remove default body margin */
   padding: 0; /* Remove default body padding */
@@ -130,6 +130,7 @@ section.dark {
 #about {
   /* padding: 2% 5%; */
   background-color: #fff;
+  transition-duration: 0.25s;
 }
 
 #about h2 {
@@ -177,6 +178,7 @@ section.dark {
 #projects {
   padding: 5% 20%;
   background-color: #f8f8f8;
+  transition-duration: 0.25s;
 }
 
 #projects h2 {
@@ -196,12 +198,13 @@ section.dark {
 /* resources */
 
 #resources {
-  padding: 0.1% 20%;
-  margin-top: 30%;
+  padding: 0.1% 10%;
+  margin-top: 0.5%;
   background-color: #f8f8f8;
   border-bottom: 1px solid grey;
   display: flex;
   flex-direction: column;
+  transition-duration: 0.25s;
 }
 
 #resources.dark {
@@ -213,22 +216,31 @@ section.dark {
   font-size: 1rem;
 }
 
-.icons {
+/* .icons {
   display: flex;
-  align-content: center;
-}
-
-/* .icons p {
-}
-
-.break {
-  font-size: 3rem;
+  justify-content: center;
 } */
 
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows content to wrap onto multiple lines */
+  gap: 1rem; /* Adds some spacing between items */
+}
+
+.icons ul li {
+  font-size: 0.8rem;
+  list-style: none;
+  padding-right: 2rem;
+}
+
+.icons ul {
+  padding: 0;
+}
+
 #resources img {
-  width: 3rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+  width: 2.5rem;
 }
 
 /* footer */
