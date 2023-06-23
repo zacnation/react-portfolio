@@ -205,7 +205,7 @@ section.dark {
 }
 
 #resources.dark {
-  background-color: #282d35;
+  background-color: #21222a;
   color: white;
 }
 
@@ -237,7 +237,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1% 15% 3% 15%;
+  padding: 1% 20% 3% 20%;
   transition-duration: 0.25s;
   background-color: #f8f8f8;
 }

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export default function Resources(props) {
   return (
     <section id="resources" className={props.darkMode ? "dark" : ""}>
-      <h2>Amazing resources I&apos;m incredibly grateful for</h2>
+      <h2>Resources I&apos;m incredibly grateful for</h2>
       <div className="icons">
         <img
           src={
