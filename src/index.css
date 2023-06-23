@@ -1,6 +1,7 @@
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #21222a;
+  background-color: #fff;
+  /* background-color: #21222a; */
   margin: 0; /* Remove default body margin */
   padding: 0; /* Remove default body padding */
 }
@@ -128,7 +129,7 @@ section.dark {
 
 #about {
   /* padding: 2% 5%; */
-  background-color: white;
+  background-color: #fff;
 }
 
 #about h2 {
@@ -192,13 +193,51 @@ section.dark {
   margin: 0 auto;
 }
 
+/* resources */
+
+#resources {
+  padding: 0.1% 20%;
+  margin-top: 30%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+}
+
+#resources.dark {
+  background-color: #282d35;
+  color: white;
+}
+
+#resources h2 {
+  font-size: 1rem;
+}
+
+.icons {
+  display: flex;
+  align-content: center;
+}
+
+/* .icons p {
+}
+
+.break {
+  font-size: 3rem;
+} */
+
+#resources img {
+  width: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
 /* footer */
 
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3% 15%;
+  padding: 1% 15% 3% 15%;
   transition-duration: 0.25s;
   background-color: #f8f8f8;
 }
