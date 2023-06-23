@@ -355,8 +355,184 @@ nav.dark .toggler--slider {
 
 /* media */
 
-@media (min-width: 992px) {
+/* Mobile devices */
+@media (max-width: 767px) {
+  nav {
+    padding: 1rem;
+    /* Additional mobile styles for navigation */
+  }
+
+  nav ul {
+    padding-left: 1rem;
+    /* Additional mobile styles for navigation ul */
+  }
+
+  nav ul li a {
+    margin-right: 1rem;
+    /* Additional mobile styles for navigation links */
+  }
+
+  main {
+    padding: 5% 10%;
+    /* Additional mobile styles for main content */
+  }
+
+  .bio {
+    max-width: 100%;
+    /* Additional mobile styles for bio container */
+  }
+
+  .mern {
+    margin-bottom: 10px;
+    /* Additional mobile styles for mern section */
+  }
+
+  .mern img {
+    width: 40px;
+    height: 40px;
+    /* Additional mobile styles for mern icons */
+  }
+
+  main img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    /* Additional mobile styles for other images */
+  }
+
+  #about h2 {
+    font-size: 2rem;
+    /* Additional mobile styles for about section heading */
+  }
+
+  .row {
+    flex-direction: column;
+    /* Additional mobile styles for rows in about section */
+  }
+
+  .row img {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    /* Additional mobile styles for images in about section */
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+    /* Additional mobile styles for projects section heading */
+  }
+
+  #resources h2 {
+    font-size: 0.9rem;
+    /* Additional mobile styles for resources section heading */
+  }
+
+  footer {
+    padding: 1% 5% 3% 5%;
+    /* Additional mobile styles for footer */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    padding: 1rem 3rem;
+    /* Additional tablet styles for navigation */
+  }
+
+  main {
+    padding: 5% 20%;
+    /* Additional tablet styles for main content */
+  }
+
+  .bio {
+    max-width: 80%;
+    /* Additional tablet styles for bio container */
+  }
+
+  .mern {
+    margin-bottom: 20px;
+    /* Additional tablet styles for mern section */
+  }
+
+  .mern img {
+    width: 50px;
+    height: 50px;
+    /* Additional tablet styles for mern icons */
+  }
+
+  main img {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    /* Additional tablet styles for other images */
+  }
+
+  #about h2 {
+    font-size: 2.2rem;
+    /* Additional tablet styles for about section heading */
+  }
+
+  .row {
+    flex-direction: row;
+    /* Additional tablet styles for rows in about section */
+  }
+
+  .row img {
+    margin-left: 2rem;
+    margin-bottom: 0;
+    /* Additional tablet styles for images in about section */
+  }
+
+  #projects h2 {
+    font-size: 2.2rem;
+    /* Additional tablet styles for projects section heading */
+  }
+
+  #resources h2 {
+    font-size: 1rem;
+    /* Additional tablet styles for resources section heading */
+  }
+
+  footer {
+    padding: 1% 10% 3% 10%;
+    /* Additional tablet styles for footer */
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  nav {
+    padding: 1rem 3rem;
+    /* Additional desktop styles for navigation */
+  }
+
+  main {
+    padding: 5% 30%;
+    /* Additional desktop styles for main content */
+  }
+
   #about {
     padding: 2% 5%;
+    /* Additional desktop styles for about section */
+  }
+
+  #about h2 {
+    font-size: 2.5rem;
+    /* Additional desktop styles for about section heading */
+  }
+
+  #projects {
+    padding: 5% 20%;
+    /* Additional desktop styles for projects section */
+  }
+
+  #projects h2 {
+    font-size: 2.5rem;
+    /* Additional desktop styles for projects section heading */
+  }
+
+  footer {
+    padding: 1% 20% 3% 20%;
+    /* Additional desktop styles for footer */
   }
 }
