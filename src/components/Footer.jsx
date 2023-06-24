@@ -4,7 +4,6 @@ import {
   faGalacticRepublic,
   faGithub,
   faLinkedin,
-  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -25,7 +24,7 @@ export default function Footer(props) {
       </div>
       <p>
         Made with <FontAwesomeIcon icon={faHeart} className="heart-icon" /> (and{" "}
-        <FontAwesomeIcon icon={faReact} className="react-icon" />)
+        <i className="devicon-vscode-plain"></i>)
       </p>
       <FontAwesomeIcon
         icon={faGalacticRepublic}
