@@ -73,11 +73,15 @@ main.dark {
   color: white;
 }
 
+.tech-stack i {
+  padding-right: 1rem;
+}
+
 .mern i {
   font-size: 3rem;
 }
 
-.languages {
+.not-mern {
   font-size: 2.2rem;
 }
 

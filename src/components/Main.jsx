@@ -18,7 +18,7 @@ export default function Main(props) {
               <i className="devicon-react-original"></i>
               <i className="devicon-nodejs-plain"></i>
             </div>
-            <div className="languages">
+            <div className="not-mern">
               <i className="devicon-html5-plain"></i>
               <i className="devicon-css3-plain"></i>
               <i className="devicon-bootstrap-plain"></i>
