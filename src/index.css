@@ -202,6 +202,23 @@ section.dark {
   margin: 0 auto;
 }
 
+.what-next {
+  display: flex;
+  flex-direction: column;
+}
+
+.what-next i {
+  font-size: 2.5rem;
+}
+
+.what-next p {
+  margin: 0 0 0 1rem;
+}
+
+.what-next div {
+  display: flex;
+}
+
 /* resources */
 
 #resources {
