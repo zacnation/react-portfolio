@@ -8,8 +8,8 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../public/lewagon-icon-inverted.svg"
-              : "../../public/lewagon-icon.svg"
+              ? "../../dist/lewagon-icon-inverted.svg"
+              : "../../dist/lewagon-icon.svg"
           }
           alt=""
           className="lewagon-icon"
@@ -21,8 +21,8 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../public/scrimba-dark-f.svg"
-              : "../../public/scrimba-icon.svg"
+              ? "../../dist/scrimba-dark-f.svg"
+              : "../../dist/scrimba-icon.svg"
           }
           alt=""
           className="scrimba-icon"
@@ -35,8 +35,8 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../public/udemy-icon-inverted.svg"
-              : "../../public/udemy-icon.svg"
+              ? "../../dist/udemy-icon-inverted.svg"
+              : "../../dist/udemy-icon.svg"
           }
           alt=""
           className="udemy-icon"
@@ -49,8 +49,8 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../public/codecademy-icon-inverted.svg"
-              : "../../public/codecademy-icon.svg"
+              ? "../../dist/codecademy-icon-inverted.svg"
+              : "../../dist/codecademy-icon.svg"
           }
           alt=""
           className="codecademy-icon"
@@ -62,8 +62,8 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../public/youtube-dark-f.svg"
-              : "../../public/youtube-icon.svg"
+              ? "../../dist/youtube-dark-f.svg"
+              : "../../dist/youtube-icon.svg"
           }
           alt=""
           className="youtube-icon"

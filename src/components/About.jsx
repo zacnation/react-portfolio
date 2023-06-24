@@ -15,8 +15,8 @@ export default function About(props) {
           <img
             src={
               props.darkMode
-                ? "../../public/lewagon-logo-inverted.svg"
-                : "../../public/lewagon-logo.svg"
+                ? "../../dist/lewagon-logo-inverted.svg"
+                : "../../dist/lewagon-logo.svg"
             }
             alt=""
             className="lewagon-logo"
@@ -26,8 +26,8 @@ export default function About(props) {
           <img
             src={
               props.darkMode
-                ? "../../public/udemy-logo-inverted.svg"
-                : "../../public/udemy-logo.svg"
+                ? "../../dist/udemy-logo-inverted.svg"
+                : "../../dist/udemy-logo.svg"
             }
             alt=""
             className="udemy-logo"
