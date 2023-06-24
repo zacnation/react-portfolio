@@ -14,9 +14,7 @@ export default function About(props) {
           </p>
           <img
             src={
-              props.darkMode
-                ? "../../dist/lewagon-logo-inverted.svg"
-                : "../../dist/lewagon-logo.svg"
+              props.darkMode ? "lewagon-logo-inverted.svg" : "lewagon-logo.svg"
             }
             alt=""
             className="lewagon-logo"
@@ -24,11 +22,7 @@ export default function About(props) {
         </div>
         <div className="row">
           <img
-            src={
-              props.darkMode
-                ? "../../dist/udemy-logo-inverted.svg"
-                : "../../dist/udemy-logo.svg"
-            }
+            src={props.darkMode ? "udemy-logo-inverted.svg" : "udemy-logo.svg"}
             alt=""
             className="udemy-logo"
           />

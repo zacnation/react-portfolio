@@ -7,9 +7,7 @@ export default function Resources(props) {
       <div className="icons">
         <img
           src={
-            props.darkMode
-              ? "../../dist/lewagon-icon-inverted.svg"
-              : "../../dist/lewagon-icon.svg"
+            props.darkMode ? "lewagon-icon-inverted.svg" : "lewagon-icon.svg"
           }
           alt=""
           className="lewagon-icon"
@@ -19,11 +17,7 @@ export default function Resources(props) {
         </ul>
         {/* <p className="break">|</p> */}
         <img
-          src={
-            props.darkMode
-              ? "../../dist/scrimba-dark-f.svg"
-              : "../../dist/scrimba-icon.svg"
-          }
+          src={props.darkMode ? "scrimba-dark-f.svg" : "scrimba-icon.svg"}
           alt=""
           className="scrimba-icon"
         />
@@ -33,11 +27,7 @@ export default function Resources(props) {
         </ul>
         {/* <p className="break">|</p> */}
         <img
-          src={
-            props.darkMode
-              ? "../../dist/udemy-icon-inverted.svg"
-              : "../../dist/udemy-icon.svg"
-          }
+          src={props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"}
           alt=""
           className="udemy-icon"
         />
@@ -49,8 +39,8 @@ export default function Resources(props) {
         <img
           src={
             props.darkMode
-              ? "../../dist/codecademy-icon-inverted.svg"
-              : "../../dist/codecademy-icon.svg"
+              ? "codecademy-icon-inverted.svg"
+              : "codecademy-icon.svg"
           }
           alt=""
           className="codecademy-icon"
@@ -60,11 +50,7 @@ export default function Resources(props) {
         </ul>
         {/* <p className="break">|</p> */}
         <img
-          src={
-            props.darkMode
-              ? "../../dist/youtube-dark-f.svg"
-              : "../../dist/youtube-icon.svg"
-          }
+          src={props.darkMode ? "youtube-dark-f.svg" : "youtube-icon.svg"}
           alt=""
           className="youtube-icon"
         />
