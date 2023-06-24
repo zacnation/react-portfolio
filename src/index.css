@@ -204,11 +204,16 @@ section.dark {
 .coming-soon {
   width: max-content;
   margin: 0 auto;
+  padding: 20% 0;
 }
 
 .what-next {
   display: flex;
   flex-direction: column;
+}
+
+.tech-card {
+  padding: 1rem 0;
 }
 
 .what-next i {
