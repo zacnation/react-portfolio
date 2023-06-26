@@ -22,8 +22,8 @@ export default function Resources(props) {
           className="scrimba-icon"
         />
         <ul>
+          <li>The Scrimba podcast</li>
           <li>The free catalogue</li>
-          <li>The podcast!</li>
         </ul>
         {/* <p className="break">|</p> */}
         <img

@@ -12,14 +12,14 @@ export default function Footer(props) {
     <footer className={props.darkMode ? "dark" : ""}>
       <div className="icons">
         <a href="https://github.com/zacnation" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" />
+          <FontAwesomeIcon icon={faGithub} className="github-icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/zacnation/"
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} className="github-icon" />
+          <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" />
         </a>
       </div>
       <p>
