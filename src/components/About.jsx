@@ -28,8 +28,11 @@ export default function About(props) {
           />
           <p>
             Before joining Le Wagon, my self-study involved a lot of Codecademy
-            and Udemy courses. I completed A list of my completed courses can be
-            found here.
+            and Udemy courses. A list of my completed courses can be found{" "}
+            <span className="courses-here" onClick={props.toggleClose}>
+              here
+            </span>
+            .
           </p>
         </div>
         {/* <div className="row">
@@ -57,4 +60,5 @@ export default function About(props) {
 
 About.propTypes = {
   darkMode: PropTypes.bool.isRequired,
+  toggleClose: PropTypes.bool,
 };
