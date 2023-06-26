@@ -7,7 +7,7 @@ body {
 
 /* popup */
 
-.popup {
+#popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,6 +17,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#popup .dark {
+  background-color: #21222a;
+  color: white;
 }
 
 .popup-inner {
@@ -186,12 +191,23 @@ section.dark {
   margin-bottom: 1rem;
 }
 
+.courses-here {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .row {
   display: flex;
 }
+
 #about.dark {
   background-color: #232930;
   color: white;
+
+  .courses-here {
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
 }
 
 .row img {

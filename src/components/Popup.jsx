@@ -4,9 +4,9 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Popup(props) {
   return props.buttonPopup ? (
-    <div className="popup">
+    <div id="popup" className={props.darkMode ? "dark" : ""}>
       <div className="popup-inner">
-        <h1>Hello</h1>
+        <h2>Courses:</h2>
         <FontAwesomeIcon
           icon={faXmark}
           className="close"
