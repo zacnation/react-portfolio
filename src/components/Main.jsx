@@ -6,10 +6,7 @@ export default function Main(props) {
       <div className="container">
         <div className="content">
           <h1>Hi, I&apos;m Zac.</h1>
-          <p className="bio">
-            A Full-Stack Web Developer specialising in the MERN stack, based in
-            London.
-          </p>
+          <p className="bio">A Full-Stack Developer based in London.</p>
           <div className="tech-stack">
             <div className="mern">
               <p>Tech Stack |</p>
