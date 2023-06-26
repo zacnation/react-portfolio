@@ -207,6 +207,7 @@ section.dark {
   .courses-here {
     color: white;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    text-decoration: none;
   }
 }
 
