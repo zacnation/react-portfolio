@@ -2,8 +2,12 @@ import PropTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
-    <nav className={`bg-gray-200 ${props.darkMode ? "dark" : ""}`}>
-      <div className="max-w-6xl mx-auto px-4">
+    <nav
+      className={`bg-white shadow-md shadow-gray-100 ${
+        props.darkMode ? "dark" : ""
+      }`}
+    >
+      <div className="max-w-full mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="flex justify-between">
           {/* logo */}
           <div className="logo py-8 px-3 font-bold">Zac Nation</div>
@@ -37,7 +41,7 @@ export default function Navbar(props) {
 
             {/* mobile button */}
             <div className="md:hidden flex items-center">
-              <button>
+              <button onClick={props.toggleHamburger}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -57,8 +61,9 @@ export default function Navbar(props) {
           </div>
         </div>
       </div>
+
       {/* mobile menu */}
-      <div>
+      <div className={`md:hidden ${props.hamburger ? "" : "hidden"}`}>
         <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
           Home
         </a>
@@ -79,6 +84,8 @@ export default function Navbar(props) {
 Navbar.propTypes = {
   darkMode: PropTypes.bool.isRequired,
   toggleDarkMode: PropTypes.bool.isRequired,
+  hamburger: PropTypes.bool.isRequired,
+  toggleHamburger: PropTypes.bool.isRequired,
 };
 
 // =============
