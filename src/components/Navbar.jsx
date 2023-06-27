@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import ToggleSwitch from "../components/ToggleSwitch";
 
 export default function Navbar(props) {
   return (
@@ -21,6 +22,7 @@ export default function Navbar(props) {
               >
                 light/dark
               </button>
+              <ToggleSwitch />
             </div>
 
             {/* secondary nav */}
