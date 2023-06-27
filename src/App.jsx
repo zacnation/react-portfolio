@@ -12,18 +12,27 @@ import "tailwindcss/tailwind.css";
 export default function App() {
   const [darkMode, setDarkMode] = React.useState(false);
   const [buttonPopup, setButtonPopup] = React.useState(false);
+  const [hamburger, setHamburger] = React.useState(hamburger);
 
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);
   }
 
   function toggleClose() {
-    setButtonPopup((prevstate) => !prevstate);
+    setButtonPopup((prevState) => !prevState);
+  }
+
+  function toggleHamburger() {
+    setHamburger((prevState) => !prevState);
   }
 
   return (
     <div>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Navbar
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+        toggleHamburger={toggleHamburger}
+      />
       <Popup
         darkMode={darkMode}
         buttonPopup={buttonPopup}
