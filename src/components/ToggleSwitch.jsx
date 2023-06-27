@@ -1,25 +1,22 @@
-import React, { Component } from "react";
+import PropTypes from "prop-types";
 import Switch from "react-switch";
 
-class ToggleSwitch extends Component {
-  constructor() {
-    super();
-    this.state = { checked: false };
-    this.handleChange = this.handleChange.bind(this);
-  }
+const ToggleSwitch = ({ checked, onChange }) => {
+  return (
+    <label>
+      <Switch
+        onChange={onChange}
+        checked={checked}
+        offColor="#faa"
+        onColor="#faa"
+      />
+    </label>
+  );
+};
 
-  handleChange(checked) {
-    this.setState({ checked });
-  }
-
-  render() {
-    return (
-      <label>
-        <span>Switch with default style</span>
-        <Switch onChange={this.handleChange} checked={this.state.checked} />
-      </label>
-    );
-  }
-}
+ToggleSwitch.propTypes = {
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default ToggleSwitch;

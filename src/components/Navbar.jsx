@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import ToggleSwitch from "../components/ToggleSwitch";
+import ToggleSwitch from "./ToggleSwitch";
 
 export default function Navbar(props) {
   return (
@@ -12,17 +12,15 @@ export default function Navbar(props) {
         <div className="flex justify-between">
           {/* logo */}
           <div className="logo py-8 px-3 font-bold">Zac Nation</div>
-
           <div className="flex space-x-4">
             {/* primary nav */}
             <div className="hidden md:flex items-center">
-              <button
-                className="bg-teal-400 px-2 py-1 rounded hover:bg-pink-400 transition duration-100"
-                onClick={props.toggleDarkMode}
-              >
-                light/dark
-              </button>
-              <ToggleSwitch />
+              <ToggleSwitch
+                darkMode={props.darkMode}
+                toggleDarkMode={props.toggleDarkMode}
+                checked={props.darkMode}
+                onChange={props.toggleDarkMode}
+              />
             </div>
 
             {/* secondary nav */}
@@ -66,6 +64,12 @@ export default function Navbar(props) {
 
       {/* mobile menu */}
       <div className={`md:hidden ${props.hamburger ? "" : "hidden"}`}>
+        <ToggleSwitch
+          darkMode={props.darkMode}
+          toggleDarkMode={props.toggleDarkMode}
+          checked={props.darkMode}
+          onChange={props.toggleDarkMode}
+        />
         <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
           Home
         </a>
@@ -89,125 +93,3 @@ Navbar.propTypes = {
   hamburger: PropTypes.bool.isRequired,
   toggleHamburger: PropTypes.bool.isRequired,
 };
-
-// =============
-// Me
-// =============
-
-// import PropTypes from "prop-types";
-// export default function Navbar(props) {
-//   return (
-//     <nav
-//       className={`flex items-center justify-between ${
-//         props.darkMode ? "dark" : ""
-//       }`}
-//     >
-//       <h3 className="logo">Zac Nation</h3>
-//       <div className="nav-elements">
-//         <div className="toggler">
-//           <div className="toggler--slider" onClick={props.toggleDarkMode}>
-//             <div className="toggler--slider--circle"></div>
-//           </div>
-//         </div>
-// <ul>
-//   <li>
-//     <a href="#home">Home</a>
-//   </li>
-//   <li>
-//     <a href="#about">About</a>
-//   </li>
-//   <li>
-//     <a href="#projects">Projects</a>
-//   </li>
-//   <li>
-//     <a href="#contact">Contact</a>
-//   </li>
-// </ul>
-//       </div>
-//     </nav>
-//   );
-// }
-
-// Navbar.propTypes = {
-//   darkMode: PropTypes.bool.isRequired,
-//   toggleDarkMode: PropTypes.bool.isRequired,
-// };
-
-//
-
-//
-
-//
-
-// =============
-
-// CHATGPT
-
-// =============
-
-// import PropTypes from "prop-types";
-
-// export default function Navbar(props) {
-//   return (
-//     <nav
-//       className={`flex items-center justify-between p-4 ${
-//         props.darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
-//       }`}
-//     >
-//       <h3 className="text-xl font-bold">Zac Nation</h3>
-//       <div className="flex items-center">
-//         <div
-//           className={`relative w-12 h-6 rounded-full bg-gray-400 ${
-//             props.darkMode ? "bg-blue-600" : "bg-gray-300"
-//           }`}
-//           onClick={props.toggleDarkMode}
-//         >
-//           <div
-//             className={`absolute w-4 h-4 rounded-full bg-white ${
-//               props.darkMode ? "left-6" : "left-1"
-//             }`}
-//           ></div>
-//         </div>
-//       </div>
-//       <ul className="hidden sm:flex">
-//         <li>
-//           <a
-//             href="#home"
-//             className="px-2 py-1 text-gray-800 hover:text-gray-600"
-//           >
-//             Home
-//           </a>
-//         </li>
-//         <li>
-//           <a
-//             href="#about"
-//             className="px-2 py-1 text-gray-800 hover:text-gray-600"
-//           >
-//             About
-//           </a>
-//         </li>
-//         <li>
-//           <a
-//             href="#projects"
-//             className="px-2 py-1 text-gray-800 hover:text-gray-600"
-//           >
-//             Projects
-//           </a>
-//         </li>
-//         <li>
-//           <a
-//             href="#contact"
-//             className="px-2 py-1 text-gray-800 hover:text-gray-600"
-//           >
-//             Contact
-//           </a>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// }
-
-// Navbar.propTypes = {
-//   darkMode: PropTypes.bool.isRequired,
-//   toggleDarkMode: PropTypes.func.isRequired,
-// };

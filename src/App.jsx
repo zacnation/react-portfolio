@@ -1,5 +1,4 @@
-import React from "react";
-import "./index.css";
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import About from "./components/About";
@@ -10,9 +9,9 @@ import Popup from "./components/Popup";
 import "tailwindcss/tailwind.css";
 
 export default function App() {
-  const [darkMode, setDarkMode] = React.useState(false);
-  const [buttonPopup, setButtonPopup] = React.useState(false);
-  const [hamburger, setHamburger] = React.useState();
+  const [darkMode, setDarkMode] = useState(false);
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
 
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);
