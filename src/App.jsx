@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Resources from "./components/Resources";
 import Popup from "./components/Popup";
+import "tailwindcss/tailwind.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = React.useState(false);
