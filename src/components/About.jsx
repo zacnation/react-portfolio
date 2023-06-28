@@ -1,10 +1,21 @@
 import PropTypes from "prop-types";
 export default function About(props) {
   return (
-    <section id="about" className={props.darkMode ? "dark" : ""}>
-      <div className="rows">
-        <h2>About me</h2>
+    <section
+      className={`${props.darkMode ? "bg-dark-II text-white" : "bg-white"}`}
+    >
+      <div className="py-14 px-6">
+        <h2 className="text-2xl font-bold">About me</h2>
         <div className="row">
+          <img
+            src={
+              props.darkMode
+                ? "lewagon-logo-white.svg"
+                : "lewagon-logo-black.svg"
+            }
+            alt=""
+            className="md:hidden w-40 py-6"
+          />
           <p>
             I&apos;m a graduate of Le Wagon, a 9-week full-time intensive web
             development bootcamp based in London. During the bootcamp I worked
@@ -19,7 +30,7 @@ export default function About(props) {
                 : "lewagon-logo-black.svg"
             }
             alt=""
-            className="lewagon-logo"
+            className="hidden md:block"
           />
         </div>
         <div className="row">
@@ -28,7 +39,14 @@ export default function About(props) {
               props.darkMode ? "udemy-logo-white.svg" : "udemy-logo-black.svg"
             }
             alt=""
-            className="udemy-logo"
+            className="hidden md:block"
+          />
+          <img
+            src={
+              props.darkMode ? "udemy-logo-white.svg" : "udemy-logo-black.svg"
+            }
+            alt=""
+            className="md:hidden w-32 pt-6"
           />
           <p>
             Before joining Le Wagon, my self-study involved a lot of Codecademy

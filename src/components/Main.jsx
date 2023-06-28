@@ -4,7 +4,7 @@ export default function Main(props) {
   return (
     <main
       className={`py-20 lg:w-screen lg:h-screen ${
-        props.darkMode ? "bg-dark text-white" : "bg-light"
+        props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
       <div className="">
@@ -13,7 +13,7 @@ export default function Main(props) {
             Hi, I&apos;m Zac.
           </h1>
           <p className="text-sm md:text-lg text-center mt-3">
-            A Full-Stack Developer based in London.
+            A Full-Stack Web Developer based in London.
           </p>
           <div className="flex flex-col text-center">
             <div className="mern text-5xl space-x-3 my-3">

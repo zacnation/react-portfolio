@@ -8,7 +8,8 @@ export default {
       },
       colors: {
         light: "#f8f8f8",
-        dark: "#282d35",
+        "dark-I": "#282d35",
+        "dark-II": "#232930",
         "very-dark": "#21222a",
       },
     },
