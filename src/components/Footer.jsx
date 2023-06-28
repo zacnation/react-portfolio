@@ -11,7 +11,7 @@ export default function Footer(props) {
   return (
     <footer
       className={`flex justify-around py-8 ${
-        props.darkMode ? "bg-dark-I text-white" : "bg-light"
+        props.darkMode ? "bg-very-dark text-white" : "bg-light"
       }`}
     >
       <div>

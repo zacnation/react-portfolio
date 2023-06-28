@@ -5,7 +5,7 @@ export default function Navbar(props) {
   return (
     <nav
       className={`bg-white shadow-md shadow-gray-100 ${
-        props.darkMode ? "dark" : ""
+        props.darkMode ? "bg-very-dark text-white" : "bg-white"
       }`}
     >
       <div className="max-w-full mx-auto px-4 md:px-10 lg:px-20 xl:px-40">

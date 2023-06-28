@@ -5,7 +5,7 @@ export default function Resources(props) {
   return (
     <section
       className={`py-16 ${
-        props.darkMode ? "bg-dark-II text-white" : "bg-white"
+        props.darkMode ? "bg-very-dark text-white" : "bg-white"
       }`}
     >
       <h2 className="md:hidden text-2xl font-bold pb-5">Resources</h2>
