@@ -3,10 +3,16 @@ import TechCard from "./TechCard";
 
 export default function About(props) {
   return (
-    <section id="projects" className={props.darkMode ? "dark" : ""}>
-      <h2>Projects</h2>
-      <h2 className="coming-soon">More coming soon 👨‍💻</h2>
-      <h2>What&apos;s next?</h2>
+    <section
+      className={`py-14 px-3 ${
+        props.darkMode ? "bg-dark-I text-white" : "bg-light"
+      }`}
+    >
+      <h2 className="text-2xl font-bold">Projects</h2>
+      <h2 className="text-2xl font-bold text-center py-14">
+        More coming soon 👨‍💻
+      </h2>
+      <h2 className="text-2xl font-bold pb-2">What&apos;s next?</h2>
       <div className="what-next">
         <TechCard
           icon="devicon-chrome-plain"
