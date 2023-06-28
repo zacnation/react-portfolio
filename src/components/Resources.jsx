@@ -1,65 +1,72 @@
 import PropTypes from "prop-types";
+import ResourceCard from "./ResourceCard";
 
 export default function Resources(props) {
   return (
-    <section id="resources" className={props.darkMode ? "dark" : ""}>
-      <h2>Resources I&apos;m incredibly grateful for</h2>
-      <div className="icons">
-        <img
-          src={
-            props.darkMode ? "lewagon-icon-inverted.svg" : "lewagon-icon.svg"
-          }
-          alt=""
-          className="lewagon-icon"
-        />
-        <ul>
-          <li>The entire team 🥂</li>
-        </ul>
-        {/* <p className="break">|</p> */}
-        <img
-          src={props.darkMode ? "scrimba-dark-f.svg" : "scrimba-icon.svg"}
-          alt=""
-          className="scrimba-icon"
-        />
-        <ul>
-          <li>The Scrimba podcast</li>
-          <li>The free catalogue</li>
-        </ul>
-        {/* <p className="break">|</p> */}
-        <img
-          src={props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"}
-          alt=""
-          className="udemy-icon"
-        />
-        <ul>
-          <li>Angela Yu</li>
-          <li>Colt Steele</li>
-        </ul>
-        {/* <p className="break">|</p> */}
-        <img
-          src={
-            props.darkMode
-              ? "codecademy-icon-inverted.svg"
-              : "codecademy-icon.svg"
-          }
-          alt=""
-          className="codecademy-icon"
-        />
-        <ul>
-          <li>Full-Stack career path</li>
-        </ul>
-        {/* <p className="break">|</p> */}
-        <img
-          src={props.darkMode ? "youtube-dark-f.svg" : "youtube-icon.svg"}
-          alt=""
-          className="youtube-icon"
-        />
-        <ul>
-          <li>danascript</li>
-          <li>Tiff In Tech</li>
-          <li>Tina Huang</li>
-          <li>FreeCodeCamp</li>
-        </ul>
+    <section
+      className={`py-16 ${
+        props.darkMode ? "bg-dark-II text-white" : "bg-white"
+      }`}
+    >
+      <h2 className="md:hidden text-2xl font-bold pb-5">Resources</h2>
+      <h2 className="hidden md:block text-2xl font-bold">
+        Resources I&apos;m incredibly grateful for
+      </h2>
+
+      <div className="grid grid-cols-2">
+        <div className="flex items-center">
+          <ResourceCard
+            imageSrc={
+              props.darkMode ? "lewagon-icon-inverted.svg" : "lewagon-icon.svg"
+            }
+            listItems={["The entire team 🥂"]}
+          />
+        </div>
+
+        <div className="grid col-span-2">
+          <div className="flex items-center">
+            <ResourceCard
+              imageSrc={
+                props.darkMode ? "scrimba-dark-f.svg" : "scrimba-icon.svg"
+              }
+              listItems={["The Scrimba podcast", "The free catalogue"]}
+            />
+          </div>
+        </div>
+
+        <div className="flex items-center">
+          <ResourceCard
+            imageSrc={
+              props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"
+            }
+            listItems={["Angela Yu", "Colt Steele"]}
+          />
+        </div>
+
+        <div className="flex items-center">
+          <ResourceCard
+            imageSrc={
+              props.darkMode
+                ? "codecademy-icon-inverted.svg"
+                : "codecademy-icon.svg"
+            }
+            listItems={["Full-Stack career path"]}
+          />
+        </div>
+
+        <div className="grid col-span-3">
+          <ResourceCard
+            imageSrc={
+              props.darkMode ? "youtube-dark-f.svg" : "youtube-icon.svg"
+            }
+            listItems={[
+              "danascript",
+              "Tiff In Tech",
+              "Tina Huang",
+              "FreeCodeCamp",
+            ]}
+          />
+        </div>
       </div>
     </section>
   );
