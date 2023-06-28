@@ -10,7 +10,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 export default function Footer(props) {
   return (
     <footer
-      className={`flex justify-around py-8 ${
+      className={`flex justify-around pt-3 pb-8 ${
         props.darkMode ? "bg-very-dark text-white" : "bg-light"
       }`}
     >

@@ -4,7 +4,7 @@ import ResourceCard from "./ResourceCard";
 export default function Resources(props) {
   return (
     <section
-      className={`py-16 ${
+      className={`pt-8 ${
         props.darkMode ? "bg-very-dark text-white" : "bg-white"
       }`}
     >
