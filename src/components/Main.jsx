@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export default function Main(props) {
   return (
     <main
-      className={`py-20 lg:w-screen lg:h-screen ${
+      className={`pb-20 pt-40 lg:w-screen lg:h-screen ${
         props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
