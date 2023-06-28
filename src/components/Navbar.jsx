@@ -12,9 +12,9 @@ export default function Navbar(props) {
         <div className="flex justify-between">
           {/* logo */}
           <div className="logo py-8 px-3 font-bold">Zac Nation</div>
-          <div className="flex space-x-4">
+          <div className="flex items-center space-x-4">
             {/* primary nav */}
-            <div className="hidden md:flex items-center">
+            <div className=" items-center">
               <ToggleSwitch
                 darkMode={props.darkMode}
                 toggleDarkMode={props.toggleDarkMode}
@@ -64,12 +64,12 @@ export default function Navbar(props) {
 
       {/* mobile menu */}
       <div className={`md:hidden ${props.hamburger ? "" : "hidden"}`}>
-        <ToggleSwitch
+        {/* <ToggleSwitch
           darkMode={props.darkMode}
           toggleDarkMode={props.toggleDarkMode}
           checked={props.darkMode}
           onChange={props.toggleDarkMode}
-        />
+        /> */}
         <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
           Home
         </a>
