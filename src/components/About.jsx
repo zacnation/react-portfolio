@@ -4,7 +4,7 @@ export default function About(props) {
     <section
       className={`${props.darkMode ? "bg-dark-II text-white" : "bg-white"}`}
     >
-      <div className="py-14 px-6">
+      <div className="py-14 px-3">
         <h2 className="text-2xl font-bold">About me</h2>
         <div className="row">
           <img
