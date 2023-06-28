@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function Main(props) {
   return (
-    <main id="home" className={props.darkMode ? "dark" : ""}>
+    <main className={`${props.darkMode ? "bg-dark text-white" : "bg-light"}`}>
       <div className="container">
         <div className="content">
           <h1>Hi, I&apos;m Zac.</h1>
