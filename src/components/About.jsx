@@ -46,7 +46,7 @@ export default function About(props) {
               props.darkMode ? "udemy-logo-white.svg" : "udemy-logo-black.svg"
             }
             alt=""
-            className="md:hidden w-32 pt-6"
+            className="md:hidden w-32 py-6"
           />
           <p>
             Before joining Le Wagon, my self-study involved a lot of Codecademy
