@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 export default function Main(props) {
   return (
     <main
+      id="main"
       className={`pb-20 pt-40 lg:w-screen lg:h-screen ${
         props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}

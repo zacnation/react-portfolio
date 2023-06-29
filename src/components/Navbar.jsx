@@ -11,7 +11,9 @@ export default function Navbar(props) {
       <div className="max-w-full mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="flex justify-between">
           {/* logo */}
-          <div className="text-2xl py-8 px-3 font-bold">Zac Nation</div>
+          <a href="#main" className="text-2xl py-8 px-3 font-bold">
+            Zac Nation
+          </a>
           <div className="flex items-center space-x-4">
             {/* primary nav */}
             <div className="pt-1.5">
@@ -25,7 +27,7 @@ export default function Navbar(props) {
 
             {/* secondary nav */}
             <div className="hidden md:flex items-center space-x-3">
-              <a href="#home" className="py-8 px-3">
+              <a href="#main" className="py-8 px-3">
                 Home
               </a>
               <a href="#about" className="py-8 px-3">

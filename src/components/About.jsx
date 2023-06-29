@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 export default function About(props) {
   return (
     <section
+      id="about"
       className={`md:px-10 ${
         props.darkMode ? "bg-dark-II text-white" : "bg-white"
       }`}
