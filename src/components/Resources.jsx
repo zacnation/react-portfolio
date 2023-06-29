@@ -5,7 +5,7 @@ export default function Resources(props) {
   return (
     <section
       className={`pt-8 px-3 md:px-10 xl:px-60 2xl:px-96 ${
-        props.darkMode ? "bg-very-dark text-white" : "bg-white"
+        props.darkMode ? "bg-very-dark text-white" : "bg-light"
       }`}
     >
       <h2 className="lg:hidden text-2xl font-bold pb-5">Resources</h2>

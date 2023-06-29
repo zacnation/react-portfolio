@@ -26,7 +26,7 @@ export default function Navbar(props) {
             </div>
 
             {/* secondary nav */}
-            <div className="hidden md:flex items-center space-x-3">
+            <div className="hidden md:flex items-center space-x-3 font-bold">
               <a href="#main" className="py-8 px-3">
                 Home
               </a>
@@ -65,7 +65,7 @@ export default function Navbar(props) {
       </div>
 
       {/* mobile menu */}
-      <div className={`md:hidden ${props.hamburger ? "" : "hidden"}`}>
+      <div className={`md:hidden font-bold ${props.hamburger ? "" : "hidden"}`}>
         {/* <ToggleSwitch
           darkMode={props.darkMode}
           toggleDarkMode={props.toggleDarkMode}

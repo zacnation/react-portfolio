@@ -9,8 +9,8 @@ export default function About(props) {
       }`}
     >
       <h2 className="text-2xl font-bold">Projects</h2>
-      <h2 className="text-2xl font-bold text-center py-28 md:py-40 lg:py-60">
-        More coming soon 👨‍💻
+      <h2 className="text-2xl md:text-5xl font-bold text-center py-28 md:py-40 lg:py-60">
+        👨‍💻
       </h2>
     </section>
   );
