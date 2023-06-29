@@ -11,7 +11,7 @@ export default function Navbar(props) {
       <div className="max-w-full mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="flex justify-between">
           {/* logo */}
-          <div className="logo py-8 px-3 font-bold">Zac Nation</div>
+          <div className="text-2xl py-8 px-3 font-bold">Zac Nation</div>
           <div className="flex items-center space-x-4">
             {/* primary nav */}
             <div className="pt-1.5">
