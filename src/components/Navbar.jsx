@@ -14,7 +14,7 @@ export default function Navbar(props) {
           <div className="logo py-8 px-3 font-bold">Zac Nation</div>
           <div className="flex items-center space-x-4">
             {/* primary nav */}
-            <div className=" items-center">
+            <div className="pt-1.5">
               <ToggleSwitch
                 darkMode={props.darkMode}
                 toggleDarkMode={props.toggleDarkMode}
