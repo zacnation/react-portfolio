@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import WhatNext from "./components/WhatNext";
 import Footer from "./components/Footer";
 import Resources from "./components/Resources";
 import Popup from "./components/Popup";
@@ -41,6 +42,7 @@ export default function App() {
       <Main darkMode={darkMode} />
       <About darkMode={darkMode} toggleClose={toggleClose} />
       <Projects darkMode={darkMode} />
+      <WhatNext darkMode={darkMode} />
       <Resources darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
