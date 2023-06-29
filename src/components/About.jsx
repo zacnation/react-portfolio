@@ -34,7 +34,16 @@ export default function About(props) {
                   : "lewagon-icon.svg"
               }
               alt=""
-              className="hidden md:block w-20 pl-5"
+              className="hidden md:block lg:block xl:hidden 2xl:hidden w-20 pl-5"
+            />
+            <img
+              src={
+                props.darkMode
+                  ? "lewagon-logo-white.svg"
+                  : "lewagon-logo-black.svg"
+              }
+              alt=""
+              className="hidden xl:block 2xl:block w-60 pl-5"
             />
           </div>
         </div>
@@ -54,9 +63,16 @@ export default function About(props) {
         </p>
         <div className="flex items-center py-8">
           <img
+            src={
+              props.darkMode ? "udemy-logo-white.svg" : "udemy-logo-black.svg"
+            }
+            alt=""
+            className="hidden xl:block 2xl:block w-48 pr-5"
+          />
+          <img
             src={props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"}
             alt=""
-            className="hidden md:block w-20 md:pr-3"
+            className="hidden md:block lg:block xl:hidden 2xl:hidden w-20 pr-5"
           />
           <p className="hidden md:block text-justify">
             Before joining Le Wagon, my self-study involved a lot of Codecademy
