@@ -4,12 +4,12 @@ import ResourceCard from "./ResourceCard";
 export default function Resources(props) {
   return (
     <section
-      className={`pt-8 px-3 md:px-10 ${
+      className={`pt-8 px-3 md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? "bg-very-dark text-white" : "bg-white"
       }`}
     >
       <h2 className="lg:hidden text-2xl font-bold pb-5">Resources</h2>
-      <h2 className="hidden lg:block text-2xl font-bold">
+      <h2 className="hidden lg:block text-md font-bold">
         Resources I&apos;m incredibly grateful for
       </h2>
 

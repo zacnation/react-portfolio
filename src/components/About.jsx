@@ -3,11 +3,11 @@ export default function About(props) {
   return (
     <section
       id="about"
-      className={`md:px-10 ${
+      className={`md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? "bg-dark-II text-white" : "bg-white"
       }`}
     >
-      <div className="py-14 px-3">
+      <div className="py-14 px-3 md:px-0">
         <h2 className="text-2xl font-bold md:pb-3">About me</h2>
         <div className="row">
           <img
