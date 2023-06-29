@@ -4,7 +4,7 @@ import TechCard from "./TechCard";
 export default function About(props) {
   return (
     <section
-      className={`py-14 px-3 ${
+      className={`py-14 px-3 md:px-10 ${
         props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
