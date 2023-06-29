@@ -22,7 +22,7 @@ export default function Main(props) {
             <i className="devicon-react-original"></i>
             <i className="devicon-nodejs-plain"></i>
           </div>
-          <div className="not-mern text-3xl space-x-2.5">
+          <div className="not-mern text-3xl max-[350px]:text-2xl space-x-2.5">
             <i className="devicon-html5-plain"></i>
             <i className="devicon-css3-plain"></i>
             <i className="devicon-bootstrap-plain"></i>
