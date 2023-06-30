@@ -53,7 +53,7 @@ export default function About(props) {
           alt=""
           className="md:hidden w-32 py-6"
         />
-        <p className="md:hidden">
+        <p className="md:hidden text-justify">
           Before joining Le Wagon, my self-study involved a lot of Codecademy
           and Udemy courses. A list of my completed courses can be found{" "}
           <span className="courses-here" onClick={props.toggleClose}>
