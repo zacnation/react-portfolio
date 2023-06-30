@@ -4,7 +4,7 @@ import TechCard from "./TechCard";
 export default function WhatNext(props) {
   return (
     <div
-      className={`py-12 md:px-10 xl:px-60 2xl:px-96 ${
+      className={`py-12 pl-2 pr-1 md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? "bg-dark-II text-white" : "bg-white"
       }`}
     >
