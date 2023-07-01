@@ -25,7 +25,7 @@ export default function Main(props) {
           <div className="not-mern text-3xl max-[350px]:text-2xl space-x-2.5">
             <i className="devicon-html5-plain"></i>
             <i className="devicon-css3-plain"></i>
-            <i className="devicon-bootstrap-plain"></i>
+            <i className="devicon-tailwindcss-plain"></i>
             <i className="devicon-javascript-plain"></i>
             <i className="devicon-typescript-plain"></i>
             <i className="devicon-ruby-plain"></i>
