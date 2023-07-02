@@ -2,14 +2,28 @@ import PropTypes from "prop-types";
 
 export default function ProjectCard(props) {
   return (
-    <div className="flex flex-col mb-20 py-5 px-1 bg-slate-100 rounded-md">
+    <div
+      className={`flex flex-col md:flex-row mb-20 py-5 px-1 rounded-md shadow-lg ${
+        props.darkMode
+          ? "bg-dark-II text-white shadow-very-dark"
+          : "bg-white shadow-gray-100"
+      }`}
+    >
       <h2 className="text-3xl pb-4 md:pb-0">{props.title}</h2>
-      <p className="text-justify px-5">{props.description}</p>
-      <div className="flex items-center space-x-2 justify-center">
+      <p className="text-justify px-5 font-thin">{props.description}</p>
+      <div
+        className={`flex items-center space-x-2 justify-center ${
+          props.darkMode ? "text-white" : "text-black"
+        }`}
+      >
         {props.techs.map((item, index) => {
           return item === "Stimulus" ? (
             <img
-              src="https://www.svgrepo.com/show/354392/stimulus.svg"
+              src={
+                props.darkMode
+                  ? "../../dist/stimulus-svgrepo-com.svg"
+                  : "https://www.svgrepo.com/show/354392/stimulus.svg"
+              }
               alt=""
               className="w-6 h-6"
             />
@@ -26,6 +40,12 @@ export default function ProjectCard(props) {
     </div>
   );
 }
+
+// src={
+//   props.darkMode
+//     ? "lewagon-logo-white.svg"
+//     : "lewagon-logo-black.svg"
+// }
 
 ProjectCard.propTypes = {
   darkMode: PropTypes.bool.isRequired,
