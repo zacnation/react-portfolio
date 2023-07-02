@@ -14,12 +14,8 @@ const ToggleSwitch = ({ checked, onChange }) => {
         handleDiameter={14}
         height={20}
         width={40}
-        uncheckedIcon={
-          <img src="../../dist/moon.svg" alt="" className="w-5 px-1 pt-1" />
-        }
-        checkedIcon={
-          <img src="../../dist/sun.svg" alt="" className="w-5 pl-1 pt-0.5" />
-        }
+        uncheckedIcon={<img src="moon.svg" alt="" className="w-5 px-1 pt-1" />}
+        checkedIcon={<img src="sun.svg" alt="" className="w-5 pl-1 pt-0.5" />}
       />
     </label>
   );
