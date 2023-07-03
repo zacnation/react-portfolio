@@ -43,14 +43,11 @@ import PropTypes from "prop-types";
 
 export default function ProjectCard(props) {
   return (
-    <div
-      className="flex items-center bg-cover bg-center h-44 filter grayscale hover:filter-none cursor-pointer mb-5"
-      style={{
-        backgroundImage: `url(${props.imgSrc})`,
-      }}
-    >
-      <h1 className="text-white text-4xl mx-auto">{props.title}</h1>
-    </div>
+    <img
+      src={props.imgSrc}
+      alt=""
+      className="filter grayscale hover:filter-none cursor-pointer mb-5"
+    />
   );
 }
 
