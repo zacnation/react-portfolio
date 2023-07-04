@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import ProjectCard from "./ProjectCard";
 
-export default function About(props) {
+export default function Projects(props) {
   return (
     <section
       id="projects"
@@ -40,7 +40,7 @@ export default function About(props) {
   );
 }
 
-About.propTypes = {
+Projects.propTypes = {
   darkMode: PropTypes.bool.isRequired,
   toggleClose: PropTypes.bool,
 };
