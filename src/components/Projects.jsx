@@ -13,7 +13,7 @@ export default function About(props) {
       <div className="font-bold text-center py-28 md:py-40 lg:py-60">
         <ProjectCard
           darkMode={props.darkMode}
-          title="MIND MISSION"
+          title="MIND MISSIONnnnnnnnn"
           description="A Rails prototype of Mind Mission, a mindfulness training game for 9 to 11-year-olds. Sed sagittis felis turpis, vitae accumsan nibh lacinia in. Nulla nec tellus at sapien fringilla consequat. Cras ac ultrices neque. Suspendisse vehicula pretium maximus. Phasellus lorem risus, semper nec mauris et, luctus convallis nisi. Integer vel leo at erat dictum pharetra. Suspendisse efficitur lacus odio, nec porta massa mollis sit amet."
           techs={["Ruby", "Rails", "JavaScript", "Stimulus"]}
         />
