@@ -10,26 +10,29 @@ export default function About(props) {
       }`}
     >
       <h2 className="font-bold">Projects</h2>
-      <div className="font-bold text-center py-28 md:py-40 lg:py-60">
+      <div className="font-bold text-center py-28 md:py-40 lg:py-60 z-0">
         <ProjectCard
+          toggleClose={props.toggleClose}
           darkMode={props.darkMode}
           imgSrc={"../../public/mindmission.png"}
-          title=""
+          title="MIND MISSION"
           description="A Rails prototype of Mind Mission, a mindfulness training game for 9 to 11-year-olds. Sed sagittis felis turpis, vitae accumsan nibh lacinia in. Nulla nec tellus at sapien fringilla consequat. Cras ac ultrices neque. Suspendisse vehicula pretium maximus. Phasellus lorem risus, semper nec mauris et, luctus convallis nisi. Integer vel leo at erat dictum pharetra. Suspendisse efficitur lacus odio, nec porta massa mollis sit amet."
           techs={["ruby", "rails", "javascript", "stimulus"]}
         />
         <ProjectCard
+          toggleClose={props.toggleClose}
           imgSrc={"../../public/lightsout.png"}
           darkMode={props.darkMode}
-          title=""
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
+          title="LIGHTS OUT"
+          description="Llorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
           techs={["html5", "css3", "tailwindcss", "javascript", "react"]}
         />
         <ProjectCard
+          toggleClose={props.toggleClose}
           imgSrc={"../../public/zacnation.png"}
           darkMode={props.darkMode}
-          title=""
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
+          title="PORTFOLIO"
+          description="Lllorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
           techs={["html5", "css3", "tailwindcss", "react"]}
         />
       </div>
@@ -39,4 +42,5 @@ export default function About(props) {
 
 About.propTypes = {
   darkMode: PropTypes.bool.isRequired,
+  toggleClose: PropTypes.bool,
 };
