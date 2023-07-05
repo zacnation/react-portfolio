@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
         <div>
           <h2 className="text-3xl pb-4 md:pb-0">{props.title}</h2>
           <div
-            className={`flex items-center space-x-2 justify-center hidden md:block ${
+            className={`flex space-x-2 hidden md:block ${
               props.darkMode ? "text-white" : "text-black"
             }`}
           >
@@ -26,7 +26,7 @@ export default function ProjectCard(props) {
                       : "https://www.svgrepo.com/show/354392/stimulus.svg"
                   }
                   alt=""
-                  className="w-6 h-6"
+                  className="w-6 h-6 inline"
                 />
               ) : (
                 <i
