@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import Popup from "./Popup";
+import MindmissionPopup from "./MindmissionPopup";
 
 export default function Projects(props) {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -24,8 +24,7 @@ export default function Projects(props) {
             alt=""
             onClick={togglePopup}
           />
-          <Popup
-            title="Hello"
+          <MindmissionPopup
             buttonPopup={buttonPopup}
             toggleClose={togglePopup}
             darkMode={props.darkMode}
