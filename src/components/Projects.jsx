@@ -6,12 +6,12 @@ export default function About(props) {
   return (
     <section
       id="projects"
-      className={`py-14 px-3 md:px-10 xl:px-60 2xl:px-96 ${
+      className={`pt-10 pb-1 px-3 md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
-      <h2 className="font-bold">Projects</h2>
-      <div className="font-bold text-center py-28 md:py-40 lg:py-60">
+      <h2 className="text-2xl font-bold pb-6 md:pb-9">Projects</h2>
+      <div className="font-bold text-center">
         <ProjectCard
           darkMode={props.darkMode}
           title="MIND MISSION"
@@ -26,17 +26,11 @@ export default function About(props) {
         />
         <ProjectCard
           darkMode={props.darkMode}
-          title="LIGHTS OUT"
+          title="AIRBNB"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
-          techs={["html5", "css3", "javascript", "react"]}
+          techs={["html5", "css3", "bootstrap", "javascript", "ruby", "rails"]}
         />
         <ProjectCardInverted
-          darkMode={props.darkMode}
-          title="FIREBASE TO-DO"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
-          techs={["html5", "css3", "javascript", "firebase"]}
-        />
-        <ProjectCard
           darkMode={props.darkMode}
           title="YELPCAMP"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
@@ -49,12 +43,6 @@ export default function About(props) {
             "express",
             "nodejs",
           ]}
-        />
-        <ProjectCardInverted
-          darkMode={props.darkMode}
-          title="AIRBNB"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
-          techs={["html5", "css3", "bootstrap", "javascript", "ruby", "rails"]}
         />
       </div>
     </section>
