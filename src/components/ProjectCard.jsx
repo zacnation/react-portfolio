@@ -13,12 +13,12 @@ export default function ProjectCard(props) {
         <div>
           <h2 className="text-3xl pb-4 md:pb-0">{props.title}</h2>
           <div
-            className={`flex space-x-2 hidden md:block ${
+            className={`flex items-center justify-center space-x-2 hidden md:flex ${
               props.darkMode ? "text-white" : "text-black"
             }`}
           >
             {props.techs.map((item, index) => {
-              return item === "Stimulus" ? (
+              return item === "stimulus" ? (
                 <img
                   src={
                     props.darkMode
@@ -30,8 +30,8 @@ export default function ProjectCard(props) {
                 />
               ) : (
                 <i
-                  className={`text-2xl devicon-${item.toLowerCase()}-${
-                    item === "Express" ? "original" : "plain"
+                  className={`text-2xl devicon-${item}-${
+                    item === "express" ? "original" : "plain"
                   }`}
                   key={index}
                 ></i>
@@ -41,12 +41,12 @@ export default function ProjectCard(props) {
         </div>
         <p className="text-justify px-5 font-thin">{props.description}</p>
         <div
-          className={`flex items-center space-x-2 justify-center md:hidden ${
+          className={`flex items-center justify-center space-x-2 md:hidden ${
             props.darkMode ? "text-white" : "text-black"
           }`}
         >
           {props.techs.map((item, index) => {
-            return item === "Stimulus" ? (
+            return item === "stimulus" ? (
               <img
                 src={
                   props.darkMode
@@ -58,8 +58,8 @@ export default function ProjectCard(props) {
               />
             ) : (
               <i
-                className={`text-2xl devicon-${item.toLowerCase()}-${
-                  item === "Express" ? "original" : "plain"
+                className={`text-2xl devicon-${item}-${
+                  item === "express" ? "original" : "plain"
                 }`}
                 key={index}
               ></i>
