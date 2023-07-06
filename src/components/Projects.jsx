@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-import MindmissionPopup from "./MindmissionPopup";
+// import MindmissionPopup from "./MindmissionPopup";
 
 export default function Projects(props) {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -17,19 +17,19 @@ export default function Projects(props) {
         props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
-      <h2 className="font-bold">Projects</h2>
-      <div className="font-bold text-center py-28 md:py-40 lg:py-60 z-0">
+      <h2 className="text-2xl font-bold pb-6 md:pb-9">Projects</h2>
+      <div className="font-bold text-center pb-10 z-0">
         <div className="flex justify-center items-center z-0">
           <img
             src="../../public/mindmission.png"
             alt=""
             onClick={togglePopup}
           />
-          <MindmissionPopup
+          {/* <MindmissionPopup
             buttonPopup={buttonPopup}
             toggleClose={togglePopup}
             darkMode={props.darkMode}
-          />
+          /> */}
         </div>
       </div>
     </section>
