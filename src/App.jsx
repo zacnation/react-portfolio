@@ -41,7 +41,7 @@ export default function App() {
       />
       <Main darkMode={darkMode} />
       <About darkMode={darkMode} toggleClose={toggleClose} />
-      <Projects darkMode={darkMode} />
+      <Projects darkMode={darkMode} toggleClose={toggleClose} />
       <WhatNext darkMode={darkMode} />
       <Resources darkMode={darkMode} />
       <Footer darkMode={darkMode} />

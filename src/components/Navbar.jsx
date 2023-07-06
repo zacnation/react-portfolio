@@ -4,7 +4,7 @@ import ToggleSwitch from "./ToggleSwitch";
 export default function Navbar(props) {
   return (
     <nav
-      className={`fixed w-full shadow-md ${
+      className={`fixed w-full shadow-md z-10 ${
         props.darkMode ? "bg-very-dark text-white" : "bg-white shadow-gray-100"
       }`}
     >
