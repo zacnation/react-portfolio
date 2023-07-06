@@ -20,33 +20,57 @@ export default function Projects(props) {
       }`}
     >
       <h2 className="text-2xl font-bold pb-6 md:pb-9">Projects</h2>
-      <div className="font-bold text-center pb-10 z-0">
-        <div className="flex justify-center items-center z-0">
-          <ProjectCard
-            cardId="lewagon"
-            imgSrc="../../public/lewagon-logo-black.svg"
-            title={"LE WAGON"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
-            }
-            techs={["express", "ruby", "rails", "javascript", "stimulus"]}
-            popup={popups["lewagon"]}
-            togglePopup={() => togglePopup("lewagon")}
-            darkMode={props.darkMode}
-          />
-          <ProjectCard
-            cardId="mindmission"
-            imgSrc="../../public/mindmission.png"
-            title={"MIND MISSION"}
-            description={
-              "A mindfulness training game - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
-            }
-            techs={["ruby", "rails", "javascript", "stimulus"]}
-            popup={popups["mindmission"]}
-            togglePopup={() => togglePopup("mindmission")}
-            darkMode={props.darkMode}
-          />
-        </div>
+      <div className="flex justify-center items-center flex-wrap">
+        <ProjectCard
+          cardId="mindmission"
+          imgSrc="../../public/mindmission.png"
+          title={"MIND MISSION"}
+          description={
+            "A mindfulness training game - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
+          }
+          techs={["ruby", "rails", "javascript", "stimulus"]}
+          popup={popups["mindmission"]}
+          togglePopup={() => togglePopup("mindmission")}
+          darkMode={props.darkMode}
+        />
+        <ProjectCard
+          cardId="yelpcamp"
+          imgSrc="../../public/mindmission.png"
+          title={"YELPCAMP"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
+          }
+          techs={[
+            "html5",
+            "css3",
+            "javascript",
+            "mongodb",
+            "express",
+            "nodejs",
+          ]}
+          popup={popups["yelpcamp"]}
+          togglePopup={() => togglePopup("yelpcamp")}
+          darkMode={props.darkMode}
+        />
+        <ProjectCard
+          cardId="lightsout"
+          imgSrc="../../public/lightsout.png"
+          title={"LIGHTS OUT"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
+          }
+          techs={[
+            "html5",
+            "css3",
+            "javascript",
+            "mongodb",
+            "express",
+            "nodejs",
+          ]}
+          popup={popups["lightsout"]}
+          togglePopup={() => togglePopup("lightsout")}
+          darkMode={props.darkMode}
+        />
       </div>
     </section>
   );

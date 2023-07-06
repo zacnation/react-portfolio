@@ -5,11 +5,11 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 export default function Popup(props) {
   return props.popup ? (
     <div
-      className={`z-9 fixed inset-3 bg-gray-100 flex justify-center items-center ${
-        props.darkMode ? "dark" : ""
+      className={`z-9 fixed inset-3 flex justify-center items-center ${
+        props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
-      <div className="relative pl-4 pr-8 bg-teal-100 text-justify">
+      <div className="relative pl-4 pr-8 text-justify">
         <FontAwesomeIcon
           icon={faTimes}
           className="absolute top-3 right-3 cursor-pointer"
@@ -18,7 +18,33 @@ export default function Popup(props) {
         <img src={props.imgSrc} alt="" className="w-40" />
         <h1>Popup: {props.title}</h1>
         <p>Description: {props.description}</p>
-        <p>Techs: {props.techs}</p>
+        <div
+          className={`flex items-center justify-center space-x-2 ${
+            props.darkMode ? "text-white" : "text-black"
+          }`}
+        >
+          {props.techs.map((item, index) => {
+            return item === "stimulus" ? (
+              <img
+                src={
+                  props.darkMode
+                    ? "../../dist/stimulus-svgrepo-com.svg"
+                    : "https://www.svgrepo.com/show/354392/stimulus.svg"
+                }
+                alt=""
+                className="w-6 h-6 inline"
+                key={index}
+              />
+            ) : (
+              <i
+                className={`text-2xl devicon-${item}-${
+                  item === "express" ? "original" : "plain"
+                }`}
+                key={index}
+              ></i>
+            );
+          })}
+        </div>
       </div>
     </div>
   ) : null;
