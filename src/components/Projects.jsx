@@ -18,7 +18,7 @@ export default function About(props) {
           description="A Rails prototype of Mind Mission, a mindfulness training game for 9 to 11-year-olds. Sed sagittis felis turpis, vitae accumsan nibh lacinia in. Nulla nec tellus at sapien fringilla consequat. Cras ac ultrices neque. Suspendisse vehicula pretium maximus. Phasellus lorem risus, semper nec mauris et, luctus convallis nisi. Integer vel leo at erat dictum pharetra. Suspendisse efficitur lacus odio, nec porta massa mollis sit amet."
           techs={["ruby", "rails", "javascript", "stimulus"]}
         />
-        <ProjectCardInverted
+        <ProjectCard
           darkMode={props.darkMode}
           title="PORTFOLIO"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
@@ -30,7 +30,7 @@ export default function About(props) {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
           techs={["html5", "css3", "bootstrap", "javascript", "ruby", "rails"]}
         />
-        <ProjectCardInverted
+        <ProjectCard
           darkMode={props.darkMode}
           title="YELPCAMP"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui augue, gravida ut nisl ut, consectetur sollicitudin felis. Duis ac ex id turpis molestie accumsan. Curabitur a auctor neque. Suspendisse laoreet, lacus sit amet vehicula tristique, eros mauris lacinia arcu, vitae vehicula nunc risus quis libero. Cras et quam mauris."
