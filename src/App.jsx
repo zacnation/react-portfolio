@@ -11,15 +11,15 @@ import "tailwindcss/tailwind.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [buttonPopup, setButtonPopup] = useState(false);
+  const [popup, setpopup] = useState(false);
   const [hamburger, setHamburger] = useState(false);
 
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);
   }
 
-  function toggleClose() {
-    setButtonPopup((prevState) => !prevState);
+  function togglePopup() {
+    setpopup((prevState) => !prevState);
   }
 
   function toggleHamburger() {
@@ -34,14 +34,10 @@ export default function App() {
         hamburger={hamburger}
         toggleHamburger={toggleHamburger}
       />
-      <Popup
-        darkMode={darkMode}
-        buttonPopup={buttonPopup}
-        toggleClose={toggleClose}
-      />
+      <Popup darkMode={darkMode} popup={popup} togglePopup={togglePopup} />
       <Main darkMode={darkMode} />
-      <About darkMode={darkMode} toggleClose={toggleClose} />
-      <Projects darkMode={darkMode} toggleClose={toggleClose} />
+      <About darkMode={darkMode} togglePopup={togglePopup} />
+      <Projects darkMode={darkMode} togglePopup={togglePopup} />
       <WhatNext darkMode={darkMode} />
       <Resources darkMode={darkMode} />
       <Footer darkMode={darkMode} />

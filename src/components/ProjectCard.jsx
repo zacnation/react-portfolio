@@ -128,10 +128,10 @@ export default function ProjectCard(props) {
           src={props.imgSrc}
           alt=""
           className="w-96 cursor-pointer mb-5"
-          onClick={props.toggleClose}
+          onClick={props.togglePopup}
         />
         <Popup
-          toggleClose={props.toggleClose}
+          togglePopup={props.togglePopup}
           imgSrc={props.imgSrc}
           title={props.title}
           description={props.description}
@@ -144,7 +144,7 @@ export default function ProjectCard(props) {
 
 ProjectCard.propTypes = {
   darkMode: PropTypes.bool.isRequired,
-  toggleClose: PropTypes.func.isRequired,
+  togglePopup: PropTypes.func.isRequired,
   imgSrc: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,

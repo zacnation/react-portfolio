@@ -1,13 +1,13 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-// import MindmissionPopup from "./MindmissionPopup";
+import Popup from "./Popup";
 
 export default function Projects(props) {
-  const [buttonPopup, setButtonPopup] = useState(false);
+  const [popup, setpopup] = useState(false);
 
   const togglePopup = () => {
-    setButtonPopup(!buttonPopup);
+    setpopup(!popup);
   };
 
   return (
@@ -25,11 +25,11 @@ export default function Projects(props) {
             alt=""
             onClick={togglePopup}
           />
-          {/* <MindmissionPopup
-            buttonPopup={buttonPopup}
-            toggleClose={togglePopup}
+          <Popup
+            popup={popup}
+            togglePopup={togglePopup}
             darkMode={props.darkMode}
-          /> */}
+          />
         </div>
       </div>
     </section>
@@ -38,5 +38,5 @@ export default function Projects(props) {
 
 Projects.propTypes = {
   darkMode: PropTypes.bool.isRequired,
-  toggleClose: PropTypes.func.isRequired,
+  togglePopup: PropTypes.func.isRequired,
 };

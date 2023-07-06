@@ -3,7 +3,7 @@
 // import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 // export default function Popup(props) {
-//   return props.buttonPopup ? (
+//   return props.popup ? (
 //     <div
 //       className={`z-9 pb-12 fixed inset-3 inset-y-32 bg-gray-100 flex justify-center items-center  ${
 //         props.darkMode ? "dark" : ""
@@ -13,7 +13,7 @@
 //         <FontAwesomeIcon
 //           icon={faTimes}
 //           className="absolute top-3 right-3 cursor-pointer"
-//           onClick={props.toggleClose}
+//           onClick={props.togglePopup}
 //         />
 //         <img src="../../public/mindmission.png" alt="" />
 //         <h1>MIND MISSION</h1>
@@ -59,8 +59,8 @@
 
 // Popup.propTypes = {
 //   darkMode: PropTypes.bool.isRequired,
-//   toggleClose: PropTypes.func.isRequired,
-//   buttonPopup: PropTypes.bool.isRequired,
+//   togglePopup: PropTypes.func.isRequired,
+//   popup: PropTypes.bool.isRequired,
 //   description: PropTypes.string,
 //   title: PropTypes.string,
 //   imgSrc: PropTypes.string,

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function Popup(props) {
-  return props.buttonPopup ? (
+  return props.popup ? (
     <div
       className={`z-9 fixed inset-3 bg-gray-100 flex justify-center items-center ${
         props.darkMode ? "dark" : ""
@@ -13,7 +13,7 @@ export default function Popup(props) {
         <FontAwesomeIcon
           icon={faTimes}
           className="absolute top-3 right-3 cursor-pointer"
-          onClick={props.toggleClose}
+          onClick={props.togglePopup}
         />
         <h1>Popup: {props.title}</h1>
       </div>
@@ -23,8 +23,8 @@ export default function Popup(props) {
 
 Popup.propTypes = {
   darkMode: PropTypes.bool.isRequired,
-  toggleClose: PropTypes.func.isRequired,
-  buttonPopup: PropTypes.bool.isRequired,
+  togglePopup: PropTypes.func.isRequired,
+  popup: PropTypes.bool.isRequired,
   description: PropTypes.string,
   title: PropTypes.string,
   imgSrc: PropTypes.string,
