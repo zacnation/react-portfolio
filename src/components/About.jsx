@@ -83,24 +83,6 @@ export default function About(props) {
             .
           </p>
         </div>
-        {/* <div className="row">
-          <p>
-            I&apos;m a graduate of Le Wagon, a 9-week full-time intensive web
-            development bootcamp based in London. During the bootcamp I worked
-            with a variety of front-end and back-end technologies. Prior to the
-            bootcamp, I spent over a year self-learning how to code, and I am
-            passionate about continuing to develop my skills in this area.
-          </p>
-          <img
-            src={
-              props.darkMode
-                ? "../../public/lewagon-logo-inverted.svg"
-                : "../../public/lewagon-logo.svg"
-            }
-            alt=""
-            className="lewagon-logo"
-          />
-        </div> */}
       </div>
     </section>
   );
@@ -108,5 +90,5 @@ export default function About(props) {
 
 About.propTypes = {
   darkMode: PropTypes.bool.isRequired,
-  togglePopup: PropTypes.bool,
+  togglePopup: PropTypes.func,
 };

@@ -66,12 +66,6 @@ export default function Navbar(props) {
 
       {/* mobile menu */}
       <div className={`md:hidden font-bold ${props.hamburger ? "" : "hidden"}`}>
-        {/* <ToggleSwitch
-          darkMode={props.darkMode}
-          toggleDarkMode={props.toggleDarkMode}
-          checked={props.darkMode}
-          onChange={props.toggleDarkMode}
-        /> */}
         <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
           Home
         </a>
@@ -91,7 +85,7 @@ export default function Navbar(props) {
 
 Navbar.propTypes = {
   darkMode: PropTypes.bool.isRequired,
-  toggleDarkMode: PropTypes.bool.isRequired,
+  toggleDarkMode: PropTypes.func.isRequired,
   hamburger: PropTypes.bool.isRequired,
-  toggleHamburger: PropTypes.bool.isRequired,
+  toggleHamburger: PropTypes.func.isRequired,
 };

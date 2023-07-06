@@ -18,8 +18,6 @@ export default function ResourceCard(props) {
 }
 
 ResourceCard.propTypes = {
-  // darkMode: PropTypes.bool.isRequired,
   imageSrc: PropTypes.string.isRequired,
-  // altText: PropTypes.string.isRequired,
   listItems: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

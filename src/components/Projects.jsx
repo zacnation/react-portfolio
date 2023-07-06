@@ -1,66 +1,3 @@
-// import { useState } from "react";
-// import PropTypes from "prop-types";
-// // import Popup from "./Popup";
-// import ProjectCard from "./ProjectCard";
-
-// export default function Projects(props) {
-//   const [popup, setpopup] = useState(false);
-
-//   const togglePopup = () => {
-//     setpopup(!popup);
-//   };
-
-//   return (
-//     <section
-//       id="projects"
-//       className={`pt-10 pb-1 px-3 md:px-10 xl:px-60 2xl:px-96 ${
-//         props.darkMode ? "bg-dark-I text-white" : "bg-light"
-//       }`}
-//     >
-//       <h2 className="text-2xl font-bold pb-6 md:pb-9">Projects</h2>
-//       <div className="font-bold text-center pb-10 z-0">
-//         <div className="flex justify-center items-center z-0">
-//           {/* <img
-//             src="../../public/mindmission.png"
-//             alt=""
-//             onClick={togglePopup}
-//           />
-//           <Popup
-//             popup={popup}
-//             togglePopup={togglePopup}
-//             darkMode={props.darkMode}
-//           /> */}
-//           <ProjectCard
-//             imgSrc="../../public/lewagon-logo-black.svg"
-//             title={"LE WAGON"}
-//             description={"Jess, Issy, Kat, Dilber, and Zhanna <3"}
-//             techs={["express", "ruby", "rails", "javascript", "stimulus"]}
-//             popup={popup}
-//             togglePopup={togglePopup}
-//             darkMode={props.darkMode}
-//           />
-//           <ProjectCard
-//             imgSrc="../../public/mindmission.png"
-//             title={"MIND MISSION"}
-//             description={
-//               "A mindfulness training game, built with Jess, Issy, Kat, Dilber, and Zhanna <3"
-//             }
-//             techs={["ruby", "rails", "javascript", "stimulus"]}
-//             popup={popup}
-//             togglePopup={togglePopup}
-//             darkMode={props.darkMode}
-//           />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// Projects.propTypes = {
-//   darkMode: PropTypes.bool,
-//   togglePopup: PropTypes.func,
-// };
-
 import { useState } from "react";
 import PropTypes from "prop-types";
 import ProjectCard from "./ProjectCard";
@@ -89,7 +26,9 @@ export default function Projects(props) {
             cardId="lewagon"
             imgSrc="../../public/lewagon-logo-black.svg"
             title={"LE WAGON"}
-            description={"Jess, Issy, Kat, Dilber, and Zhanna <3"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
+            }
             techs={["express", "ruby", "rails", "javascript", "stimulus"]}
             popup={popups["lewagon"]}
             togglePopup={() => togglePopup("lewagon")}
@@ -100,7 +39,7 @@ export default function Projects(props) {
             imgSrc="../../public/mindmission.png"
             title={"MIND MISSION"}
             description={
-              "A mindfulness training game, built with Jess, Issy, Kat, Dilber, and Zhanna <3"
+              "A mindfulness training game - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
             }
             techs={["ruby", "rails", "javascript", "stimulus"]}
             popup={popups["mindmission"]}
