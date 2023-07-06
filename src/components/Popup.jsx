@@ -15,16 +15,19 @@ export default function Popup(props) {
           className="absolute top-3 right-3 cursor-pointer"
           onClick={props.togglePopup}
         />
+        <img src={props.imgSrc} alt="" className="w-40" />
         <h1>Popup: {props.title}</h1>
+        <p>Description: {props.description}</p>
+        <p>Techs: {props.techs}</p>
       </div>
     </div>
   ) : null;
 }
 
 Popup.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  togglePopup: PropTypes.func.isRequired,
-  popup: PropTypes.bool.isRequired,
+  darkMode: PropTypes.bool,
+  togglePopup: PropTypes.func,
+  popup: PropTypes.bool,
   description: PropTypes.string,
   title: PropTypes.string,
   imgSrc: PropTypes.string,
