@@ -11,7 +11,7 @@ export default function ProjectCard(props) {
     >
       <div className="md:flex">
         <div>
-          <h2 className="text-3xl pb-4 md:pb-0">{props.title}</h2>
+          <h2 className="text-3xl mb-4 md:pb-0 md:w-60">{props.title}</h2>
           <div
             className={`flex items-center justify-center space-x-2 hidden md:flex ${
               props.darkMode ? "text-white" : "text-black"
@@ -41,7 +41,7 @@ export default function ProjectCard(props) {
         </div>
         <p className="text-justify px-5 font-thin">{props.description}</p>
         <div
-          className={`flex items-center justify-center space-x-2 md:hidden ${
+          className={`flex items-center justify-center space-x-2 pt-4 md:hidden ${
             props.darkMode ? "text-white" : "text-black"
           }`}
         >
