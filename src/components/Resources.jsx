@@ -19,7 +19,7 @@ export default function Resources(props) {
             imageSrc={
               props.darkMode ? "lewagon-icon-inverted.svg" : "lewagon-icon.svg"
             }
-            listItems={["The entire team 🥂"]}
+            listItems={["Batch #1123 🥂"]}
           />
         </div>
 
@@ -75,7 +75,7 @@ export default function Resources(props) {
             imageSrc={
               props.darkMode ? "lewagon-icon-inverted.svg" : "lewagon-icon.svg"
             }
-            listItems={["The entire team 🥂"]}
+            listItems={["Batch #1123 🥂"]}
           />
         </div>
 
