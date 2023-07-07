@@ -20,7 +20,7 @@ export default function Projects(props) {
       }`}
     >
       <h2 className="text-2xl font-bold pb-6 md:pb-9">Projects</h2>
-      <div className="flex justify-center items-center flex-wrap">
+      <div className="flex justify-center items-center flex-wrap md:grid grid-cols-2">
         <ProjectCard
           cardId="mindmission"
           imgSrc="../../public/mindmissiongrayscale.png"
