@@ -9,7 +9,7 @@ export default function Popup(props) {
         props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
-      <div className="relative pl-4 pr-8 text-justify bg-white shadow-xl rounded-lg py-5 w-full md:max-w-2xl lg:max-w-3xl">
+      <div className="relative pl-4 pr-8 text-justify bg-white shadow-xl rounded-lg mr-6 py-5 w-full md:max-w-2xl lg:max-w-3xl">
         <FontAwesomeIcon
           icon={faTimes}
           className="absolute top-3 right-3 cursor-pointer"
@@ -17,14 +17,14 @@ export default function Popup(props) {
         />
         {/* <img src={props.innerImg} alt="" className="w-full px-20" /> */}
         <div
-          className="mx-auto mb-3 w-full h-48 bg-no-repeat bg-center bg-cover"
+          className="mx-auto mb-3 w-full h-48 md:h-96 bg-no-repeat bg-center bg-cover"
           style={{
             backgroundImage: `url(../../public/${props.innerImg})`,
           }}
         ></div>
 
         <h1 className="font-bold uppercase">{props.title}</h1>
-        <p>Description: {props.description}</p>
+        <p>{props.description}</p>
         <div
           className={`flex items-center justify-center space-x-2 ${
             props.darkMode ? "text-white" : "text-black"

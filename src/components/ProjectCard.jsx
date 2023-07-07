@@ -3,11 +3,11 @@ import Popup from "./Popup";
 
 export default function ProjectCard(props) {
   return (
-    <div className="flex justify-center">
+    <div className={`flex justify-center`}>
       <img
         src={props.imgSrc}
         alt=""
-        className="w-full cursor-pointer mb-5 md:w-80"
+        className="w-full cursor-pointer mb-5 md:w-80 lg:w-96"
         onClick={props.togglePopup}
       />
       <Popup

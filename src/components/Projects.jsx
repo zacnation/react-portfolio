@@ -15,12 +15,12 @@ export default function Projects(props) {
   return (
     <section
       id="projects"
-      className={`pt-10 pb-1 px-3 md:px-10 xl:px-60 2xl:px-96 ${
+      className={`pt-10 pb-3 md:pb-5 px-3 md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? "bg-dark-I text-white" : "bg-light"
       }`}
     >
       <h2 className="text-2xl font-bold pb-6 md:pb-9">Projects</h2>
-      <div className="flex justify-center items-center flex-wrap md:grid grid-cols-2">
+      <div className="flex flex-wrap justify-center items-center md:grid grid-cols-2">
         <ProjectCard
           cardId="mindmission"
           imgSrc="../../public/mindmissiongrayscale.png"
