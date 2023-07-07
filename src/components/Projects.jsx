@@ -23,8 +23,9 @@ export default function Projects(props) {
       <div className="flex justify-center items-center flex-wrap">
         <ProjectCard
           cardId="mindmission"
-          imgSrc="../../public/mindmission.png"
-          title={"MIND MISSION"}
+          outerImg="../../public/mindmissiongrayscale.png"
+          innerImg="../../public/mindmission.png"
+          title={"mind mission"}
           description={
             "A mindfulness training game - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
           }
@@ -35,8 +36,9 @@ export default function Projects(props) {
         />
         <ProjectCard
           cardId="yelpcamp"
-          imgSrc="../../public/mindmission.png"
-          title={"YELPCAMP"}
+          outerImg="../../public/mindmissiongrayscale.png"
+          innerImg="../../public/mindmission.png"
+          title={"yelpcamp"}
           description={
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
           }
@@ -54,8 +56,9 @@ export default function Projects(props) {
         />
         <ProjectCard
           cardId="lightsout"
-          imgSrc="../../public/lightsout.png"
-          title={"LIGHTS OUT"}
+          outerImg="../../public/lightsout.png"
+          innerImg="../../public/lightsout.png"
+          title={"lights out"}
           description={
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
           }
