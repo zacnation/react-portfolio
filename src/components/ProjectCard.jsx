@@ -7,7 +7,7 @@ export default function ProjectCard(props) {
       <img
         src={props.imgSrc}
         alt=""
-        className="w-full cursor-pointer mb-5 md:w-80 lg:w-96"
+        className="w-full cursor-pointer mb-5 rounded-md hover:scale-95 transition-transform md:w-80 lg:w-96"
         onClick={props.togglePopup}
       />
       <Popup
