@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
   return (
     <div className="">
       <img
-        src={props.outerImg}
+        src={props.imgSrc}
         alt=""
         className="w-full cursor-pointer mb-5"
         onClick={props.togglePopup}
@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
       <Popup
         popup={props.popup}
         togglePopup={props.togglePopup}
-        outerImg={props.outerImg}
+        imgSrc={props.imgSrc}
         innerImg={props.innerImg}
         title={props.title}
         description={props.description}
@@ -27,7 +27,7 @@ ProjectCard.propTypes = {
   darkMode: PropTypes.bool,
   togglePopup: PropTypes.func,
   popup: PropTypes.bool,
-  outerImg: PropTypes.string,
+  imgSrc: PropTypes.string,
   innerImg: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,

@@ -15,7 +15,14 @@ export default function Popup(props) {
           className="absolute top-3 right-3 cursor-pointer"
           onClick={props.togglePopup}
         />
-        <img src={props.innerImg} alt="" className="w-40" />
+        {/* <img src={props.innerImg} alt="" className="w-full px-20" /> */}
+        <div
+          className="mx-auto mb-3 w-full h-48 bg-no-repeat bg-center bg-cover"
+          style={{
+            backgroundImage: `url(../../public/${props.innerImg})`,
+          }}
+        ></div>
+
         <h1 className="font-bold uppercase">{props.title}</h1>
         <p>Description: {props.description}</p>
         <div

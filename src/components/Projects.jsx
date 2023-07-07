@@ -23,8 +23,8 @@ export default function Projects(props) {
       <div className="flex justify-center items-center flex-wrap">
         <ProjectCard
           cardId="mindmission"
-          outerImg="../../public/mindmissiongrayscale.png"
-          innerImg="../../public/mindmission.png"
+          imgSrc="../../public/mindmissiongrayscale.png"
+          innerImg="mindmission.gif"
           title={"mind mission"}
           description={
             "A mindfulness training game - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
@@ -36,8 +36,8 @@ export default function Projects(props) {
         />
         <ProjectCard
           cardId="yelpcamp"
-          outerImg="../../public/mindmissiongrayscale.png"
-          innerImg="../../public/mindmission.png"
+          imgSrc="../../public/yelpcamp.png"
+          innerImg="../../public/yelpcamp.png"
           title={"yelpcamp"}
           description={
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
@@ -56,20 +56,13 @@ export default function Projects(props) {
         />
         <ProjectCard
           cardId="lightsout"
-          outerImg="../../public/lightsout.png"
+          imgSrc="../../public/lightsout.png"
           innerImg="../../public/lightsout.png"
           title={"lights out"}
           description={
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quasi laudantium autem aliquid eumque ut! Atque, id eum, officia quia vero repellat illum modi dolorum placeat hic veniam eum magnam."
           }
-          techs={[
-            "html5",
-            "css3",
-            "javascript",
-            "mongodb",
-            "express",
-            "nodejs",
-          ]}
+          techs={["html5", "css3", "javascript", "react"]}
           popup={popups["lightsout"]}
           togglePopup={() => togglePopup("lightsout")}
           darkMode={props.darkMode}
