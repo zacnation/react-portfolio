@@ -19,7 +19,7 @@ export default function Popup(props) {
         <div
           className="mx-auto mb-3 w-full h-48 rounded-md md:h-96 bg-no-repeat bg-center bg-cover"
           style={{
-            backgroundImage: `url(../../public/${props.innerImg})`,
+            backgroundImage: `url(${props.innerImg})`,
           }}
         ></div>
 
