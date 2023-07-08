@@ -29,7 +29,7 @@ export default function Resources(props) {
               imageSrc={
                 props.darkMode ? "scrimba-dark-f.svg" : "scrimba-icon.svg"
               }
-              listItems={["The Scrimba podcast", "The free catalogue"]}
+              listItems={["The Scrimba podcast", "and free catalogue"]}
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Resources(props) {
             imageSrc={
               props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"
             }
-            listItems={["Angela Yu", "Colt Steele"]}
+            listItems={["Angela Yu &", "Colt Steele"]}
           />
         </div>
 
@@ -84,7 +84,7 @@ export default function Resources(props) {
             imageSrc={
               props.darkMode ? "scrimba-dark-f.svg" : "scrimba-icon.svg"
             }
-            listItems={["The Scrimba podcast", "The free catalogue"]}
+            listItems={["The Scrimba podcast", "and free catalogue"]}
           />
         </div>
 
@@ -93,7 +93,7 @@ export default function Resources(props) {
             imageSrc={
               props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"
             }
-            listItems={["Angela Yu", "Colt Steele"]}
+            listItems={["Angela Yu &", "Colt Steele"]}
           />
         </div>
 
