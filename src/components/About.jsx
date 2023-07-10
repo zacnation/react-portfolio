@@ -9,6 +9,12 @@ export default function About(props) {
     >
       <div className="py-14 px-3 md:px-0">
         <h2 className="text-2xl font-bold md:pb-3">About me</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+          adipisci beatae corporis dolorum, ex eaque facere optio sit velit quos
+          magni id ipsa earum odit dicta. Repudiandae enim aspernatur omnis!
+        </p>
+        <h2 className="text-2xl pt-6 font-bold md:pb-3">My experience</h2>
         <div className="row">
           <img
             src={
