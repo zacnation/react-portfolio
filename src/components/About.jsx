@@ -62,10 +62,7 @@ export default function About(props) {
         <p className="md:hidden text-justify">
           Before joining Le Wagon, my self-study involved a lot of Codecademy
           and Udemy courses. A list of my completed courses can be found{" "}
-          <span className="courses-here" onClick={props.togglePopup}>
-            here
-          </span>
-          .
+          <span className="courses-here">here</span>.
         </p>
         <div className="flex items-center py-8">
           <img
@@ -83,10 +80,7 @@ export default function About(props) {
           <p className="hidden md:block text-justify">
             Before joining Le Wagon, my self-study involved a lot of Codecademy
             and Udemy courses. A list of my completed courses can be found{" "}
-            <span className="courses-here" onClick={props.togglePopup}>
-              here
-            </span>
-            .
+            <span className="courses-here">here</span>.
           </p>
         </div>
       </div>
