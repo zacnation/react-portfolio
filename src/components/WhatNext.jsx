@@ -11,31 +11,31 @@ export default function WhatNext(props) {
       <h2 className="text-2xl font-bold pb-2">What&apos;s next?</h2>
       <TechCard
         icon="devicon-chrome-plain"
-        description="Continuing to build Chrome extensions excites me!"
+        description="Ut ipsum mauris, mollis id ullamcorper tincidunt, luctus non lorem. Etiam sit amet efficitur ante, ut sagittis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac ligula purus."
       />
       <TechCard
         icon="devicon-firebase-plain"
-        description="Firebase was an amazing platform to work with. I'm eager to delve deeper into its capabilities and learn more."
+        description="Suspendisse placerat, ligula sed consectetur maximus, purus risus euismod ipsum, volutpat dictum mi urna at nisi. Proin sed ultricies neque."
       />
       <TechCard
         icon="devicon-nextjs-original"
-        description="Exploring a more opinionated framework like Next.js for my future projects sounds intriguing."
+        description="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tempus mollis neque a elementum. Suspendisse rutrum eros tellus, at condimentum ex imperdiet sit amet. Maecenas varius eleifend orci eu rhoncus."
       />
       <TechCard
         icon="devicon-raspberrypi-line"
-        description="I have my eye on a variety of cool Raspberry Pi projects, including automating smart home technology and much more!"
+        description="Proin purus ligula, vulputate et erat quis, rhoncus congue risus. Aenean nisi sem, rhoncus in ex vel, semper efficitur enim. Nulla efficitur ex nec condimentum maximus. Nullam mattis odio vitae pharetra eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sagittis velit eu luctus tincidunt."
       />
       <TechCard
         icon="devicon-rust-plain"
-        description="I'm eager to dive into low-level programming and gain a profound understanding of the underlying technology. Rust seems like the perfect first step into the world of low-level languages."
+        description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus."
       />
       <TechCard
         icon="devicon-threejs-original"
-        description="The possibilities with Three.js are awe-inspiring. I'm committed to enhancing my skills in this area."
+        description="Fusce venenatis orci elit, id maximus diam dictum sit amet. Phasellus pharetra, ipsum et mollis dignissim, odio felis sodales purus, non efficitur mauris turpis vel orci."
       />
       <TechCard
         icon="devicon-unity-original"
-        description="I'm genuinely passionate about 2D game development and excited to devote time to mastering this skill."
+        description="Vestibulum eu arcu eget nulla ornare gravida. Integer auctor dui et augue gravida cursus. Sed vel volutpat nibh. Aenean auctor dapibus efficitur. Phasellus nec pretium sem. Curabitur sagittis sagittis convallis."
       />
     </div>
   );
