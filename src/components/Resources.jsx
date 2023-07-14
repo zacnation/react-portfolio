@@ -13,60 +13,39 @@ export default function Resources(props) {
         Resources I&apos;m incredibly grateful for
       </h2>
 
-      <div className="grid grid-cols-2 md:hidden">
-        <div className="flex items-center">
-          <ResourceCard
-            imageSrc={
-              props.darkMode ? "lewagon-icon-inverted.svg" : "lewagon-icon.svg"
-            }
-            listItems={["Batch #1123 🥂"]}
-          />
-        </div>
+      <div className="md:hidden flex justify-center space-x-6">
+        <ResourceCard
+          imageSrc={
+            props.darkMode ? "lewagon-icon-inverted.svg" : "lewagon-icon.svg"
+          }
+          listItems={[]}
+        />
 
-        <div className="grid col-span-2">
-          <div className="flex items-center">
-            <ResourceCard
-              imageSrc={
-                props.darkMode ? "scrimba-dark-f.svg" : "scrimba-icon.svg"
-              }
-              listItems={["The Scrimba podcast", "and free catalogue"]}
-            />
-          </div>
-        </div>
+        <ResourceCard
+          imageSrc={props.darkMode ? "scrimba-dark-f.svg" : "scrimba-icon.svg"}
+          listItems={[]}
+        />
 
-        <div className="flex items-center">
-          <ResourceCard
-            imageSrc={
-              props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"
-            }
-            listItems={["Angela Yu &", "Colt Steele"]}
-          />
-        </div>
+        <ResourceCard
+          imageSrc={
+            props.darkMode ? "udemy-icon-inverted.svg" : "udemy-icon.svg"
+          }
+          listItems={[]}
+        />
 
-        <div className="flex items-center">
-          <ResourceCard
-            imageSrc={
-              props.darkMode
-                ? "codecademy-icon-inverted.svg"
-                : "codecademy-icon.svg"
-            }
-            listItems={["Full-Stack career path"]}
-          />
-        </div>
+        <ResourceCard
+          imageSrc={
+            props.darkMode
+              ? "codecademy-icon-inverted.svg"
+              : "codecademy-icon.svg"
+          }
+          listItems={[]}
+        />
 
-        <div className="grid col-span-3">
-          <ResourceCard
-            imageSrc={
-              props.darkMode ? "youtube-dark-f.svg" : "youtube-icon.svg"
-            }
-            listItems={[
-              "danascript",
-              "Tiff In Tech",
-              "Tina Huang",
-              "FreeCodeCamp",
-            ]}
-          />
-        </div>
+        <ResourceCard
+          imageSrc={props.darkMode ? "youtube-dark-f.svg" : "youtube-icon.svg"}
+          listItems={[]}
+        />
       </div>
 
       <div className="hidden md:flex justify-center">
