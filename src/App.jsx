@@ -9,11 +9,29 @@ import Footer from "./components/Footer";
 import Resources from "./components/Resources";
 import Popup from "./components/Popup";
 import "tailwindcss/tailwind.css";
+import { useEffect } from "react";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [popup, setpopup] = useState(false);
   const [hamburger, setHamburger] = useState(false);
+
+  useEffect(() => {
+    const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function handleDarkModeChange(e) {
+      setDarkMode(e.matches);
+      document.documentElement.classList.toggle("dark", e.matches);
+    }
+
+    darkModeQuery.addEventListener("change", handleDarkModeChange);
+    setDarkMode(darkModeQuery.matches);
+    document.documentElement.classList.toggle("dark", darkModeQuery.matches);
+
+    return () => {
+      darkModeQuery.removeEventListener("change", handleDarkModeChange);
+    };
+  }, []);
 
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);

@@ -11,7 +11,7 @@ export default function Footer(props) {
   return (
     <footer
       className={`flex justify-around xl:justify-between pt-3 pb-8 xl:px-60 2xl:px-96 ${
-        props.darkMode ? "bg-very-dark text-white" : "bg-light"
+        props.darkMode ? "bg-very-dark text-white" : "bg-light text-black"
       }`}
     >
       <div>
