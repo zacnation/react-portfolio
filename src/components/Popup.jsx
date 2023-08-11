@@ -6,10 +6,10 @@ export default function Popup(props) {
   return props.popup ? (
     <div
       className={`z-9 bg-gray-100 bg-opacity-80 w-full h-full fixed inset-3 flex justify-center items-center ${
-        props.darkMode ? "bg-dark-I text-white" : "bg-light"
+        props.darkMode ? "bg-dark-I text-white" : "bg-light text-black"
       }`}
     >
-      <div className="relative pl-4 pr-8 text-justify bg-white shadow-xl rounded-lg mr-6 py-5 w-full md:max-w-2xl lg:max-w-3xl">
+      <div className="relative pl-4 pr-8 text-justify bg-white text-black shadow-xl rounded-lg mr-6 py-5 w-full md:max-w-2xl lg:max-w-3xl">
         <FontAwesomeIcon
           icon={faTimes}
           className="absolute top-3 right-3 cursor-pointer"
