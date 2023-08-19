@@ -1,13 +1,13 @@
-import PropTypes from "prop-types";
-import ToggleSwitch from "./ToggleSwitch";
+import PropTypes from 'prop-types';
+import ToggleSwitch from './ToggleSwitch';
 
 export default function Navbar(props) {
   return (
     <nav
       className={`fixed w-full shadow-md z-10 ${
         props.darkMode
-          ? "bg-very-dark text-white"
-          : "bg-white shadow-gray-100 text-black"
+          ? 'bg-very-dark text-white'
+          : 'bg-white shadow-gray-100 text-black'
       }`}
     >
       <div className="max-w-full mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
@@ -67,17 +67,23 @@ export default function Navbar(props) {
       </div>
 
       {/* mobile menu */}
-      <div className={`md:hidden font-bold ${props.hamburger ? "" : "hidden"}`}>
-        <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
+      <div className={`md:hidden font-bold ${props.hamburger ? '' : 'hidden'}`}>
+        <a href="#main" className="block px-2 py-4 text-sm hover:bg-gray-700">
           Home
         </a>
-        <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
+        <a href="#about" className="block px-2 py-4 text-sm hover:bg-gray-700">
           About
         </a>
-        <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
+        <a
+          href="#projects"
+          className="block px-2 py-4 text-sm hover:bg-gray-700"
+        >
           Projects
         </a>
-        <a href="#" className="block px-2 py-4 text-sm hover:bg-gray-700">
+        <a
+          href="#contact"
+          className="block px-2 py-4 text-sm hover:bg-gray-700"
+        >
           Contact
         </a>
       </div>
