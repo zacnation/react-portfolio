@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function Popup(props) {
   return props.popup ? (
     <div
       className={`z-9 bg-gray-100 bg-opacity-80 w-full h-full fixed inset-3 flex justify-center items-center ${
-        props.darkMode ? "bg-dark-I text-white" : "bg-light text-black"
+        props.darkMode ? 'bg-dark-I text-white' : 'bg-light text-black'
       }`}
     >
       <div className="relative pl-4 pr-8 text-justify bg-white text-black shadow-xl rounded-lg mr-6 py-5 w-full md:max-w-2xl lg:max-w-3xl">
@@ -27,16 +27,16 @@ export default function Popup(props) {
         <p>{props.description}</p>
         <div
           className={`flex items-center justify-center space-x-2 ${
-            props.darkMode ? "text-white" : "text-black"
+            props.darkMode ? 'text-white' : 'text-black'
           }`}
         >
           {props.techs.map((item, index) => {
-            return item === "stimulus" ? (
+            return item === 'stimulus' ? (
               <img
                 src={
                   props.darkMode
-                    ? "../../dist/stimulus-svgrepo-com.svg"
-                    : "https://www.svgrepo.com/show/354392/stimulus.svg"
+                    ? '../../dist/stimulus-svgrepo-com.svg'
+                    : 'https://www.svgrepo.com/show/354392/stimulus.svg'
                 }
                 alt=""
                 className="w-6 h-6 inline"
@@ -45,7 +45,7 @@ export default function Popup(props) {
             ) : (
               <i
                 className={`text-2xl devicon-${item}-${
-                  item === "express" ? "original" : "plain"
+                  item === 'express' ? 'original' : 'plain'
                 }`}
                 key={index}
               ></i>
