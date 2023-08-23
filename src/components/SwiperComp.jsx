@@ -7,9 +7,17 @@ import { Navigation } from 'swiper/modules';
 import Slide from './Slide';
 
 export default function SwiperComp(props) {
+  const swiperOptions = {
+    loop: true, // Enable the loop mode
+  };
   return (
     <div>
-      <Swiper navigation={true} modules={[Navigation]} className="SwiperComp">
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="SwiperComp"
+        {...swiperOptions}
+      >
         <SwiperSlide>
           <Slide
             img={'mindmissiongrayscale.png'}
@@ -18,6 +26,7 @@ export default function SwiperComp(props) {
               'Mind Mission is a mindfulness training game... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             }
             techs={['ruby', 'rails', 'javascript', 'stimulus']}
+            link="https://www.mind-mission.me/"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -35,6 +44,7 @@ export default function SwiperComp(props) {
               'express',
               'nodejs',
             ]}
+            link="https://www.mind-mission.me/"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -45,6 +55,7 @@ export default function SwiperComp(props) {
               'Lights Out is... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             }
             techs={['html5', 'css3', 'javascript', 'react']}
+            link="https://www.mind-mission.me/"
           />
         </SwiperSlide>
       </Swiper>
