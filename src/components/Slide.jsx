@@ -37,7 +37,7 @@ export default function Slide(props) {
           })}
         </div>
         <p className="md:w-96">{props.description}</p>
-        <a href={props.link}>
+        <a href={props.link} rel="noreferrer" target={'_blank'}>
           Live URL: <strong>{props.title}</strong>
         </a>
       </div>

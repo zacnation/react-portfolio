@@ -20,7 +20,7 @@ export default function SwiperComp(props) {
       >
         <SwiperSlide>
           <Slide
-            img={'mindmissiongrayscale.png'}
+            img={'mindmissiongray.png'}
             title={'Mind Mission'}
             description={
               'Mind Mission is a mindfulness training game... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -31,7 +31,7 @@ export default function SwiperComp(props) {
         </SwiperSlide>
         <SwiperSlide>
           <Slide
-            img={'yelpcamp.png'}
+            img={'yelpcampgray.png'}
             title={'YelpCamp'}
             description={
               'YelpCamp is... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
