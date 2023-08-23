@@ -1,26 +1,27 @@
-import { useState } from "react";
-import PropTypes from "prop-types";
-import ProjectCard from "./ProjectCard";
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import ProjectCard from './ProjectCard';
+import SwiperComp from './SwiperComp';
 
 export default function Projects(props) {
-  const [popups, setPopups] = useState({});
+  // const [popups, setPopups] = useState({});
 
-  const togglePopup = (cardId) => {
-    setPopups((prevState) => ({
-      ...prevState,
-      [cardId]: !prevState[cardId],
-    }));
-  };
+  // const togglePopup = cardId => {
+  //   setPopups(prevState => ({
+  //     ...prevState,
+  //     [cardId]: !prevState[cardId],
+  //   }));
+  // };
 
   return (
     <section
       id="projects"
       className={`pt-10 pb-3 md:pb-5 px-3 md:px-10 xl:px-60 2xl:px-96 ${
-        props.darkMode ? "bg-dark-I text-white" : "bg-light text-black"
+        props.darkMode ? 'bg-dark-I text-white' : 'bg-light text-black'
       }`}
     >
       <h2 className="text-2xl font-bold pb-6 md:pb-9">Projects</h2>
-      <div className="flex flex-wrap justify-center items-center md:grid grid-cols-2">
+      {/* <div className="flex flex-wrap justify-center items-center md:grid grid-cols-2">
         <ProjectCard
           cardId="mindmission"
           imgSrc="mindmissiongrayscale.png"
@@ -67,7 +68,8 @@ export default function Projects(props) {
           togglePopup={() => togglePopup("lightsout")}
           darkMode={props.darkMode}
         />
-      </div>
+      </div> */}
+      <SwiperComp />
     </section>
   );
 }

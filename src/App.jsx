@@ -1,15 +1,15 @@
-import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import WhatNext from "./components/WhatNext";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Resources from "./components/Resources";
-import Popup from "./components/Popup";
-import "tailwindcss/tailwind.css";
-import { useEffect } from "react";
+import { useState } from 'react';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+import About from './components/About';
+import Projects from './components/Projects';
+import WhatNext from './components/WhatNext';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Resources from './components/Resources';
+import Popup from './components/Popup';
+import 'tailwindcss/tailwind.css';
+import { useEffect } from 'react';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,32 +17,32 @@ export default function App() {
   const [hamburger, setHamburger] = useState(false);
 
   useEffect(() => {
-    const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
     function handleDarkModeChange(e) {
       setDarkMode(e.matches);
-      document.documentElement.classList.toggle("dark", e.matches);
+      document.documentElement.classList.toggle('dark', e.matches);
     }
 
-    darkModeQuery.addEventListener("change", handleDarkModeChange);
+    darkModeQuery.addEventListener('change', handleDarkModeChange);
     setDarkMode(darkModeQuery.matches);
-    document.documentElement.classList.toggle("dark", darkModeQuery.matches);
+    document.documentElement.classList.toggle('dark', darkModeQuery.matches);
 
     return () => {
-      darkModeQuery.removeEventListener("change", handleDarkModeChange);
+      darkModeQuery.removeEventListener('change', handleDarkModeChange);
     };
   }, []);
 
   function toggleDarkMode() {
-    setDarkMode((prevMode) => !prevMode);
+    setDarkMode(prevMode => !prevMode);
   }
 
   function togglePopup() {
-    setpopup((prevState) => !prevState);
+    setpopup(prevState => !prevState);
   }
 
   function toggleHamburger() {
-    setHamburger((prevState) => !prevState);
+    setHamburger(prevState => !prevState);
   }
 
   return (
