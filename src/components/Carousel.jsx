@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -6,16 +5,16 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Slide from './Slide';
 
-export default function SwiperComp(props) {
+export default function Carousel() {
   const swiperOptions = {
-    loop: true, // Enable the loop mode
+    loop: true,
   };
   return (
     <div>
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        className="SwiperComp"
+        className="Carousel"
         {...swiperOptions}
       >
         <SwiperSlide>
@@ -63,7 +62,7 @@ export default function SwiperComp(props) {
   );
 }
 
-SwiperComp.propTypes = {
+Carousel.propTypes = {
   darkMode: PropTypes.bool,
   img: PropTypes.string,
   title: PropTypes.string,
