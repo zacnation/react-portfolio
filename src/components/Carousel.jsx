@@ -38,6 +38,7 @@ export default function Carousel() {
             techs={[
               'html5',
               'css3',
+              'bootstrap',
               'javascript',
               'mongodb',
               'express',

@@ -10,10 +10,14 @@ export default function About(props) {
     >
       <div className="py-14 px-3 md:px-0">
         <h2 className="text-2xl font-bold md:pb-3">About me</h2>
-        <p>---</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          explicabo nobis nesciunt sequi sit nulla, nihil atque exercitationem
+          at deserunt aliquid aliquam laudantium sint eius nam optio illum
+          repellat eum?
+        </p>
         <h2 className="text-2xl pt-6 font-bold md:pb-3">My experience</h2>
         <div className="row">
-          {/* Use the dark class directly to toggle images */}
           <img
             src={
               props.darkMode
@@ -32,7 +36,6 @@ export default function About(props) {
               code, and I am passionate about continuing to develop my skills in
               this area.
             </p>
-            {/* Use the dark class directly to toggle the Le Wagon icon */}
             <img
               src={
                 props.darkMode
@@ -53,8 +56,6 @@ export default function About(props) {
             />
           </div>
         </div>
-
-        {/* Use the dark class directly to toggle the Udemy logo */}
         <img
           src={props.darkMode ? 'udemy-logo-white.svg' : 'udemy-logo-black.svg'}
           alt=""
@@ -62,11 +63,9 @@ export default function About(props) {
         />
         <p className="md:hidden text-justify">
           Before joining Le Wagon, my self-study involved a lot of Codecademy
-          and Udemy courses. A list of my completed courses can be found{' '}
-          <span className="courses-here">here</span>.
+          and Udemy courses. A list of my completed courses can be found here.
         </p>
         <div className="flex items-center py-8">
-          {/* Use the dark class directly to toggle the Udemy icon */}
           <img
             src={
               props.darkMode ? 'udemy-logo-white.svg' : 'udemy-logo-black.svg'
@@ -92,5 +91,4 @@ export default function About(props) {
 
 About.propTypes = {
   darkMode: PropTypes.bool.isRequired,
-  togglePopup: PropTypes.func,
 };

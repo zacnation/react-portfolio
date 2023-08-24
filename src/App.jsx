@@ -7,13 +7,11 @@ import WhatNext from './components/WhatNext';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resources from './components/Resources';
-import Popup from './components/Popup';
 import 'tailwindcss/tailwind.css';
 import { useEffect } from 'react';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [popup, setpopup] = useState(false);
   const [hamburger, setHamburger] = useState(false);
 
   useEffect(() => {
@@ -37,10 +35,6 @@ export default function App() {
     setDarkMode(prevMode => !prevMode);
   }
 
-  function togglePopup() {
-    setpopup(prevState => !prevState);
-  }
-
   function toggleHamburger() {
     setHamburger(prevState => !prevState);
   }
@@ -53,10 +47,9 @@ export default function App() {
         hamburger={hamburger}
         toggleHamburger={toggleHamburger}
       />
-      <Popup darkMode={darkMode} popup={popup} togglePopup={togglePopup} />
       <Main darkMode={darkMode} />
-      <About darkMode={darkMode} togglePopup={togglePopup} />
-      <Projects darkMode={darkMode} togglePopup={togglePopup} />
+      <About darkMode={darkMode} />
+      <Projects darkMode={darkMode} />
       <WhatNext darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Resources darkMode={darkMode} />
