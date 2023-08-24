@@ -1,6 +1,13 @@
 import PropTypes from 'prop-types';
 
 export default function About(props) {
+  const lewagonLogo = props.darkMode
+    ? 'lewagon-logo-inverted.svg'
+    : 'lewagon-logo.svg';
+  const udemyLogo = props.darkMode
+    ? 'udemy-logo-inverted.svg'
+    : 'udemy-logo.svg';
+
   return (
     <section
       id="about"
@@ -18,15 +25,7 @@ export default function About(props) {
         </p>
         <h2 className="text-2xl pt-6 font-bold md:pb-3">My experience</h2>
         <div className="row">
-          <img
-            src={
-              props.darkMode
-                ? 'lewagon-logo-white.svg'
-                : 'lewagon-logo-black.svg'
-            }
-            alt=""
-            className="md:hidden w-40 py-6 dark:hidden"
-          />
+          <img src={lewagonLogo} alt="" className="xl:hidden w-40 py-6" />
           <div className="flex">
             <p className="text-justify">
               I&apos;m a graduate of Le Wagon, a 9-week full-time intensive web
@@ -37,51 +36,28 @@ export default function About(props) {
               this area.
             </p>
             <img
-              src={
-                props.darkMode
-                  ? 'lewagon-icon-inverted.svg'
-                  : 'lewagon-icon.svg'
-              }
+              src={lewagonLogo}
               alt=""
-              className="hidden md:block lg:block xl:hidden 2xl:hidden w-20 pl-5 dark:hidden"
-            />
-            <img
-              src={
-                props.darkMode
-                  ? 'lewagon-logo-white.svg'
-                  : 'lewagon-logo-black.svg'
-              }
-              alt=""
-              className="hidden xl:block 2xl:block w-60 pl-5 dark:hidden"
+              className="hidden xl:block 2xl:block w-60 pl-5"
             />
           </div>
         </div>
-        <img
-          src={props.darkMode ? 'udemy-logo-white.svg' : 'udemy-logo-black.svg'}
-          alt=""
-          className="md:hidden w-32 py-6 dark:hidden"
-        />
+
+        <img src={udemyLogo} alt="" className="xl:hidden w-32 py-6" />
         <p className="md:hidden text-justify">
           Before joining Le Wagon, my self-study involved a lot of Codecademy
           and Udemy courses. A list of my completed courses can be found here.
         </p>
+
         <div className="flex items-center py-8">
           <img
-            src={
-              props.darkMode ? 'udemy-logo-white.svg' : 'udemy-logo-black.svg'
-            }
+            src={udemyLogo}
             alt=""
-            className="hidden xl:block 2xl:block w-48 pr-5 dark:hidden"
-          />
-          <img
-            src={props.darkMode ? 'udemy-icon-inverted.svg' : 'udemy-icon.svg'}
-            alt=""
-            className="hidden md:block lg:block xl:hidden 2xl:hidden w-20 pr-5 dark:hidden"
+            className="hidden xl:block 2xl:block w-48 pr-5"
           />
           <p className="hidden md:block text-justify">
             Before joining Le Wagon, my self-study involved a lot of Codecademy
-            and Udemy courses. A list of my completed courses can be found{' '}
-            <span className="courses-here">here</span>.
+            and Udemy courses. A list of my completed courses can be found here.
           </p>
         </div>
       </div>
