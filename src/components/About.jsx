@@ -18,10 +18,17 @@ export default function About(props) {
       <div className="py-14 px-3 md:px-0">
         <h2 className="text-2xl font-bold md:pb-3">About me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          explicabo nobis nesciunt sequi sit nulla, nihil atque exercitationem
-          at deserunt aliquid aliquam laudantium sint eius nam optio illum
-          repellat eum?
+          After over a year of self study, I attended and graduated from Le
+          Wagon London, a 9-week full-time intensive coding bootcamp teaching a
+          variety of front-end and back-end technologies. I am passionate about
+          continuing to develop my skills in this area.
+        </p>
+        <br />
+        <p>
+          Since then I have been learning and working with the MERN stack by
+          following Colt Steele&apos;s web development course and building his
+          large final project &apos;YelpCamp&apos;. I have also been working on
+          a few of my own projects, including this portfolio website.
         </p>
         <h2 className="text-2xl pt-6 font-bold md:pb-3">My experience</h2>
         <div className="row">
@@ -30,10 +37,11 @@ export default function About(props) {
             <p className="text-justify">
               I&apos;m a graduate of Le Wagon, a 9-week full-time intensive web
               development bootcamp based in London. During the bootcamp, I
-              worked with a variety of front-end and back-end technologies.
-              Prior to the bootcamp, I spent over a year self-learning how to
-              code, and I am passionate about continuing to develop my skills in
-              this area.
+              worked with HTML, CSS, Bootstrap, Ruby, JavaScript ES6, SQL, git,
+              GitHub, Heroku, and Ruby on Rails. During the bootcamp I helped
+              design, implement, and ship to production both a clone of Airbnb
+              and a Rails prototype of “Mind Mission”, a mindfulness training
+              game for 9 to 11-year-olds.
             </p>
             <img
               src={lewagonLogo}
@@ -45,8 +53,8 @@ export default function About(props) {
 
         <img src={udemyLogo} alt="" className="xl:hidden w-32 py-6" />
         <p className="md:hidden text-justify">
-          Before joining Le Wagon, my self-study involved a lot of Codecademy
-          and Udemy courses. A list of my completed courses can be found here.
+          Before joining Le Wagon, my self-study involved Codecademy and Udemy
+          courses. A list of my completed courses can be found here.
         </p>
 
         <div className="flex items-center py-8">
