@@ -44,7 +44,7 @@ export default function Carousel() {
               'express',
               'nodejs',
             ]}
-            link="https://www.mind-mission.me/"
+            link="https://zacnation-yelpcamp.cyclic.app/"
           />
         </SwiperSlide>
         <SwiperSlide>
