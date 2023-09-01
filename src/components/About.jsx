@@ -26,9 +26,13 @@ export default function About(props) {
         <br />
         <p>
           Since then I have been learning and working with the MERN stack by
-          following Colt Steele&apos;s web development course and building his
-          large final project &apos;YelpCamp&apos;. I have also been working on
-          a few of my own projects, including this portfolio website.
+          following{' '}
+          <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">
+            Colt Steele&apos;s Web Development course
+          </a>{' '}
+          and building his large final project &apos;YelpCamp&apos;. I have also
+          been working on a few of my own projects, including this portfolio
+          website.
         </p>
         <h2 className="text-2xl pt-6 font-bold md:pb-3">My experience</h2>
         <div className="row">
@@ -53,8 +57,8 @@ export default function About(props) {
 
         <img src={udemyLogo} alt="" className="xl:hidden w-32 py-6" />
         <p className="md:hidden text-justify">
-          Before joining Le Wagon, my self-study involved Codecademy and Udemy
-          courses. A list of my completed courses can be found here.
+          Before joining Le Wagon, my self-study comprised of Codecademy and
+          Udemy courses.
         </p>
 
         <div className="flex items-center py-8">
@@ -64,10 +68,13 @@ export default function About(props) {
             className="hidden xl:block 2xl:block w-48 pr-5"
           />
           <p className="hidden md:block text-justify">
-            Before joining Le Wagon, my self-study involved a lot of Codecademy
-            and Udemy courses. A list of my completed courses can be found here.
+            Before joining Le Wagon, my self-study comprised of Codecademy and
+            Udemy courses.
           </p>
         </div>
+
+        <h2 className="text-2xl font-bold md:pb-3">Interests and Hobbies</h2>
+        <p>Reading and BSL</p>
       </div>
     </section>
   );
