@@ -74,7 +74,30 @@ export default function About(props) {
         </div>
 
         <h2 className="text-2xl font-bold md:pb-3">Interests and Hobbies</h2>
-        <p>Reading and BSL</p>
+        <p>
+          <strong>Reading</strong>: Reading is a passion of mine, and my book
+          collection spans a wide range of genres and topics. From personal
+          development works like &apos;How to Win Friends and Influence
+          People&apos;, &apos;Atomic Habits&apos;, and &apos;Deep Work&apos; to
+          timeless classics like &apos;1984&apos;, &apos;The Trial&apos;, and
+          &apos;The Master and Margarita&apos;, I find inspiration in the
+          diverse perspectives that literature offers. These books have not only
+          fueled my creativity and problem-solving skills but have also enriched
+          my understanding of human behavior and interaction.
+        </p>
+        <br />
+        <p>
+          <strong>British Sign Language (BSL)</strong>: Learning BSL isn&apos;t
+          just a personal interest; it&apos;s my way of embracing two critical
+          aspects of web development: accessibility and diversity, equity, and
+          inclusion (DEI). BSL is part of the bigger picture of making the
+          digital world more inclusive for those who rely on sign language. This
+          experience has given me valuable insights into the challenges faced by
+          individuals with disabilities, inspiring me to design websites and
+          applications that cater to their needs. It&apos;s also a reminder that
+          diversity includes linguistic diversity, which I&apos;m passionate
+          about promoting in the tech industry.
+        </p>
       </div>
     </section>
   );
