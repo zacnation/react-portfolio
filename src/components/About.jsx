@@ -88,6 +88,7 @@ export default function About(props) {
             'https://www.goodreads.com/review/list/169529187-zac?shelf=read'
           }
           imgSrc={'public/goodreads.png'}
+          linkText={"What I'm reading"}
         />
         <Modal
           title={'BSL'}

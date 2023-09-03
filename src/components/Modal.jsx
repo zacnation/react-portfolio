@@ -45,7 +45,7 @@ export default function Modal(props) {
           >
             <h2 className="font-bold">{props.title}</h2>
             <a href={props.urlSrc} className="underline">
-              My GoodReads account
+              {props.linkText}
             </a>
             <p>{props.description}</p>
             <img src={props.imgSrc} alt="" className="m-auto" />
@@ -69,4 +69,5 @@ Modal.propTypes = {
   iconSrc: PropTypes.string.isRequired,
   urlSrc: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
+  linkText: PropTypes.string,
 };
