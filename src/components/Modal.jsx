@@ -43,10 +43,14 @@ export default function Modal(props) {
               props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
             }`}
           >
-            <h2 className="font-bold">{props.title}</h2>
-            <a href={props.urlSrc} className="underline">
-              {props.linkText}
-            </a>
+            <h2 className="font-bold text-3xl">{props.title}</h2>
+            {props.linkText && (
+              <a href={props.urlSrc} className="text-lg">
+                My GoodReads collection:{' '}
+                <span className="font-bold">{props.linkText}</span>
+              </a>
+            )}
+
             <p>{props.description}</p>
             <img src={props.imgSrc} alt="" className="m-auto" />
             <button className="close-modal" onClick={toggleModal}>
@@ -67,7 +71,7 @@ Modal.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   iconSrc: PropTypes.string.isRequired,
-  urlSrc: PropTypes.string.isRequired,
+  urlSrc: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
   linkText: PropTypes.string,
 };

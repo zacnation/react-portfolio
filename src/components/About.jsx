@@ -88,7 +88,7 @@ export default function About(props) {
             'https://www.goodreads.com/review/list/169529187-zac?shelf=read'
           }
           imgSrc={'public/goodreads.png'}
-          linkText={"What I'm reading"}
+          linkText={'zacnation'}
         />
         <Modal
           title={'BSL'}
@@ -101,7 +101,6 @@ export default function About(props) {
               ? 'public/sign-language-inverted.svg'
               : 'public/sign-language.svg'
           }`}
-          urlSrc={'https://www.british-sign.co.uk/'}
           imgSrc={'public/goodreads.png'}
         />
         <Modal
@@ -115,7 +114,6 @@ export default function About(props) {
               ? 'public/raspberry-pi-inverted.svg'
               : 'public/raspberry-pi.svg'
           }`}
-          urlSrc={'https://www.british-sign.co.uk/'}
           imgSrc={'public/goodreads.png'}
         />
       </div>
