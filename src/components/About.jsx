@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Modal from './Modal';
 
 export default function About(props) {
   const lewagonLogo = props.darkMode
@@ -74,30 +75,20 @@ export default function About(props) {
         </div>
 
         <h2 className="text-2xl font-bold md:pb-3">Interests and Hobbies</h2>
-        <p>
-          <strong>Reading</strong>: Reading is a passion of mine, and my book
-          collection spans a wide range of genres and topics. From personal
-          development works like &apos;How to Win Friends and Influence
-          People&apos;, &apos;Atomic Habits&apos;, and &apos;Deep Work&apos; to
-          timeless classics like &apos;1984&apos;, &apos;The Trial&apos;, and
-          &apos;The Master and Margarita&apos;, I find inspiration in the
-          diverse perspectives that literature offers. These books have not only
-          fueled my creativity and problem-solving skills but have also enriched
-          my understanding of human behavior and interaction.
-        </p>
-        <br />
-        <p>
-          <strong>British Sign Language (BSL)</strong>: Learning BSL isn&apos;t
-          just a personal interest; it&apos;s my way of embracing two critical
-          aspects of web development: accessibility and diversity, equity, and
-          inclusion (DEI). BSL is part of the bigger picture of making the
-          digital world more inclusive for those who rely on sign language. This
-          experience has given me valuable insights into the challenges faced by
-          individuals with disabilities, inspiring me to design websites and
-          applications that cater to their needs. It&apos;s also a reminder that
-          diversity includes linguistic diversity, which I&apos;m passionate
-          about promoting in the tech industry.
-        </p>
+        <Modal
+          interest={'Reading'}
+          title={'HELLO'}
+          description={
+            "Reading is a passion of mine, and my book collection spans a wide range of genres and topics. From personal development works like 'How to Win Friends and Influence People', 'Atomic Habits', and 'Deep Work' to timeless classics like '1984', 'The Trial', and 'The Master and Margarita', I find inspiration in the diverse perspectives that literature offers. These books have not only fueled my creativity and problem-solving skills but have also enriched my understanding of human behavior and interaction."
+          }
+        />
+        <Modal
+          interest={'BSL'}
+          title={'HELLO'}
+          description={
+            "British Sign Language (BSL): Learning BSL isn't just a personal interest; it's my way of embracing two critical aspects of web development: accessibility and diversity, equity, and inclusion (DEI). BSL is part of the bigger picture of making the digital world more inclusive for those who rely on sign language. This experience has given me valuable insights into the challenges faced by individuals with disabilities, inspiring me to design websites and applications that cater to their needs. It's also a reminder that diversity includes linguistic diversity, which I'm passionate about promoting in the tech industry."
+          }
+        />
       </div>
     </section>
   );
