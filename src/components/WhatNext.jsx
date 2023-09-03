@@ -10,14 +10,6 @@ export default function WhatNext(props) {
     >
       <h2 className="text-2xl font-bold pb-2">What&apos;s next?</h2>
       <TechCard
-        icon="devicon-chrome-plain"
-        description="Ut ipsum mauris, mollis id ullamcorper tincidunt, luctus non lorem. Etiam sit amet efficitur ante, ut sagittis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac ligula purus."
-      />
-      <TechCard
-        icon="devicon-firebase-plain"
-        description="Suspendisse placerat, ligula sed consectetur maximus, purus risus euismod ipsum, volutpat dictum mi urna at nisi. Proin sed ultricies neque."
-      />
-      <TechCard
         icon="devicon-nextjs-original"
         description="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tempus mollis neque a elementum. Suspendisse rutrum eros tellus, at condimentum ex imperdiet sit amet. Maecenas varius eleifend orci eu rhoncus."
       />
@@ -28,10 +20,6 @@ export default function WhatNext(props) {
       <TechCard
         icon="devicon-rust-plain"
         description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus."
-      />
-      <TechCard
-        icon="devicon-threejs-original"
-        description="Fusce venenatis orci elit, id maximus diam dictum sit amet. Phasellus pharetra, ipsum et mollis dignissim, odio felis sodales purus, non efficitur mauris turpis vel orci."
       />
       <TechCard
         icon="devicon-unity-original"
