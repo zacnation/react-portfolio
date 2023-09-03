@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 export default function Main(props) {
   return (
     <main
       id="main"
-      className={`pb-20 pt-20 md:pt-40 md:w-screen md:h-screen ${
-        props.darkMode ? "bg-dark-I text-white" : "bg-light text-black"
+      className={`pb-20 pt-20 md:pt-40 md:w-screen h-screen ${
+        props.darkMode ? 'bg-dark-I text-white' : 'bg-light text-black'
       }`}
     >
       <div className="pt-32">
