@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import '../Modal.css';
 
+import PropTypes from 'prop-types';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,7 +22,7 @@ export default function Modal(props) {
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
-        {props.interest}
+        {props.title}
       </button>
 
       {modal && (
@@ -30,11 +32,11 @@ export default function Modal(props) {
             className={`${props.darkMode ? 'overlay-dark' : 'overlay'}`}
           ></div>
           <div
-            className={`modal-content max-h-96 mt-24 overflow-auto ${
+            className={`modal-content max-h-96 overflow-auto ${
               props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
             }`}
           >
-            <h2>{props.title}</h2>
+            <h2 className="font-bold">{props.title}</h2>
             <p>{props.description}</p>
             <button className="close-modal" onClick={toggleModal}>
               <FontAwesomeIcon
@@ -49,3 +51,10 @@ export default function Modal(props) {
     </>
   );
 }
+
+Modal.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+  togglePopup: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
