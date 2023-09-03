@@ -25,8 +25,15 @@ export default function Modal(props) {
 
       {modal && (
         <div className="modal">
-          <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content max-h-96 mt-24 overflow-auto">
+          <div
+            onClick={toggleModal}
+            className={`${props.darkMode ? 'overlay-dark' : 'overlay'}`}
+          ></div>
+          <div
+            className={`modal-content max-h-96 mt-24 overflow-auto ${
+              props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
+            }`}
+          >
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             <button className="close-modal" onClick={toggleModal}>

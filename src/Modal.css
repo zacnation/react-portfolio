@@ -20,8 +20,23 @@ body.active-modal {
   position: fixed;
 }
 
+.modal,
+.overlay-dark {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
 .overlay {
   background: rgba(49, 49, 49, 0.8);
+}
+
+.overlay-dark {
+  background: rgba(6, 6, 6, 0.8);
 }
 .modal-content {
   position: absolute;
