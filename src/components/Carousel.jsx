@@ -10,7 +10,7 @@ export default function Carousel() {
     loop: true,
   };
   return (
-    <div>
+    <div className="pb-10 md:pb-12 lg:pb-20">
       <Swiper
         navigation={true}
         modules={[Navigation]}

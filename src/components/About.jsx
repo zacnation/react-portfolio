@@ -12,12 +12,12 @@ export default function About(props) {
   return (
     <section
       id="about"
-      className={`md:px-10 xl:px-60 2xl:px-96 ${
+      className={`md:px-10 xl:px-60 2xl:px-96 lg:pt-16 lg:pb-20 ${
         props.darkMode ? 'bg-dark-II text-white' : 'bg-white text-black'
       }`}
     >
-      <div className="py-14 px-3 md:px-0">
-        <h2 className="text-2xl font-bold md:pb-3">About me</h2>
+      <div className="py-14 lg:py-0 px-3 md:px-0">
+        <h2 className="text-2xl font-bold pb-3">About me</h2>
         <p>
           After over a year of self study, I attended and graduated from Le
           Wagon London, a 9-week full-time intensive coding bootcamp teaching a
@@ -56,13 +56,17 @@ export default function About(props) {
           </div>
         </div>
 
-        <img src={udemyLogo} alt="" className="xl:hidden w-32 py-6" />
+        <img
+          src={udemyLogo}
+          alt=""
+          className="xl:hidden w-32 pt-6 pb-6 lg:pb-0"
+        />
         <p className="md:hidden text-justify">
           Before joining Le Wagon, my self-study comprised of Codecademy and
           Udemy courses.
         </p>
 
-        <div className="flex items-center py-8">
+        <div className="flex items-center lg:py-8">
           <img
             src={udemyLogo}
             alt=""
@@ -74,7 +78,9 @@ export default function About(props) {
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold md:pb-3">Interests and Hobbies</h2>
+        <h2 className="text-2xl font-bold py-4 md:pb-6 lg:pt-0">
+          Interests and Hobbies
+        </h2>
         <Modal
           title={'Reading'}
           description={

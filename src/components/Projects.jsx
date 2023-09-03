@@ -6,7 +6,7 @@ export default function Projects(props) {
   return (
     <section
       id="projects"
-      className={`pt-10 pb-3 md:pb-5 px-3 md:px-10 xl:px-60 2xl:px-96 ${
+      className={`pt-10 md:pt-20 md:pb-5 px-3 md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? 'bg-dark-I text-white' : 'bg-light text-black'
       }`}
     >
