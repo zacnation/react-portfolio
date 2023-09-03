@@ -22,7 +22,10 @@ export default function Modal(props) {
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
-        {props.title}
+        <div className="flex">
+          <img src={props.imgSrc} alt="" className="w-16" />
+          {props.title}
+        </div>
       </button>
 
       {modal && (
@@ -42,7 +45,6 @@ export default function Modal(props) {
               <FontAwesomeIcon
                 icon={faTimes}
                 className="absolute top-3 right-3 cursor-pointer"
-                onClick={props.togglePopup}
               />
             </button>
           </div>
@@ -54,7 +56,7 @@ export default function Modal(props) {
 
 Modal.propTypes = {
   darkMode: PropTypes.bool.isRequired,
-  togglePopup: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
 };
