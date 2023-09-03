@@ -39,7 +39,7 @@ export default function Modal(props) {
             className={`${props.darkMode ? 'overlay-dark' : 'overlay'}`}
           ></div>
           <div
-            className={`modal-content max-h-96 overflow-auto ${
+            className={`modal-content max-h-96 md:max-h-full overflow-auto ${
               props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
             }`}
           >
@@ -51,7 +51,18 @@ export default function Modal(props) {
                 rel="noreferrer"
                 className="text-lg font-bold underline underline-offset-8"
               >
-                {props.linkText}
+                <div className="flex items-center">
+                  {props.linkText}
+                  <img
+                    src={`${
+                      props.darkMode
+                        ? 'public/link-inverted.svg'
+                        : 'public/link.svg'
+                    }`}
+                    alt=""
+                    className="w-6 ml-2"
+                  />
+                </div>
               </a>
             )}
 
