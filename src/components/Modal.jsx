@@ -23,7 +23,7 @@ export default function Modal(props) {
     <>
       <button onClick={toggleModal} className="btn-modal">
         <div className="flex">
-          <img src={props.imgSrc} alt="" className="w-16" />
+          <img src={props.iconSrc} alt="" className="w-16" />
           {props.title}
         </div>
       </button>
@@ -40,7 +40,11 @@ export default function Modal(props) {
             }`}
           >
             <h2 className="font-bold">{props.title}</h2>
+            <a href={props.urlSrc} className="underline">
+              My GoodReads account
+            </a>
             <p>{props.description}</p>
+            <img src={props.imgSrc} alt="" className="m-auto" />
             <button className="close-modal" onClick={toggleModal}>
               <FontAwesomeIcon
                 icon={faTimes}
@@ -58,5 +62,7 @@ Modal.propTypes = {
   darkMode: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  iconSrc: PropTypes.string.isRequired,
+  urlSrc: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
 };

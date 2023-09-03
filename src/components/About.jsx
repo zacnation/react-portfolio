@@ -81,7 +81,11 @@ export default function About(props) {
             "Reading is a passion of mine, and my book collection spans a wide range of genres and topics. From personal development works like 'How to Win Friends and Influence People', 'Atomic Habits', and 'Deep Work' to timeless classics like '1984', 'The Trial', and 'The Master and Margarita', I find inspiration in the diverse perspectives that literature offers. These books have not only fueled my creativity and problem-solving skills but have also enriched my understanding of human behavior and interaction."
           }
           darkMode={props.darkMode}
-          imgSrc={'public/books-svgrepo-com.svg'}
+          iconSrc={'public/books-svgrepo-com.svg'}
+          urlSrc={
+            'https://www.goodreads.com/review/list/169529187-zac?shelf=read'
+          }
+          imgSrc={'public/goodreads.png'}
         />
         <Modal
           title={'BSL'}
@@ -89,7 +93,9 @@ export default function About(props) {
             "British Sign Language (BSL): Learning BSL isn't just a personal interest; it's my way of embracing two critical aspects of web development: accessibility and diversity, equity, and inclusion (DEI). BSL is part of the bigger picture of making the digital world more inclusive for those who rely on sign language. This experience has given me valuable insights into the challenges faced by individuals with disabilities, inspiring me to design websites and applications that cater to their needs. It's also a reminder that diversity includes linguistic diversity, which I'm passionate about promoting in the tech industry."
           }
           darkMode={props.darkMode}
-          imgSrc={'public/sign-language-svgrepo-com.svg'}
+          iconSrc={'public/sign-language-svgrepo-com.svg'}
+          urlSrc={'https://www.british-sign.co.uk/'}
+          imgSrc={'public/goodreads.png'}
         />
       </div>
     </section>
