@@ -111,8 +111,8 @@ export default function About(props) {
           darkMode={props.darkMode}
           iconSrc={`${
             props.darkMode
-              ? 'public/sign-language-inverted.svg'
-              : 'public/sign-language.svg'
+              ? 'public/raspberry-pi-inverted.svg'
+              : 'public/raspberry-pi.svg'
           }`}
           urlSrc={'https://www.british-sign.co.uk/'}
           imgSrc={'public/goodreads.png'}
