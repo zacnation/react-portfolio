@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
-import TechCard from "./TechCard";
+import PropTypes from 'prop-types';
+import TechCard from './TechCard';
 
 export default function WhatNext(props) {
   return (
     <div
-      className={`py-12 pl-2 pr-1 md:px-10 xl:px-60 2xl:px-96 ${
-        props.darkMode ? "bg-dark-II text-white" : "bg-white text-black"
+      className={`transition-all duration-300 py-12 pl-2 pr-1 md:px-10 xl:px-60 2xl:px-96 ${
+        props.darkMode ? 'bg-dark-II text-white' : 'bg-white text-black'
       }`}
     >
       <h2 className="text-2xl font-bold pb-2">What&apos;s next?</h2>

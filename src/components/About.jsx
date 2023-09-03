@@ -12,7 +12,7 @@ export default function About(props) {
   return (
     <section
       id="about"
-      className={`md:px-10 xl:px-60 2xl:px-96 lg:pt-16 lg:pb-20 ${
+      className={`transition-all duration-300 md:px-10 xl:px-60 2xl:px-96 lg:pt-16 lg:pb-20 ${
         props.darkMode ? 'bg-dark-II text-white' : 'bg-white text-black'
       }`}
     >
