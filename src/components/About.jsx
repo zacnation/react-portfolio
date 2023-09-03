@@ -87,8 +87,10 @@ export default function About(props) {
           urlSrc={
             'https://www.goodreads.com/review/list/169529187-zac?shelf=read'
           }
-          imgSrc={'public/goodreads.png'}
-          linkText={'zacnation'}
+          imgSrc={`${
+            props.darkMode ? 'public/books-inverted.png' : 'public/books.png'
+          }`}
+          linkText={'My previously read'}
         />
         <Modal
           title={'BSL'}
@@ -101,7 +103,6 @@ export default function About(props) {
               ? 'public/sign-language-inverted.svg'
               : 'public/sign-language.svg'
           }`}
-          imgSrc={'public/goodreads.png'}
         />
         <Modal
           title={'Technical skills'}
@@ -114,7 +115,6 @@ export default function About(props) {
               ? 'public/raspberry-pi-inverted.svg'
               : 'public/raspberry-pi.svg'
           }`}
-          imgSrc={'public/goodreads.png'}
         />
       </div>
     </section>

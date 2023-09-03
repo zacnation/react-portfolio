@@ -23,7 +23,7 @@ export default function Modal(props) {
     <>
       <button onClick={toggleModal} className="btn-modal">
         <div
-          className={`flex items-center border-solid border-2 py-2 px-6 rounded ${
+          className={`flex items-center space-x-2 border-solid border-2 py-2 px-6 rounded ${
             props.darkMode ? 'border-white' : 'border-black'
           }`}
         >
@@ -45,13 +45,17 @@ export default function Modal(props) {
           >
             <h2 className="font-bold text-3xl">{props.title}</h2>
             {props.linkText && (
-              <a href={props.urlSrc} className="text-lg">
-                My GoodReads collection:{' '}
-                <span className="font-bold">{props.linkText}</span>
+              <a
+                href={props.urlSrc}
+                target="_blank"
+                rel="noreferrer"
+                className="text-lg font-bold underline underline-offset-8"
+              >
+                {props.linkText}
               </a>
             )}
 
-            <p>{props.description}</p>
+            <p className="mt-3">{props.description}</p>
             <img src={props.imgSrc} alt="" className="m-auto" />
             <button className="close-modal" onClick={toggleModal}>
               <FontAwesomeIcon
@@ -72,6 +76,6 @@ Modal.propTypes = {
   description: PropTypes.string.isRequired,
   iconSrc: PropTypes.string.isRequired,
   urlSrc: PropTypes.string,
-  imgSrc: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string,
   linkText: PropTypes.string,
 };
