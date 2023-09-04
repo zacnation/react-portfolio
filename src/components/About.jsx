@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Modal from './Modal';
+import AboutModal from './AboutModal';
 
 export default function About(props) {
   const lewagonLogo = props.darkMode
@@ -61,10 +62,15 @@ export default function About(props) {
           alt=""
           className="xl:hidden w-32 pt-6 pb-6 lg:pb-0"
         />
-        <p className="md:hidden text-justify">
+        <div className="md:hidden text-justify">
           Before joining Le Wagon, my self-study comprised of Codecademy and
-          Udemy courses.
-        </p>
+          Udemy courses. A full list of my completed courses can be found{' '}
+          <AboutModal
+            title={'here'}
+            innerTitle={'Certificates'}
+            darkMode={props.darkMode}
+          />
+        </div>
 
         <div className="flex items-center lg:py-8">
           <img
@@ -72,10 +78,15 @@ export default function About(props) {
             alt=""
             className="hidden xl:block 2xl:block w-48 pr-5"
           />
-          <p className="hidden md:block text-justify">
+          <div className="hidden md:block text-justify">
             Before joining Le Wagon, my self-study comprised of Codecademy and
-            Udemy courses.
-          </p>
+            Udemy courses. A full list of my completed courses can be found{' '}
+            <AboutModal
+              title={'here'}
+              innerTitle={'My Certificates'}
+              darkMode={props.darkMode}
+            />
+          </div>
         </div>
 
         <h2 className="text-2xl font-bold py-4 md:pb-6 lg:pt-0">
