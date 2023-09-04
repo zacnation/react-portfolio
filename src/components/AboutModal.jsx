@@ -23,7 +23,9 @@ export default function AboutModal(props) {
     <>
       <button onClick={toggleModal} className="btn-modal lg:mr-6">
         <div className={`${props.darkMode ? 'border-white' : 'border-black'}`}>
-          <h2 className="text-lg">{props.title}</h2>
+          <h2 className="font-bold underline underline-offset-2">
+            {props.title}
+          </h2>
         </div>
       </button>
 
@@ -38,7 +40,9 @@ export default function AboutModal(props) {
               props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
             }`}
           >
-            <h2 className="font-bold text-3xl">{props.innerTitle}</h2>
+            <h2 className="font-bold text-2xl md:text-3xl mb-5">
+              {props.innerTitle}
+            </h2>
 
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               <img src="colt-certificate.jpeg" alt="" />

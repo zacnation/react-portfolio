@@ -43,7 +43,7 @@ export default function Modal(props) {
               props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
             }`}
           >
-            <h2 className="font-bold text-3xl">{props.title}</h2>
+            <h2 className="font-bold text-2xl md:text-3xl">{props.title}</h2>
             {props.linkText && (
               <a
                 href={props.urlSrc}
