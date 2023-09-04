@@ -54,11 +54,7 @@ export default function Modal(props) {
                 <div className="flex items-center">
                   {props.linkText}
                   <img
-                    src={`${
-                      props.darkMode
-                        ? 'public/link-inverted.svg'
-                        : 'public/link.svg'
-                    }`}
+                    src={`${props.darkMode ? 'link-inverted.svg' : 'link.svg'}`}
                     alt=""
                     className="w-6 ml-2"
                   />
