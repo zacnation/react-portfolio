@@ -19,17 +19,6 @@ export default function Carousel() {
       >
         <SwiperSlide>
           <Slide
-            img={'mindmissiongray.png'}
-            title={'Mind Mission'}
-            description={
-              'Mind Mission is a mindfulness training game... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-            }
-            techs={['ruby', 'rails', 'javascript', 'stimulus']}
-            link="https://www.mind-mission.me/"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide
             img={'yelpcampgray.png'}
             title={'YelpCamp'}
             description={
@@ -55,6 +44,17 @@ export default function Carousel() {
               'Lights Out is... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             }
             techs={['html5', 'css3', 'javascript', 'react']}
+            link="https://www.mind-mission.me/"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Slide
+            img={'mindmissiongray.png'}
+            title={'Mind Mission'}
+            description={
+              'Mind Mission is a mindfulness training game... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            }
+            techs={['ruby', 'rails', 'javascript', 'stimulus']}
             link="https://www.mind-mission.me/"
           />
         </SwiperSlide>
