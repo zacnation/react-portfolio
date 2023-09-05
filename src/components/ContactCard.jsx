@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopy } from '@fortawesome/free-regular-svg-icons';
 
 export default function ContactCard(props) {
   // const fillColor = props.darkMode ? '#fff' : '#000';
@@ -21,19 +22,42 @@ export default function ContactCard(props) {
   // );
 
   return (
-    <div
-      className={`transition-all duration-300 ${
-        props.darkMode ? 'bg-dark-I text-white' : 'bg-white text-black'
-      }`}
-    >
-      <div className="flex items-center justify-center border rounded w-32 h-12">
-        <FontAwesomeIcon
-          icon={props.icon}
-          className="w-6 h-6 pr-2 hover:text-slate-600"
-        />{' '}
-        <p>{props.title}</p>
-      </div>
-    </div>
+    <>
+      {props.id === 'email' ? (
+        <div
+          onClick={() =>
+            navigator.clipboard.writeText('zacnation.work@icloud.com')
+          }
+          className={`transition-all duration-150 flex items-center justify-center border rounded w-32 h-12 hover:cursor-pointer  ${
+            props.darkMode
+              ? 'bg-dark-I text-white border-white hover:bg-gray-200 hover:text-black'
+              : 'bg-white text-black border-gray-400 hover:bg-dark-I hover:text-white hover:border-dark-I'
+          }`}
+        >
+          <FontAwesomeIcon icon={props.icon} className="w-6 h-6 pr-2" />{' '}
+          <p>{props.title}</p>{' '}
+          <img
+            src={props.darkMode ? 'link-inverted.svg' : 'link.svg'}
+            className="w-6 pl-1 animate-pulse"
+            alt=""
+          />
+        </div>
+      ) : (
+        <a
+          href={`https://${props.url}`}
+          target="_blank"
+          rel="noreferrer"
+          className={`transition-all duration-150 flex items-center justify-center border rounded w-32 h-12 hover:cursor-pointer  ${
+            props.darkMode
+              ? 'bg-dark-I text-white border-white hover:bg-gray-200 hover:text-black'
+              : 'bg-white text-black border-gray-400 hover:bg-dark-I hover:text-white hover:border-dark-I'
+          }`}
+        >
+          <FontAwesomeIcon icon={props.icon} className="w-6 h-6 pr-2" />{' '}
+          <p>{props.title}</p>
+        </a>
+      )}{' '}
+    </>
   );
 }
 
@@ -41,4 +65,6 @@ ContactCard.propTypes = {
   darkMode: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  id: PropTypes.string,
 };
