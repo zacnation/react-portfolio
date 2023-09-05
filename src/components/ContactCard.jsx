@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy } from '@fortawesome/free-regular-svg-icons';
 
 export default function ContactCard(props) {
   // const fillColor = props.darkMode ? '#fff' : '#000';
@@ -28,17 +27,17 @@ export default function ContactCard(props) {
           onClick={() =>
             navigator.clipboard.writeText('zacnation.work@icloud.com')
           }
-          className={`transition-all duration-150 flex items-center justify-center border rounded w-32 h-12 hover:cursor-pointer  ${
+          className={`transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
             props.darkMode
               ? 'bg-dark-I text-white border-white hover:bg-gray-200 hover:text-black'
               : 'bg-white text-black border-gray-400 hover:bg-dark-I hover:text-white hover:border-dark-I'
           }`}
         >
-          <FontAwesomeIcon icon={props.icon} className="w-6 h-6 pr-2" />{' '}
-          <p>{props.title}</p>{' '}
+          <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />{' '}
+          <p className="text-lg">{props.title}</p>{' '}
           <img
             src={props.darkMode ? 'link-inverted.svg' : 'link.svg'}
-            className="w-6 pl-1 animate-pulse"
+            className="w-7 pl-1 animate-pulse"
             alt=""
           />
         </div>
@@ -47,14 +46,14 @@ export default function ContactCard(props) {
           href={`https://${props.url}`}
           target="_blank"
           rel="noreferrer"
-          className={`transition-all duration-150 flex items-center justify-center border rounded w-32 h-12 hover:cursor-pointer  ${
+          className={`transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
             props.darkMode
               ? 'bg-dark-I text-white border-white hover:bg-gray-200 hover:text-black'
               : 'bg-white text-black border-gray-400 hover:bg-dark-I hover:text-white hover:border-dark-I'
           }`}
         >
-          <FontAwesomeIcon icon={props.icon} className="w-6 h-6 pr-2" />{' '}
-          <p>{props.title}</p>
+          <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />{' '}
+          <p className="text-lg">{props.title}</p>
         </a>
       )}{' '}
     </>
