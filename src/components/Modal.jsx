@@ -4,7 +4,10 @@ import '../Modal.css';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faTimes,
+  faArrowUpRightFromSquare,
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function Modal(props) {
   const [modal, setModal] = useState(false);
@@ -53,9 +56,8 @@ export default function Modal(props) {
               >
                 <div className="flex items-center">
                   {props.linkText}
-                  <img
-                    src={props.darkMode ? 'link-inverted.svg' : 'link.svg'}
-                    alt=""
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
                     className="w-6 ml-2"
                   />
                 </div>
