@@ -8,12 +8,9 @@ export default function Resources(props) {
         props.darkMode ? 'bg-very-dark text-white' : 'bg-light text-black'
       }`}
     >
-      <h2 className="lg:hidden text-2xl font-bold pb-5">Resources</h2>
-      <h2 className="hidden lg:block text-md font-bold">
-        Resources I&apos;m incredibly grateful for
-      </h2>
+      <h2 className="flex justify-center text-2xl font-bold pb-5">Resources</h2>
 
-      <div className="md:hidden flex justify-center space-x-6">
+      <div className="lg:hidden flex justify-center space-x-6">
         <ResourceCard
           imageSrc={
             props.darkMode ? 'lewagon-icon-inverted.svg' : 'lewagon-icon.svg'
@@ -48,7 +45,7 @@ export default function Resources(props) {
         />
       </div>
 
-      <div className="hidden md:flex justify-center">
+      <div className="hidden lg:flex justify-center">
         <div className="flex items-center">
           <ResourceCard
             imageSrc={
@@ -63,7 +60,7 @@ export default function Resources(props) {
             imageSrc={
               props.darkMode ? 'scrimba-dark-f.svg' : 'scrimba-icon.svg'
             }
-            listItems={['The Scrimba podcast', 'and free catalogue']}
+            listItems={['Scrimba podcast', '& free catalogue']}
           />
         </div>
 
@@ -83,7 +80,7 @@ export default function Resources(props) {
                 ? 'codecademy-icon-inverted.svg'
                 : 'codecademy-icon.svg'
             }
-            listItems={['Full-Stack career path']}
+            listItems={['Full-Stack', 'career path']}
           />
         </div>
 
@@ -92,12 +89,7 @@ export default function Resources(props) {
             imageSrc={
               props.darkMode ? 'youtube-dark-f.svg' : 'youtube-icon.svg'
             }
-            listItems={[
-              'danascript',
-              'Tiff In Tech',
-              'Tina Huang',
-              'FreeCodeCamp',
-            ]}
+            listItems={['danascript', 'Tiff In Tech', 'Tina Huang']}
           />
         </div>
       </div>

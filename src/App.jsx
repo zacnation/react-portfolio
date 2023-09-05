@@ -53,7 +53,7 @@ export default function App() {
       <WhatNext darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Resources darkMode={darkMode} />
-      <Footer darkMode={darkMode} />
+      {/* <Footer darkMode={darkMode} /> */}
     </div>
   );
 }
