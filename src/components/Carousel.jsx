@@ -49,6 +49,16 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <Slide
+            img={'portfolio.png'}
+            title={'Portfolio'}
+            description={
+              'Lights Out is... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            }
+            techs={['html5', 'css3', 'tailwindcss', 'react']}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Slide
             img={'mindmissiongray.png'}
             title={'Mind Mission'}
             description={

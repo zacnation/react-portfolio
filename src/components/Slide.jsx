@@ -39,20 +39,24 @@ export default function Slide(props) {
           })}
         </div>
         <p className="md:w-96">{props.description}</p>
-        <div className="flex items-center space-x-2">
-          <a
-            href={props.link}
-            rel="noreferrer"
-            target={'_blank'}
-            className="font-bold underline underline-offset-2"
-          >
-            {props.title}{' '}
-          </a>
-          <FontAwesomeIcon
-            icon={faArrowUpRightFromSquare}
-            className="w-6 ml-2"
-          />
-        </div>
+        {props.title === 'Portfolio' ? (
+          ''
+        ) : (
+          <div className="flex items-center space-x-2">
+            <a
+              href={props.link}
+              rel="noreferrer"
+              target={'_blank'}
+              className="font-bold underline underline-offset-2"
+            >
+              {props.title}{' '}
+            </a>
+            <FontAwesomeIcon
+              icon={faArrowUpRightFromSquare}
+              className="w-6 ml-2"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
