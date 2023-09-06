@@ -57,36 +57,21 @@ export default function About(props) {
           </div>
         </div>
 
-        <img
-          src={udemyLogo}
-          alt=""
-          className="xl:hidden w-32 pt-6 pb-6 lg:pb-0"
-        />
-        <div className="md:hidden text-justify">
-          Before joining Le Wagon, my self-study comprised of Codecademy and
-          Udemy courses. A full list of my completed courses can be found{' '}
-          <AboutModal
-            title={'here'}
-            innerTitle={'Certificates'}
-            darkMode={props.darkMode}
-          />
-        </div>
-
-        <div className="flex items-center lg:py-8">
+        <div className="xl:flex xl:items-center lg:pb-8 lg:pt-0">
           <img
             src={udemyLogo}
             alt=""
-            className="hidden xl:block 2xl:block w-48 pr-5"
+            className="w-32 pt-6 pb-4 lg:pb-3 xl:w-48 xl:pr-5"
           />
-          <div className="hidden md:block text-justify">
+          <p className="text-justify xl:pt-6">
             Before joining Le Wagon, my self-study comprised of Codecademy and
             Udemy courses. A full list of my completed courses can be found{' '}
             <AboutModal
               title={'here'}
-              innerTitle={'My Certificates'}
+              innerTitle={'Certificates'}
               darkMode={props.darkMode}
             />
-          </div>
+          </p>
         </div>
 
         <h2 className="text-2xl font-bold py-4 md:pb-6 lg:pt-0">
