@@ -14,6 +14,10 @@ export default function WhatNext(props) {
         description="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tempus mollis neque a elementum. Suspendisse rutrum eros tellus, at condimentum ex imperdiet sit amet. Maecenas varius eleifend orci eu rhoncus."
       />
       <TechCard
+        icon="devicon-python-plain"
+        description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus"
+      />
+      <TechCard
         icon="devicon-raspberrypi-line"
         description="Proin purus ligula, vulputate et erat quis, rhoncus congue risus. Aenean nisi sem, rhoncus in ex vel, semper efficitur enim. Nulla efficitur ex nec condimentum maximus. Nullam mattis odio vitae pharetra eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sagittis velit eu luctus tincidunt."
       />
