@@ -19,14 +19,25 @@ export default function About(props) {
     >
       <div className="py-14 lg:py-0 px-3 md:px-0">
         <h2 className="text-2xl font-bold pb-3">About me</h2>
-        <p>
+        {/* <p>
           After over a year of self study, I attended and graduated from Le
           Wagon London, a 9-week full-time intensive coding bootcamp teaching a
           variety of front-end and back-end technologies. I am passionate about
           continuing to develop my skills in this area.
+        </p> */}
+        <p>
+          Two years ago I started learning to code in my spare time, and I
+          quickly realised that Full-Stack Web Development was the area that
+          interested me most. For the last year I&apos;ve been learning to code
+          full time, and I&apos;m now looking for a role as a Junior Web
+          Developer. I&apos;m an outgoing, enthusiastic team player who is
+          passionate about creating accessible, user-friendly websites and
+          applications. I&apos;m a quick learner, and I&apos;m excited to
+          continue learning and developing both my technical and soft skills in
+          this area.
         </p>
         <br />
-        <p>
+        {/* <p>
           Since then I have been learning and working with the MERN stack by
           following{' '}
           <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">
@@ -35,19 +46,27 @@ export default function About(props) {
           and building his large final project &apos;YelpCamp&apos;. I have also
           been working on a few of my own projects, including this portfolio
           website.
-        </p>
+        </p> */}
         <h2 className="text-2xl pt-6 font-bold md:pb-3">My experience</h2>
         <div className="row">
           <img src={lewagonLogo} alt="" className="xl:hidden w-40 py-6" />
           <div className="flex">
             <p className="text-justify">
-              I&apos;m a graduate of Le Wagon, a 9-week full-time intensive web
-              development bootcamp based in London. During the bootcamp, I
-              worked with HTML, CSS, Bootstrap, Ruby, JavaScript ES6, SQL, git,
-              GitHub, Heroku, and Ruby on Rails. During the bootcamp I helped
-              design, implement, and ship to production both a clone of Airbnb
-              and a Rails prototype of “Mind Mission”, a mindfulness training
-              game for 9 to 11-year-olds.
+              I&apos;m a graduate of{' '}
+              <a
+                href="https://www.lewagon.com/london"
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2"
+              >
+                Le Wagon
+              </a>
+              , a 9-week full-time intensive web development bootcamp based in
+              London. During the bootcamp, I worked with HTML, CSS, Bootstrap,
+              Ruby, JavaScript ES6, SQL, git, GitHub, Heroku, and Ruby on Rails.
+              During the bootcamp I helped design, implement, and ship to
+              production both a clone of Airbnb and a Rails prototype of “Mind
+              Mission”, a mindfulness training game for 9 to 11-year-olds.
             </p>
             <img
               src={lewagonLogo}
@@ -65,12 +84,22 @@ export default function About(props) {
           />
           <p className="text-justify xl:pt-6">
             Before joining Le Wagon, my self-study comprised of Codecademy and
-            Udemy courses. A full list of my completed courses can be found{' '}
+            Udemy courses. Most recently I completed{' '}
+            <a
+              href="https://www.udemy.com/course/the-web-developer-bootcamp/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-2"
+            >
+              Colt Steele&apos;s web development course
+            </a>
+            . A full list of my completed courses can be found{' '}
             <AboutModal
               title={'here'}
               innerTitle={'Certificates'}
               darkMode={props.darkMode}
             />
+            .
           </p>
         </div>
 

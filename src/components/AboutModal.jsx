@@ -21,7 +21,7 @@ export default function AboutModal(props) {
 
   return (
     <>
-      <button onClick={toggleModal} className="btn-modal lg:mr-6">
+      <button onClick={toggleModal} className="btn-modal">
         <div className={`${props.darkMode ? 'border-white' : 'border-black'}`}>
           <h2 className="font-bold underline underline-offset-2">
             {props.title}
