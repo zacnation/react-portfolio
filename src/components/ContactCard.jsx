@@ -8,7 +8,7 @@ export default function ContactCard(props) {
       {props.id === 'email' ? (
         <div
           onClick={() =>
-            navigator.clipboard.writeText('zacnation.work@icloud.com')
+            navigator.clipboard.writeText('zac.nation.work@icloud.com')
           }
           className={`transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
             props.darkMode
