@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 export default function TechCard(props) {
   return (
-    <div className="flex py-4 items-center">
-      <i className={`text-4xl pr-2 md:pr-3 ${props.icon}`}></i>
+    <div className="flex py-4 items-center max-lg:flex-col max-lg:border max-lg:rounded-md max-lg:mb-3 max-lg:px-2">
+      <i className={`text-4xl max-lg:pb-3 lg:pr-2 ${props.icon}`}></i>
       <p>{props.description}</p>
     </div>
   );
