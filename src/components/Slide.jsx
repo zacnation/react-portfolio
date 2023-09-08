@@ -11,11 +11,7 @@ export default function Slide(props) {
       </div>
       <div className="md:ml-9">
         <h2 className="text-xl font-bold pt-2 md:pt-0">{props.title}</h2>
-        <div
-          className={`flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3 ${
-            props.darkMode ? 'text-white' : 'text-black'
-          }`}
-        >
+        <div className="flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3">
           {props.techs.map((item, index) => {
             return item === 'stimulus' ? (
               <img
