@@ -15,11 +15,7 @@ export default function Slide(props) {
           {props.techs.map((item, index) => {
             return item === 'stimulus' ? (
               <img
-                src={
-                  props.darkMode
-                    ? '../../dist/stimulus-svgrepo-com.svg'
-                    : 'https://www.svgrepo.com/show/354392/stimulus.svg'
-                }
+                src="stimulus2.png"
                 alt=""
                 className="w-6 h-6 inline"
                 key={index}
