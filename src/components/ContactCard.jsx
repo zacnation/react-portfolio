@@ -12,8 +12,8 @@ export default function ContactCard(props) {
           }
           className={`transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
             props.darkMode
-              ? 'bg-dark-I text-white border-white hover:bg-gray-200 hover:text-black'
-              : 'bg-white text-black border-gray-400 hover:bg-dark-I hover:text-white hover:border-dark-I'
+              ? 'bg-dark-I text-white border-gray-400 hover:border-white'
+              : 'bg-white text-black border-gray-400 hover:border-dark-I'
           }`}
         >
           <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />{' '}
@@ -31,8 +31,8 @@ export default function ContactCard(props) {
           rel="noreferrer"
           className={`transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
             props.darkMode
-              ? 'bg-dark-I text-white border-white hover:bg-gray-200 hover:text-black'
-              : 'bg-white text-black border-gray-400 hover:bg-dark-I hover:text-white hover:border-dark-I'
+              ? 'bg-dark-I text-white border-gray-400 hover:border-white'
+              : 'bg-white text-black border-gray-400 hover:border-dark-I'
           }`}
         >
           <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />{' '}
