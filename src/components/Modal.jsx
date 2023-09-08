@@ -30,7 +30,7 @@ export default function Modal(props) {
             props.darkMode ? 'border-white' : 'border-black'
           }`}
         >
-          <img src={props.iconSrc} alt="" className="w-16" />
+          <img src={props.iconSrc} alt="" className="w-8 md:w-12" />
           <h2 className="text-lg">{props.title}</h2>
         </div>
       </button>
