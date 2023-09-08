@@ -48,20 +48,22 @@ export default function Modal(props) {
           >
             <h2 className="font-bold text-2xl md:text-3xl">{props.title}</h2>
             {props.linkText && (
-              <a
-                href={props.urlSrc}
-                target="_blank"
-                rel="noreferrer"
-                className="text-lg font-bold underline underline-offset-8"
-              >
-                <div className="flex items-center">
+              <div className="flex">
+                <a
+                  href={props.urlSrc}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-lg font-bold underline underline-offset-8"
+                >
                   {props.linkText}
+                </a>
+                <div className="flex items-center">
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                     className="w-6 ml-2"
                   />
                 </div>
-              </a>
+              </div>
             )}
 
             <p className="mt-3">{props.description}</p>
