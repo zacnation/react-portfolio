@@ -11,19 +11,11 @@ export default function Slide(props) {
       </div>
       <div className="md:ml-9">
         <h2 className="text-xl font-bold pt-2 md:pt-0">{props.title}</h2>
-        <div
-          className={`flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3 ${
-            props.darkMode ? 'text-white' : 'text-black'
-          }`}
-        >
+        <div className="flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3">
           {props.techs.map((item, index) => {
             return item === 'stimulus' ? (
               <img
-                src={
-                  props.darkMode
-                    ? '../../dist/stimulus-svgrepo-com.svg'
-                    : 'https://www.svgrepo.com/show/354392/stimulus.svg'
-                }
+                src="stimulus2.png"
                 alt=""
                 className="w-6 h-6 inline"
                 key={index}
@@ -39,20 +31,24 @@ export default function Slide(props) {
           })}
         </div>
         <p className="md:w-96">{props.description}</p>
-        <div className="flex items-center space-x-2">
-          <a
-            href={props.link}
-            rel="noreferrer"
-            target={'_blank'}
-            className="font-bold underline underline-offset-2"
-          >
-            {props.title}{' '}
-          </a>
-          <FontAwesomeIcon
-            icon={faArrowUpRightFromSquare}
-            className="w-6 ml-2"
-          />
-        </div>
+        {props.title === 'Portfolio' ? (
+          ''
+        ) : (
+          <div className="flex items-center space-x-2">
+            <a
+              href={props.link}
+              rel="noreferrer"
+              target={'_blank'}
+              className="font-bold underline underline-offset-2"
+            >
+              {props.title}{' '}
+            </a>
+            <FontAwesomeIcon
+              icon={faArrowUpRightFromSquare}
+              className="w-6 ml-2"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
