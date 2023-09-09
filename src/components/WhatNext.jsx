@@ -4,11 +4,13 @@ import TechCard from './TechCard';
 export default function WhatNext(props) {
   return (
     <div
-      className={`transition-all duration-300 py-12 pl-2 pr-1 md:px-10 xl:px-60 2xl:px-96 ${
+      className={`transition-all duration-300 py-12 pl-2 pr-2 md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? 'bg-dark-II text-white' : 'bg-white text-black'
       }`}
     >
-      <h2 className="text-2xl font-bold pb-2">What&apos;s next?</h2>
+      <h2 className="text-2xl font-bold pb-2 text-center max-lg:pb-6 lg:text-3xl">
+        What&apos;s next?
+      </h2>
       <TechCard
         icon="devicon-nextjs-original"
         title="Next.js"
