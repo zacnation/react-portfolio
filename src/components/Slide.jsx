@@ -10,8 +10,10 @@ export default function Slide(props) {
         <img src={props.img} alt="" style={{ width: '400px' }} />
       </div>
       <div className="md:ml-9">
-        <h2 className="text-xl font-bold pt-2 md:pt-0">{props.title}</h2>
-        <div className="flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3">
+        <h2 className="text-xl font-bold pt-2 max-md:text-center md:pt-0">
+          {props.title}
+        </h2>
+        <div className="flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3 max-md:py-4">
           {props.techs.map((item, index) => {
             return item === 'stimulus' ? (
               <img
