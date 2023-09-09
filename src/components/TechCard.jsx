@@ -7,7 +7,9 @@ export default function TechCard(props) {
         <i className={`text-4xl ${props.icon}`}></i>
         <p className="max-lg:hidden">{props.title}</p>
       </div>
-      <p className="pt-3">{props.description}</p>
+      <p className="pt-3 text-center lg:text-justify lg:px-36">
+        {props.description}
+      </p>
     </div>
   );
 }
@@ -15,4 +17,5 @@ export default function TechCard(props) {
 TechCard.propTypes = {
   icon: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
