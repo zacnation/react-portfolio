@@ -33,10 +33,8 @@ export default function Contact(props) {
         </div>
         <div className="flex justify-center items-center">
           <ContactCard
-            id={'email'}
             icon={faEnvelope}
             title={'Email'}
-            url={'zacnation-yelpcamp.cyclic.app'}
             darkMode={props.darkMode}
           />
         </div>
