@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function ContactCard(props) {
   return (
     <>
-      {props.id === 'email' ? (
+      {props.title === 'Email' ? (
         <div
           onClick={() =>
-            navigator.clipboard.writeText('zac.nation.work@icloud.com')
+            navigator.clipboard.writeText('zac.nation.work@outlook.com')
           }
           className={`transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
             props.darkMode
@@ -47,6 +47,5 @@ ContactCard.propTypes = {
   darkMode: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  id: PropTypes.string,
+  url: PropTypes.string,
 };
