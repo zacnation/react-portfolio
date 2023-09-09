@@ -15,7 +15,7 @@ export default function Slide(props) {
           {props.techs.map((item, index) => {
             return item === 'stimulus' ? (
               <img
-                src="stimulus2.png"
+                src="stimulus.png"
                 alt=""
                 className="w-6 h-6 inline"
                 key={index}
