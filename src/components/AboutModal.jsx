@@ -46,11 +46,6 @@ export default function AboutModal(props) {
 
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               <img src="colt-certificate.jpeg" alt="" />
-              <img src="colt-certificate.jpeg" alt="" />
-              <img src="colt-certificate.jpeg" alt="" />
-              <img src="colt-certificate.jpeg" alt="" />
-              <img src="colt-certificate.jpeg" alt="" />
-              <img src="colt-certificate.jpeg" alt="" />
             </div>
 
             <button className="close-modal" onClick={toggleModal}>
