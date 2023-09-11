@@ -18,9 +18,7 @@ export default function About(props) {
       }`}
     >
       <div className="py-14 lg:py-0 px-3 md:px-0">
-        <h2 className="text-2xl font-bold pb-3 text-center lg:text-3xl">
-          About me
-        </h2>
+        <h2 className="text-3xl font-bold pb-3 text-center">About me</h2>
         {/* <p>
           After over a year of self study, I attended and graduated from Le
           Wagon London, a 9-week full-time intensive coding bootcamp teaching a
@@ -49,7 +47,7 @@ export default function About(props) {
           been working on a few of my own projects, including this portfolio
           website.
         </p> */}
-        <h2 className="text-2xl pt-6 font-bold md:pb-3 text-center lg:text-3xl">
+        <h2 className="text-3xl pt-6 font-bold md:pb-3 text-center">
           My experience
         </h2>
         <div className="row">
