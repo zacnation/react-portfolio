@@ -31,11 +31,11 @@ export default function WhatNext(props) {
         title="Rust"
         description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus."
       />
-      <TechCard
+      {/* <TechCard
         icon="devicon-unity-original"
         title="Unity"
         description="Vestibulum eu arcu eget nulla ornare gravida. Integer auctor dui et augue gravida cursus. Sed vel volutpat nibh. Aenean auctor dapibus efficitur. Phasellus nec pretium sem. Curabitur sagittis sagittis convallis."
-      />
+      /> */}
     </div>
   );
 }
