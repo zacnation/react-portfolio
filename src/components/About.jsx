@@ -89,7 +89,7 @@ export default function About(props) {
             className="w-32 pt-6 pb-4 lg:pb-3 xl:w-48 xl:pr-5 mx-auto"
           />
           <p className="text-justify xl:pt-6">
-            Before joining Le Wagon, my self-study comprised of Codecademy and
+            Before joining Le Wagon, my self-study consisted of Codecademy and
             Udemy courses. Most recently I completed{' '}
             <a
               href="https://www.udemy.com/course/the-web-developer-bootcamp/"
