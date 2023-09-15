@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Resources from './components/Resources';
 import 'tailwindcss/tailwind.css';
 import { useEffect } from 'react';
+import ParentComponent from './components/ParentComponent';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -48,8 +49,9 @@ export default function App() {
         toggleHamburger={toggleHamburger}
       />
       <Main darkMode={darkMode} />
-      <About darkMode={darkMode} />
-      <Projects darkMode={darkMode} />
+      {/* <About darkMode={darkMode} />
+      <Projects darkMode={darkMode} /> */}
+      <ParentComponent darkMode={darkMode} />
       <WhatNext darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Resources darkMode={darkMode} />
