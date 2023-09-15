@@ -14,6 +14,12 @@ export default function Modal(props) {
 
   const toggleModal = () => {
     setModal(!modal);
+    if (!modal && props.onOpen) {
+      props.onOpen(); // Call the onOpen function when opening the modal
+    }
+    if (modal && props.onClose) {
+      props.onClose(); // Call the onClose function when closing the modal
+    }
   };
 
   if (modal) {
@@ -91,4 +97,6 @@ Modal.propTypes = {
   urlSrc: PropTypes.string,
   imgSrc: PropTypes.string,
   linkText: PropTypes.string,
+  onOpen: PropTypes.func,
+  onClose: PropTypes.func,
 };

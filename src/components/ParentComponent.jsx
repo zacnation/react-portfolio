@@ -17,15 +17,16 @@ export default function ParentComponent(props) {
 
   return (
     <div>
-      <About darkMode={props.darkMode} />
-      <button onClick={openModal}>Open Modal</button>{' '}
-      {/* Add a button to open the modal */}
-      {!isModalOpen && <Projects darkMode={props.darkMode} />}
-      {isModalOpen && (
+      <About darkMode={props.darkMode} openModal={openModal} />
+      {isModalOpen ? (
         <Modal
           darkMode={props.darkMode}
-          onClose={closeModal} // Pass the closeModal function to the Modal component
+          onClose={() => {
+            closeModal();
+          }}
         />
+      ) : (
+        <Projects darkMode={props.darkMode} />
       )}
     </div>
   );
