@@ -17,17 +17,12 @@ export default function ParentComponent(props) {
 
   return (
     <div>
-      <About darkMode={props.darkMode} openModal={openModal} />
-      {isModalOpen ? (
-        <Modal
-          darkMode={props.darkMode}
-          onClose={() => {
-            closeModal();
-          }}
-        />
-      ) : (
-        <Projects darkMode={props.darkMode} />
-      )}
+      <About
+        darkMode={props.darkMode}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
+      {isModalOpen ? '' : <Projects darkMode={props.darkMode} />}
     </div>
   );
 }

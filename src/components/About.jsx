@@ -126,7 +126,7 @@ export default function About(props) {
             imgSrc={`${props.darkMode ? 'books-inverted.png' : 'books.png'}`}
             linkText={'My previously read'}
             onOpen={props.openModal}
-            onClose={props.onModalClose} // Pass the onClose callback
+            onClose={props.closeModal} // Pass the onClose callback
           />
           <Modal
             title={'BSL'}
@@ -140,7 +140,7 @@ export default function About(props) {
                 : 'sign-language.svg'
             }`}
             onOpen={props.openModal}
-            onClose={props.onModalClose} // Pass the onClose callback
+            onClose={props.closeModal} // Pass the onClose callback
           />
           <Modal
             title={'Technical skills'}
@@ -152,7 +152,7 @@ export default function About(props) {
               props.darkMode ? 'raspberry-pi-inverted.svg' : 'raspberry-pi.svg'
             }`}
             onOpen={props.openModal}
-            onClose={props.onModalClose} // Pass the onClose callback
+            onClose={props.closeModal} // Pass the onClose callback
           />
         </div>
       </div>
