@@ -63,6 +63,7 @@ export default function Modal(props) {
                   className="text-lg font-bold underline underline-offset-8"
                 >
                   {props.linkText}
+                  <span className="max-lg:hidden"> on Goodreads</span>
                 </a>
                 <div className="flex items-center">
                   <FontAwesomeIcon
