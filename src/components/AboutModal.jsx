@@ -11,6 +11,12 @@ export default function AboutModal(props) {
 
   const toggleModal = () => {
     setModal(!modal);
+    if (!modal && props.onOpen) {
+      props.onOpen(); // Call the onOpen function when opening the modal
+    }
+    if (modal && props.onClose) {
+      props.onClose(); // Call the onClose function when closing the modal
+    }
   };
 
   if (modal) {
@@ -65,4 +71,6 @@ AboutModal.propTypes = {
   darkMode: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   innerTitle: PropTypes.string.isRequired,
+  onOpen: PropTypes.func,
+  onClose: PropTypes.func,
 };

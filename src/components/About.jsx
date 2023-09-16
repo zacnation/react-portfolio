@@ -104,6 +104,8 @@ export default function About(props) {
               title={'here'}
               innerTitle={'Certificates'}
               darkMode={props.darkMode}
+              onOpen={props.openModal}
+              onClose={props.closeModal}
             />
             .
           </p>
@@ -126,7 +128,7 @@ export default function About(props) {
             imgSrc={`${props.darkMode ? 'books-inverted.png' : 'books.png'}`}
             linkText={'My previously read'}
             onOpen={props.openModal}
-            onClose={props.closeModal} // Pass the onClose callback
+            onClose={props.closeModal}
           />
           <Modal
             title={'BSL'}
@@ -140,7 +142,7 @@ export default function About(props) {
                 : 'sign-language.svg'
             }`}
             onOpen={props.openModal}
-            onClose={props.closeModal} // Pass the onClose callback
+            onClose={props.closeModal}
           />
           <Modal
             title={'Technical skills'}
@@ -152,7 +154,7 @@ export default function About(props) {
               props.darkMode ? 'raspberry-pi-inverted.svg' : 'raspberry-pi.svg'
             }`}
             onOpen={props.openModal}
-            onClose={props.closeModal} // Pass the onClose callback
+            onClose={props.closeModal}
           />
         </div>
       </div>
@@ -162,4 +164,6 @@ export default function About(props) {
 
 About.propTypes = {
   darkMode: PropTypes.bool.isRequired,
+  openModal: PropTypes.func,
+  closeModal: PropTypes.func,
 };

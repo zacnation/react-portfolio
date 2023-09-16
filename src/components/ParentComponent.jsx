@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import About from './About';
 import Projects from './Projects';
-import Modal from './Modal';
 
 export default function ParentComponent(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
