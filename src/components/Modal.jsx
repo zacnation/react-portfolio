@@ -43,7 +43,7 @@ export default function Modal(props) {
       </button>
 
       {modal && (
-        <div className="modal">
+        <div className="modal max-md:text-center text-justify">
           <div
             onClick={toggleModal}
             className={`${props.darkMode ? 'overlay-dark' : 'overlay'}`}
