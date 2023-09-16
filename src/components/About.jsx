@@ -145,7 +145,7 @@ export default function About(props) {
             onClose={props.closeModal}
           />
           <Modal
-            title={'Technical skills'}
+            title={'Tech skills'}
             description={
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium vitae turpis in sodales. Etiam ac leo ut metus viverra iaculis. Donec vitae orci urna. Quisque sed nibh a arcu vulputate eleifend non ut ipsum. Curabitur convallis nisl vel arcu placerat, id sagittis velit posuere. Nulla facilisi. Nam luctus tempus massa, ut vulputate risus ultricies sed. Aliquam tempus quis enim ac ultrices. Morbi nec lorem suscipit, viverra libero sed, hendrerit nunc. Aliquam erat volutpat. Ut consectetur ut libero ac luctus. Ut pellentesque est vel magna tempus, nec dictum leo venenatis. Sed at nibh venenatis, malesuada sapien nec, elementum leo. In accumsan lectus neque, at sollicitudin odio aliquam nec. In eu sollicitudin libero. Morbi iaculis augue at nibh ultricies, eget ullamcorper est vulputate. Suspendisse a mi faucibus, scelerisque est sit amet, elementum velit. Mauris id ligula ac eros ornare accumsan. Vivamus fermentum elementum arcu ac egestas. Nullam pulvinar justo at ante facilisis rutrum.'
             }
