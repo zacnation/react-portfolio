@@ -28,11 +28,9 @@ export default function AboutModal(props) {
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
-        <div className={`${props.darkMode ? 'border-white' : 'border-black'}`}>
-          <h2 className="font-bold underline underline-offset-2">
-            {props.title}
-          </h2>
-        </div>
+        <h2 className="font-bold underline underline-offset-2">
+          {props.title}
+        </h2>
       </button>
 
       {modal && (
@@ -51,7 +49,24 @@ export default function AboutModal(props) {
             </h2>
 
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+              <img src="lewagon.png" alt="" />
+              <img
+                src={`${props.darkMode ? 'bcs-inverted.svg' : 'bcs.svg'}`}
+                alt=""
+                className="w-32"
+              />
               <img src="colt-certificate.jpeg" alt="" />
+              <img src="js13.png" alt="" />
+              <img src="react13.png" alt="" />
+              <img src="node13.png" alt="" />
+              <img src="express13.png" alt="" />
+              <img src="git13.png" alt="" />
+              <img src="python13.png" alt="" />
+              <img src="ruby13.png" alt="" />
+              <img src="rails13.png" alt="" />
+              <img src="sql13.png" alt="" />
+              <img src="testing13.png" alt="" />
+              <img src="emoji13.png" alt="" />
             </div>
 
             <button className="close-modal" onClick={toggleModal}>
