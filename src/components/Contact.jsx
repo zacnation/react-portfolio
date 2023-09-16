@@ -7,6 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 export default function Contact(props) {
   return (
     <div
+      id="contact"
       className={`transition-all duration-300 py-12 px-3 md:px-10 xl:px-60 2xl:px-96 ${
         props.darkMode ? 'bg-dark-I text-white' : 'bg-white text-black'
       }`}
