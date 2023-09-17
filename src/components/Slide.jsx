@@ -51,24 +51,6 @@ export default function Slide(props) {
         <p className="md:w-96 overflow-y-auto max-sm:h-80 h-44 border rounded p-2">
           {props.description}
         </p>
-        {/* {props.title === 'Portfolio' ? (
-          ''
-        ) : (
-          <div className="flex items-center space-x-2 pt-2">
-            <a
-              href={props.link}
-              rel="noreferrer"
-              target={'_blank'}
-              className="font-bold underline underline-offset-2"
-            >
-              {props.title}{' '}
-            </a>
-            <FontAwesomeIcon
-              icon={faArrowUpRightFromSquare}
-              className="w-6 ml-2"
-            />
-          </div>
-        )} */}
       </div>
     </div>
   );

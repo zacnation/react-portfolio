@@ -9,7 +9,9 @@ export default function Projects(props) {
         props.darkMode ? 'bg-dark-I text-white' : 'bg-light text-black'
       }`}
     >
-      <h2 className="text-center text-2xl font-bold pb-6 md:pb-9">Projects</h2>
+      <h2 className="text-center text-2xl font-bold pb-6 md:pb-9 lg:text-3xl">
+        Projects
+      </h2>
       <Carousel />
     </section>
   );

@@ -32,6 +32,7 @@ export default function Carousel() {
               'mongodb',
               'express',
               'nodejs',
+              'git',
             ]}
             link="https://zacnation-yelpcamp.cyclic.app/"
           />
@@ -54,7 +55,7 @@ export default function Carousel() {
             description={
               'This portfolio site is built with React and Tailwind CSS. It is deployed on Netlify. I used Git for version control. It is a work in progress. It is optimised for mobile devices. Also, I used the Swiper React component to create the carousel.'
             }
-            techs={['html5', 'css3', 'tailwindcss', 'react']}
+            techs={['html5', 'css3', 'tailwindcss', 'react', 'git']}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -64,7 +65,7 @@ export default function Carousel() {
             description={
               'Mind Mission is a mindfulness training game for 9 to 11-year-olds. It is designed to help children learn how to manage their emotions and develop various coping mechanisms through the challenges they solve.'
             }
-            techs={['ruby', 'rails', 'javascript', 'stimulus']}
+            techs={['ruby', 'rails', 'javascript', 'css3', 'git']}
             link="https://www.mind-mission.me/"
           />
         </SwiperSlide>
