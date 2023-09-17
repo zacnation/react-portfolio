@@ -22,7 +22,7 @@ export default function Carousel() {
             img={'yelpcampgray.png'}
             title={'YelpCamp'}
             description={
-              'YelpCamp is... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              'YelpCamp is a fullstack web application that allows users to create and review campgrounds. It is built with Node.js, Express, MongoDB, and Bootstrap. Authentication is implemented using Passport.js. Users can create, edit, and delete campgrounds and comments. They can also upload campground photos. The app is deployed on Heroku. YelpCamp is a project from the Udemy course - The Web Developer Bootcamp by Colt Steele. I added some features to the app, such as the ability to upload campground photos, edit and delete comments, and delete campgrounds. I also added a landing page and a 404 page. I used Bootstrap to style the app. I deployed the app on Heroku. I used MongoDB Atlas to host the database. I used Cloudinary to host the images. I used SendGrid to send emails. I used Mapbox to display the map on the campground show page. I used Heroku Scheduler to schedule a job to delete campgrounds and comments that are older than 24 hours. I used Git for version control.'
             }
             techs={[
               'html5',
@@ -62,7 +62,7 @@ export default function Carousel() {
             img={'mindmissiongray.png'}
             title={'Mind Mission'}
             description={
-              'Mind Mission is a mindfulness training game... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              'Mind Mission is a mindfulness training game for 9 to 11-year-olds. It is designed to help children learn how to manage their emotions and develop various coping mechanisms through the challenges they solve.'
             }
             techs={['ruby', 'rails', 'javascript', 'stimulus']}
             link="https://www.mind-mission.me/"

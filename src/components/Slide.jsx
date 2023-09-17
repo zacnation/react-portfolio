@@ -32,11 +32,13 @@ export default function Slide(props) {
             );
           })}
         </div>
-        <p className="md:w-96">{props.description}</p>
+        <p className="md:w-96 overflow-y-auto max-sm:h-80 h-44 border rounded p-2">
+          {props.description}
+        </p>
         {props.title === 'Portfolio' ? (
           ''
         ) : (
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 pt-2">
             <a
               href={props.link}
               rel="noreferrer"
