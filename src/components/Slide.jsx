@@ -10,9 +10,25 @@ export default function Slide(props) {
         <img src={props.img} alt="" style={{ width: '400px' }} />
       </div>
       <div className="md:ml-9">
-        <h2 className="text-xl font-bold pt-2 max-md:text-center md:pt-0">
-          {props.title}
-        </h2>
+        {props.title === 'Portfolio' ? (
+          <h2 className="text-xl font-bold md:pt-0">Portfolio</h2>
+        ) : (
+          <div className="flex items-center max-md:justify-center space-x-2 pt-2 hover:underline underline-offset-2">
+            <a
+              href={props.link}
+              rel="noreferrer"
+              target={'_blank'}
+              className="text-xl font-bold md:pt-0"
+            >
+              {props.title}{' '}
+            </a>
+            <FontAwesomeIcon
+              icon={faArrowUpRightFromSquare}
+              className="w-6 ml-2"
+            />
+          </div>
+        )}
+
         <div className="flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3 max-md:py-4">
           {props.techs.map((item, index) => {
             return item === 'stimulus' ? (
@@ -35,7 +51,7 @@ export default function Slide(props) {
         <p className="md:w-96 overflow-y-auto max-sm:h-80 h-44 border rounded p-2">
           {props.description}
         </p>
-        {props.title === 'Portfolio' ? (
+        {/* {props.title === 'Portfolio' ? (
           ''
         ) : (
           <div className="flex items-center space-x-2 pt-2">
@@ -52,7 +68,7 @@ export default function Slide(props) {
               className="w-6 ml-2"
             />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

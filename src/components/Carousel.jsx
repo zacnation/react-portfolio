@@ -41,7 +41,7 @@ export default function Carousel() {
             img={'lightsout.png'}
             title={'Lights Out'}
             description={
-              'Lights Out is... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              'Lights Out is a simple React game that uses state and props. The goal of the game is to turn all the lights out. Clicking on a light toggles it and its adjacent lights. The game is won when all the lights are turned out.'
             }
             techs={['html5', 'css3', 'javascript', 'react']}
             link="https://www.mind-mission.me/"
@@ -52,7 +52,7 @@ export default function Carousel() {
             img={'portfolio.png'}
             title={'Portfolio'}
             description={
-              'Lights Out is... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              'This portfolio site is built with React and Tailwind CSS. It is deployed on Netlify. I used Git for version control. It is a work in progress. It is optimised for mobile devices. Also, I used the Swiper React component to create the carousel.'
             }
             techs={['html5', 'css3', 'tailwindcss', 'react']}
           />
