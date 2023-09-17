@@ -22,20 +22,21 @@ export default function WhatNext(props) {
         description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus"
       />
       <TechCard
+        icon="devicon-rust-plain"
+        title="Rust"
+        description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus."
+      />
+      <TechCard
         icon="devicon-raspberrypi-line"
         title="Raspberry Pi"
         description="Proin purus ligula, vulputate et erat quis, rhoncus congue risus. Aenean nisi sem, rhoncus in ex vel, semper efficitur enim. Nulla efficitur ex nec condimentum maximus. Nullam mattis odio vitae pharetra eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sagittis velit eu luctus tincidunt."
       />
       <TechCard
-        icon="devicon-rust-plain"
-        title="Rust"
-        description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus."
-      />
-      {/* <TechCard
-        icon="devicon-unity-original"
-        title="Unity"
+        icon="godot"
+        title="2D game development"
         description="Vestibulum eu arcu eget nulla ornare gravida. Integer auctor dui et augue gravida cursus. Sed vel volutpat nibh. Aenean auctor dapibus efficitur. Phasellus nec pretium sem. Curabitur sagittis sagittis convallis."
-      /> */}
+        darkMode={props.darkMode}
+      />
     </div>
   );
 }
