@@ -36,6 +36,7 @@ export default function Main(props) {
             {/* <i className="devicon-typescript-plain"></i> */}
             <i className="devicon-ruby-plain"></i>
             <i className="devicon-rails-plain"></i>
+            <i className="devicon-git-plain"></i>
             {/* <i className="devicon-postgresql-plain"></i> */}
             {/* <i className="devicon-jest-plain"></i> */}
           </div>
