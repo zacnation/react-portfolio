@@ -14,27 +14,27 @@ export default function WhatNext(props) {
       <TechCard
         icon="devicon-nextjs-original"
         title="Next.js"
-        description="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tempus mollis neque a elementum. Suspendisse rutrum eros tellus, at condimentum ex imperdiet sit amet. Maecenas varius eleifend orci eu rhoncus."
+        description="Next.js is a React framework that I'd like to learn more about. I've been looking at building a blog with it, as well as a portfolio website. I think it would be interesting to see how a more opinionated approach to React development compares to the more flexible approach I've been using."
       />
       <TechCard
         icon="devicon-python-plain"
         title="Python 3"
-        description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus"
+        description="I've got some experience with Python, but I'd like to learn more about it. I'd like to learn more about Python's data science and machine learning capabilities, as well as its web development capabilities. I'd also like to learn more about Python's use in automation."
       />
       <TechCard
         icon="devicon-rust-plain"
         title="Rust"
-        description="Suspendisse fermentum quam quis mi ultricies aliquet. Aenean mattis, lorem at feugiat vehicula, felis magna maximus turpis, vel finibus."
+        description="Rust interests me as I think it's a great language for learning about memory management and low-level programming. I'd like to learn more about it and build some projects with it."
       />
       <TechCard
         icon="devicon-raspberrypi-line"
         title="Raspberry Pi"
-        description="Proin purus ligula, vulputate et erat quis, rhoncus congue risus. Aenean nisi sem, rhoncus in ex vel, semper efficitur enim. Nulla efficitur ex nec condimentum maximus. Nullam mattis odio vitae pharetra eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sagittis velit eu luctus tincidunt."
+        description="I'd love to get into Raspberry Pi development. I've been looking at building a home automation system using a Raspberry Pi, as well as a a retro gaming console, and a Pi-Hole - a network-wide ad blocker."
       />
       <TechCard
         icon="devicon-unrealengine-original"
         title="2D game development"
-        description="Vestibulum eu arcu eget nulla ornare gravida. Integer auctor dui et augue gravida cursus. Sed vel volutpat nibh. Aenean auctor dapibus efficitur. Phasellus nec pretium sem. Curabitur sagittis sagittis convallis."
+        description="I'd like to study 2D game development more as a way to branch out to other areas of software development. I've always been interested in game development, but I've never had the time to learn it. I've been looking at Godot and Unreal Engine as possible options."
         darkMode={props.darkMode}
       />
     </div>
