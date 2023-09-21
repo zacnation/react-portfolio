@@ -40,6 +40,18 @@ export default function Contact(props) {
           />
         </div>
       </div>
+      <div className="flex flex-col justify-center items-center">
+        <a href="#main" className="mt-20 animate-bounce">
+          <img
+            src={props.darkMode ? 'up-arrow-inverted.svg' : 'up-arrow.svg'}
+            alt=""
+            className="w-14"
+          />
+        </a>
+        <a href="#main">
+          <p className="text-lg font-bold">Back to top</p>
+        </a>
+      </div>
     </div>
   );
 }
