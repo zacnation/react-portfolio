@@ -147,7 +147,7 @@ export default function About(props) {
           <Modal
             title={'Tech skills'}
             description={
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium vitae turpis in sodales. Etiam ac leo ut metus viverra iaculis. Donec vitae orci urna. Quisque sed nibh a arcu vulputate eleifend non ut ipsum. Curabitur convallis nisl vel arcu placerat, id sagittis velit posuere. Nulla facilisi. Nam luctus tempus massa, ut vulputate risus ultricies sed. Aliquam tempus quis enim ac ultrices. Morbi nec lorem suscipit, viverra libero sed, hendrerit nunc. Aliquam erat volutpat. Ut consectetur ut libero ac luctus. Ut pellentesque est vel magna tempus, nec dictum leo venenatis. Sed at nibh venenatis, malesuada sapien nec, elementum leo. In accumsan lectus neque, at sollicitudin odio aliquam nec. In eu sollicitudin libero. Morbi iaculis augue at nibh ultricies, eget ullamcorper est vulputate. Suspendisse a mi faucibus, scelerisque est sit amet, elementum velit. Mauris id ligula ac eros ornare accumsan. Vivamus fermentum elementum arcu ac egestas. Nullam pulvinar justo at ante facilisis rutrum.'
+              'Gaining skills such as being able to work with the terminal, using git and GitHub, and deploying with Netlify / Cyclic has been great. Next, I want to learn more about the cloud and AWS, as well as how to work with Docker and Kubernetes, work with a Raspberry Pi for IoT projects, and continue to learn more about areas such as cybersecurity and data structures and algorithms. I feel even having a foundational understanding of these areas will help me become a better developer.'
             }
             darkMode={props.darkMode}
             iconSrc={`${
