@@ -19,12 +19,6 @@ export default function About(props) {
     >
       <div className="py-14 lg:py-0 px-3 md:px-0">
         <h2 className="text-3xl font-bold pb-3 text-center">About me</h2>
-        {/* <p>
-          After over a year of self study, I attended and graduated from Le
-          Wagon London, a 9-week full-time intensive coding bootcamp teaching a
-          variety of front-end and back-end technologies. I am passionate about
-          continuing to develop my skills in this area.
-        </p> */}
         <p className="text-justify">
           Two years ago I started learning to code in my spare time, and I
           quickly realised that Full-Stack Web Development was the area that
@@ -36,17 +30,6 @@ export default function About(props) {
           continue learning and developing both my technical and soft skills in
           this area.
         </p>
-        <br />
-        {/* <p>
-          Since then I have been learning and working with the MERN stack by
-          following{' '}
-          <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">
-            Colt Steele&apos;s Web Development course
-          </a>{' '}
-          and building his large final project &apos;YelpCamp&apos;. I have also
-          been working on a few of my own projects, including this portfolio
-          website.
-        </p> */}
         <h2 className="text-3xl pt-6 font-bold md:pb-3 text-center">
           My experience
         </h2>
