@@ -17,7 +17,6 @@ export default function Navbar(props) {
             Zac Nation
           </a>
           <div className="flex items-center space-x-4">
-            {/* primary nav */}
             <div className="pt-1.5">
               <ToggleSwitch
                 darkMode={props.darkMode}
@@ -27,7 +26,6 @@ export default function Navbar(props) {
               />
             </div>
 
-            {/* secondary nav */}
             <div className="hidden md:flex items-center space-x-3 font-bold">
               <a href="#main" className="py-8 px-3">
                 Home
@@ -43,7 +41,6 @@ export default function Navbar(props) {
               </a>
             </div>
 
-            {/* mobile button */}
             <div className="md:hidden flex items-center">
               <button onClick={props.toggleHamburger}>
                 <svg
@@ -66,7 +63,6 @@ export default function Navbar(props) {
         </div>
       </div>
 
-      {/* mobile menu */}
       <div className={`md:hidden font-bold ${props.hamburger ? '' : 'hidden'}`}>
         <a href="#main" className="block px-2 py-4 text-sm hover:bg-gray-700">
           Home

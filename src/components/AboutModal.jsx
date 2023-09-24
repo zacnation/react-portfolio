@@ -12,10 +12,10 @@ export default function AboutModal(props) {
   const toggleModal = () => {
     setModal(!modal);
     if (!modal && props.onOpen) {
-      props.onOpen(); // Call the onOpen function when opening the modal
+      props.onOpen();
     }
     if (modal && props.onClose) {
-      props.onClose(); // Call the onClose function when closing the modal
+      props.onClose();
     }
   };
 

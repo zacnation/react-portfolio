@@ -15,10 +15,10 @@ export default function Modal(props) {
   const toggleModal = () => {
     setModal(!modal);
     if (!modal && props.onOpen) {
-      props.onOpen(); // Call the onOpen function when opening the modal
+      props.onOpen();
     }
     if (modal && props.onClose) {
-      props.onClose(); // Call the onClose function when closing the modal
+      props.onClose();
     }
   };
 
@@ -30,7 +30,6 @@ export default function Modal(props) {
 
   return (
     <>
-      {/* Button to open the modal */}
       <button onClick={toggleModal} className="btn-modal lg:mr-6">
         <div
           className={`flex items-center space-x-2 border-solid border-2 py-2 px-6 rounded ${

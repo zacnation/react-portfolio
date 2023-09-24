@@ -1,11 +1,8 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
-import About from './components/About';
-import Projects from './components/Projects';
 import WhatNext from './components/WhatNext';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Resources from './components/Resources';
 import 'tailwindcss/tailwind.css';
 import { useEffect } from 'react';
@@ -49,13 +46,10 @@ export default function App() {
         toggleHamburger={toggleHamburger}
       />
       <Main darkMode={darkMode} />
-      {/* <About darkMode={darkMode} />
-      <Projects darkMode={darkMode} /> */}
       <ParentComponent darkMode={darkMode} />
       <WhatNext darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Resources darkMode={darkMode} />
-      {/* <Footer darkMode={darkMode} /> */}
     </div>
   );
 }

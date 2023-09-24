@@ -10,33 +10,6 @@ export default function Footer(props) {
         props.darkMode ? 'bg-very-dark text-white' : 'bg-light text-black'
       }`}
     >
-      {/* <div>
-        <a href="https://github.com/zacnation" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="w-6 h-6 pr-2 hover:text-slate-600"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/zacnation/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="w-6 h-6 hover:text-slate-600"
-          />
-        </a>
-      </div>
-      <p className="text-lg">
-        Made with{' '}
-        <FontAwesomeIcon
-          icon={faHeart}
-          className="heart-icon hover:text-pink-600"
-        />{' '}
-        (and <i className="devicon-vscode-plain"></i>)
-      </p> */}
-
       <FontAwesomeIcon icon={faJediOrder} className="w-6 h-6" />
       <FontAwesomeIcon
         icon={faHeart}

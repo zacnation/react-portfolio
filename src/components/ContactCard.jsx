@@ -1,16 +1,16 @@
-import React, { useState } from 'react'; // Import useState
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ContactCard(props) {
-  const [copied, setCopied] = useState(false); // Initialize a state variable
+  const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText('zac.nation.work@outlook.com');
-    setCopied(true); // Set copied to true when the div is clicked
+    setCopied(true);
 
     setTimeout(() => {
-      setCopied(false); // Reset copied to false after 2 seconds
+      setCopied(false);
     }, 1500);
   };
 
