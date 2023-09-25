@@ -56,6 +56,14 @@ export default function Slide(props) {
             })}
           </div>
           <p className="md:w-96 overflow-y-auto max-sm:h-80 h-44 border rounded p-2">
+            {props.email && (
+              <>
+                <strong>{props.email}</strong>
+                <br />
+                <strong>{props.password}</strong>
+                <br />
+              </>
+            )}
             {props.description}
           </p>
         </div>
@@ -71,4 +79,6 @@ Slide.propTypes = {
   description: PropTypes.string,
   techs: PropTypes.arrayOf(PropTypes.string),
   link: PropTypes.string,
+  email: PropTypes.string,
+  password: PropTypes.string,
 };
