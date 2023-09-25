@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import TechCard from './TechCard';
 
-export default function WhatNext(props) {
+export default function WhatNext({ darkMode }) {
   return (
     <div
       className={`transition-all duration-300 py-12 pl-2 pr-2 md:px-10 xl:px-60 2xl:px-96 ${
-        props.darkMode ? 'bg-dark-II text-white' : 'bg-white text-black'
+        darkMode ? 'bg-dark-II text-white' : 'bg-white text-black'
       }`}
     >
       <h2 className="text-2xl font-bold pb-2 text-center max-lg:pb-6 lg:text-3xl">
@@ -35,7 +35,7 @@ export default function WhatNext(props) {
         icon="devicon-unrealengine-original"
         title="2D game development"
         description="I'd like to study 2D game development more as a way to branch out to other areas of software development. I've always been interested in game development, but I've never had the time to learn it. I've been looking at Godot and Unreal Engine as possible options."
-        darkMode={props.darkMode}
+        darkMode={darkMode}
       />
     </div>
   );

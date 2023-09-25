@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import About from './About';
 import Projects from './Projects';
 
-export default function ParentComponent(props) {
+export default function ParentComponent({ darkMode }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -17,11 +17,11 @@ export default function ParentComponent(props) {
   return (
     <div>
       <About
-        darkMode={props.darkMode}
+        darkMode={darkMode}
         openModal={openModal}
         closeModal={closeModal}
       />
-      {isModalOpen ? '' : <Projects darkMode={props.darkMode} />}
+      {isModalOpen ? '' : <Projects darkMode={darkMode} />}
     </div>
   );
 }
