@@ -12,7 +12,7 @@ export default function Projects({ darkMode }) {
       <h2 className="text-center text-2xl font-bold pb-6 md:pb-9 lg:text-3xl">
         Projects
       </h2>
-      <Carousel />
+      <Carousel darkMode={darkMode} />
     </section>
   );
 }

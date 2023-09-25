@@ -5,10 +5,11 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Slide from './Slide';
 
-export default function Carousel() {
+export default function Carousel({ darkMode }) {
   const swiperOptions = {
     loop: true,
   };
+
   return (
     <div className="pb-10 md:pb-12 lg:pb-20">
       <Swiper
@@ -16,6 +17,7 @@ export default function Carousel() {
         modules={[Navigation]}
         className="Carousel"
         {...swiperOptions}
+        style={{ '--swiper-navigation-color': darkMode ? '#fff' : '#000' }}
       >
         <SwiperSlide>
           <Slide
