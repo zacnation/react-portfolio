@@ -18,14 +18,25 @@ export default function Slide(props) {
         </div>
         <div className="md:ml-9">
           {props.title === 'Portfolio' ? (
-            <h2 className="text-xl font-bold md:pt-0">Portfolio</h2>
+            <div className="flex items-center space-x-3">
+              <h2 className="text-xl font-bold md:pt-0">Portfolio</h2>
+              <p
+                className={`px-2 py-1 rounded ${
+                  props.darkMode
+                    ? 'bg-light text-black'
+                    : 'bg-dark-I text-white'
+                }`}
+              >
+                {props.badge}
+              </p>
+            </div>
           ) : (
-            <div className="flex items-center max-md:justify-center space-x-2 pt-2 hover:underline underline-offset-2">
+            <div className="flex items-center max-md:justify-center space-x-2 pt-2">
               <a
                 href={props.link}
                 rel="noreferrer"
                 target={'_blank'}
-                className="text-xl font-bold md:pt-0"
+                className="text-xl font-bold md:pt-0 hover:underline underline-offset-2"
               >
                 {props.title}{' '}
               </a>
@@ -33,6 +44,17 @@ export default function Slide(props) {
                 icon={faArrowUpRightFromSquare}
                 className="w-6 ml-2"
               />
+              {props.badge && (
+                <p
+                  className={`px-2 py-1 rounded ${
+                    props.darkMode
+                      ? 'bg-light text-black'
+                      : 'bg-dark-I text-white'
+                  }`}
+                >
+                  {props.badge}
+                </p>
+              )}
             </div>
           )}
 
@@ -81,4 +103,5 @@ Slide.propTypes = {
   link: PropTypes.string,
   email: PropTypes.string,
   password: PropTypes.string,
+  badge: PropTypes.string,
 };
