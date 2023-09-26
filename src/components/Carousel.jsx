@@ -39,6 +39,8 @@ export default function Carousel({ darkMode }) {
               'git',
             ]}
             link="https://zacnation-yelpcamp.cyclic.app/"
+            badge="In Progress"
+            darkMode={darkMode}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -50,6 +52,8 @@ export default function Carousel({ darkMode }) {
             }
             techs={['html5', 'css3', 'javascript', 'react']}
             link="https://www.mind-mission.me/"
+            badge="Coming Soon"
+            darkMode={darkMode}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -60,6 +64,8 @@ export default function Carousel({ darkMode }) {
               'This portfolio site is built with React and Tailwind CSS. It is deployed on Netlify. I used Git for version control. It is a work in progress. It is optimised for mobile devices. Also, I used the Swiper React component to create the carousel.'
             }
             techs={['html5', 'css3', 'tailwindcss', 'react', 'git']}
+            badge="In Progress"
+            darkMode={darkMode}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -73,6 +79,7 @@ export default function Carousel({ darkMode }) {
             }
             techs={['ruby', 'rails', 'javascript', 'css3', 'git']}
             link="https://www.mind-mission.me/"
+            darkMode={darkMode}
           />
         </SwiperSlide>
       </Swiper>
