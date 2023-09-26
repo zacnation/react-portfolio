@@ -40,14 +40,16 @@ export default function ContactCard(props) {
             data-tooltip={'Single click to copy, double click to open mail app'}
           >
             {copied ? (
-              <p className="text-lg">Copied!</p>
+              <p className="text-lg select-none">Copied!</p>
             ) : (
               <>
                 <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />
-                <p className="text-lg">{copied ? 'Copied!' : 'Email'}</p>
+                <p className="text-lg select-none">
+                  {copied ? 'Copied!' : 'Email'}
+                </p>
                 <img
                   src={props.darkMode ? 'link-inverted.svg' : 'link.svg'}
-                  className="w-7 pl-1 animate-pulse"
+                  className="w-7 pl-1 animate-pulse select-none"
                   alt=""
                 />
               </>
@@ -71,7 +73,7 @@ export default function ContactCard(props) {
           }`}
         >
           <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />{' '}
-          <p className="text-lg">{props.title}</p>
+          <p className="text-lg select-none">{props.title}</p>
         </a>
       )}{' '}
     </>
