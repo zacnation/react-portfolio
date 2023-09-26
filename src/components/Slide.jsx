@@ -31,12 +31,12 @@ export default function Slide(props) {
               </p>
             </div>
           ) : (
-            <div className="flex items-center max-md:justify-center space-x-2 pt-2 hover:underline underline-offset-2">
+            <div className="flex items-center max-md:justify-center space-x-2 pt-2">
               <a
                 href={props.link}
                 rel="noreferrer"
                 target={'_blank'}
-                className="text-xl font-bold md:pt-0"
+                className="text-xl font-bold md:pt-0 hover:underline underline-offset-2"
               >
                 {props.title}{' '}
               </a>
