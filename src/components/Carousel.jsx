@@ -45,18 +45,6 @@ export default function Carousel({ darkMode }) {
         </SwiperSlide>
         <SwiperSlide>
           <Slide
-            img={'lightsout.png'}
-            title={'Lights Out'}
-            description={
-              'Lights Out is a simple React game that uses state and props. The goal of the game is to turn all the lights out. Clicking on a light toggles it and its adjacent lights. The game is won when all the lights are turned out.'
-            }
-            techs={['html5', 'css3', 'javascript', 'react']}
-            badge="Coming Soon"
-            darkMode={darkMode}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide
             img={'portfolio.png'}
             title={'Portfolio'}
             description={
@@ -64,6 +52,18 @@ export default function Carousel({ darkMode }) {
             }
             techs={['html5', 'css3', 'tailwindcss', 'react', 'git']}
             badge="In Progress"
+            darkMode={darkMode}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Slide
+            img={'lightsout.png'}
+            title={'Lights Out'}
+            description={
+              'Lights Out is a simple React game that uses state and props. The goal of the game is to turn all the lights out. Clicking on a light toggles it and its adjacent lights. The game is won when all the lights are turned out.'
+            }
+            techs={['html5', 'css3', 'javascript', 'react']}
+            badge="Coming Soon"
             darkMode={darkMode}
           />
         </SwiperSlide>
