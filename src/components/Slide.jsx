@@ -17,7 +17,7 @@ export default function Slide(props) {
           />
         </div>
         <div className="md:ml-9">
-          {props.title === 'Portfolio' ? (
+          {/* {props.title === 'Portfolio' ? (
             <div className="flex items-center space-x-3">
               <h2 className="text-xl font-bold md:pt-0">Portfolio</h2>
               <p
@@ -30,35 +30,37 @@ export default function Slide(props) {
                 {props.badge}
               </p>
             </div>
-          ) : (
-            <div className="flex items-center max-md:justify-center space-x-2 pt-2">
-              <a
-                href={props.link}
-                rel="noreferrer"
-                target={'_blank'}
-                className={`text-xl font-bold md:pt-0 ${
-                  props.link && 'hover:underline underline-offset-2'
-                }`}
-              >
-                {props.title}{' '}
-              </a>
+          ) : ( */}
+          <div className="flex items-center max-md:justify-center space-x-2 pt-2">
+            <a
+              href={props.link}
+              rel="noreferrer"
+              target={'_blank'}
+              className={`text-xl font-bold md:pt-0 ${
+                props.link && 'hover:underline underline-offset-2'
+              }`}
+            >
+              {props.title}{' '}
+            </a>
+            {props.link && (
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
                 className="w-6 ml-2"
               />
-              {props.badge && (
-                <p
-                  className={`px-2 py-1 rounded ${
-                    props.darkMode
-                      ? 'bg-light text-black'
-                      : 'bg-dark-I text-white'
-                  }`}
-                >
-                  {props.badge}
-                </p>
-              )}
-            </div>
-          )}
+            )}
+            {props.badge && (
+              <p
+                className={`px-2 py-1 rounded ${
+                  props.darkMode
+                    ? 'bg-light text-black'
+                    : 'bg-dark-I text-white'
+                }`}
+              >
+                {props.badge}
+              </p>
+            )}
+          </div>
+          {/* )} */}
 
           <div className="flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3 max-md:py-4">
             {props.techs.map((item, index) => {
