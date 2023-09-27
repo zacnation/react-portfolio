@@ -51,7 +51,6 @@ export default function Carousel({ darkMode }) {
               'Lights Out is a simple React game that uses state and props. The goal of the game is to turn all the lights out. Clicking on a light toggles it and its adjacent lights. The game is won when all the lights are turned out.'
             }
             techs={['html5', 'css3', 'javascript', 'react']}
-            link="https://www.mind-mission.me/"
             badge="Coming Soon"
             darkMode={darkMode}
           />

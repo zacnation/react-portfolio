@@ -36,7 +36,9 @@ export default function Slide(props) {
                 href={props.link}
                 rel="noreferrer"
                 target={'_blank'}
-                className="text-xl font-bold md:pt-0 hover:underline underline-offset-2"
+                className={`text-xl font-bold md:pt-0 ${
+                  props.link && 'hover:underline underline-offset-2'
+                }`}
               >
                 {props.title}{' '}
               </a>
