@@ -75,7 +75,6 @@ export default function Modal(props) {
 
             <p className="mt-3">{props.description}</p>
             <img src={props.imgSrc} alt="" className="m-auto" />
-            {/* Button to close the modal */}
             <button className="close-modal" onClick={toggleModal}>
               <FontAwesomeIcon
                 icon={faTimes}

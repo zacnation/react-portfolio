@@ -1,23 +1,23 @@
 .email {
-  position: relative; /* Make the parent div a positioning context */
+  position: relative;
 }
 
 .email::before {
   content: attr(data-tooltip);
   width: 200px;
-  position: absolute; /* Position the tooltip absolutely */
-  bottom: 120%; /* Position it above the div */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  background-color: #000; /* Tooltip background color */
-  color: white; /* Tooltip text color */
-  padding: 0.5rem; /* Add padding to the tooltip */
-  border-radius: 4px; /* Add rounded corners */
-  opacity: 0; /* Initially hide the tooltip */
-  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
-  pointer-events: none; /* Make the tooltip not block interactions with the div */
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 .email:hover::before {
-  opacity: 1; /* Show the tooltip on hover */
+  opacity: 1;
 }
