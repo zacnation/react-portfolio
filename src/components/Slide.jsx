@@ -36,7 +36,7 @@ export default function Slide(props) {
             )}
             {props.badge && (
               <p
-                className={`px-2 py-1 rounded ${
+                className={`px-2 py-1 rounded max-md:text-xs max-md:px-1 ${
                   props.darkMode
                     ? 'bg-light text-black'
                     : 'bg-dark-I text-white'
