@@ -69,6 +69,28 @@ export default function Carousel({ darkMode }) {
         </SwiperSlide>
         <SwiperSlide>
           <Slide
+            img={'airbnb.png'}
+            title={'Airbnb clone'}
+            description={
+              'This Airbnb clone is a full-stack web application built with the MERN stack, supporting full CRUD operations: users can create and rent properties'
+            }
+            techs={[
+              'html5',
+              'css3',
+              'tailwindcss',
+              'javascript',
+              'mongodb',
+              'express',
+              'react',
+              'nodejs',
+              'git',
+            ]}
+            badge="Coming Soon"
+            darkMode={darkMode}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Slide
             img={'mindmissiongray.png'}
             title={'Mind Mission'}
             email={'Username: test@email.com'}
