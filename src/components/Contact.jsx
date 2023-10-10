@@ -3,6 +3,7 @@ import ContactCard from './ContactCard';
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Download from './Download';
 
 export default function Contact({ darkMode }) {
   return (
@@ -47,6 +48,9 @@ export default function Contact({ darkMode }) {
         <a href="#main">
           <p className="text-lg font-bold">Back to top</p>
         </a>
+        <div className="flex justify-center items-center mt-12">
+          <Download darkMode={darkMode} />
+        </div>
       </div>
     </div>
   );
