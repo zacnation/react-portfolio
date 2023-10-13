@@ -5,7 +5,7 @@ export default function Projects({ darkMode }) {
   return (
     <section
       id="projects"
-      className={`transition-all duration-300 pt-10 md:pt-20 md:pb-5 px-3 md:px-10 xl:px-60 2xl:px-96 ${
+      className={`transition-all duration-300 pt-10 md:pt-20 md:pb-5 xl:px-20 ${
         darkMode ? 'bg-dark-I text-white' : 'bg-light text-black'
       }`}
     >
@@ -20,3 +20,4 @@ export default function Projects({ darkMode }) {
 Projects.propTypes = {
   darkMode: PropTypes.bool,
 };
+// px-3 md:px-10 xl:px-60 2xl:px-96

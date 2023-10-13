@@ -6,14 +6,14 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 export default function Slide(props) {
   return (
     <>
-      <img src={props.img} alt="" className="md:hidden" />
+      <img src={props.img} alt="" className="lg:hidden md:px-40" />
       <div className="px-12 md:p-0 md:flex md:align-center md:justify-center">
         <div>
           <img
             src={props.img}
             alt=""
-            style={{ width: '400px' }}
-            className="max-md:hidden"
+            style={{ width: '550px' }}
+            className="max-lg:hidden"
           />
         </div>
         <div className="md:ml-9">
@@ -65,7 +65,7 @@ export default function Slide(props) {
               );
             })}
           </div>
-          <p className="md:w-96 overflow-y-auto max-sm:h-80 h-44 border rounded p-2">
+          <p className="w-full md:w-96 overflow-y-auto max-sm:h-80 h-min max-h-60 border rounded py-2 px-4">
             {props.email && (
               <>
                 <strong>{props.email}</strong>

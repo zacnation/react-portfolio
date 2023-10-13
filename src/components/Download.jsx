@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
+
 export default function Download(props) {
   function handleDownload() {
     const downloadLink = document.createElement('a');
-    downloadLink.href = '/zacnation-cv.pdf'; // Path to your CV file in the public directory
-    downloadLink.download = 'zacnation-cv'; // Name of the downloaded file
+    downloadLink.href = '/zacnation-cv.pdf'; // path
+    downloadLink.download = 'zacnation-cv';
     downloadLink.click();
   }
 
@@ -19,3 +21,7 @@ export default function Download(props) {
     </button>
   );
 }
+
+Download.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+};

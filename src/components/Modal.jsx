@@ -32,7 +32,7 @@ export default function Modal(props) {
     <>
       <button onClick={toggleModal} className="btn-modal lg:mr-6">
         <div
-          className={`flex items-center space-x-2 border-solid border-2 py-2 px-6 rounded ${
+          className={`flex items-center space-x-2 border py-2 px-6 rounded ${
             props.darkMode
               ? 'border-gray-400 hover:border-white'
               : 'border-gray-400 hover:border-dark-I'
