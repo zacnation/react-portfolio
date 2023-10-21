@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import About from './About';
-import Projects from './Projects';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import About from "./About";
+import Projects from "./Projects";
+import Interests from "./Interests";
 
 export default function ParentComponent({ darkMode }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,7 +22,8 @@ export default function ParentComponent({ darkMode }) {
         openModal={openModal}
         closeModal={closeModal}
       />
-      {isModalOpen ? '' : <Projects darkMode={darkMode} />}
+      <Interests darkMode={darkMode} />
+      {isModalOpen ? "" : <Projects darkMode={darkMode} />}
     </div>
   );
 }

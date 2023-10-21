@@ -1,21 +1,22 @@
-import PropTypes from 'prop-types';
-import Modal from './Modal';
-import AboutModal from './AboutModal';
-import Download from './Download';
+import PropTypes from "prop-types";
+import Modal from "./Modal";
+import AboutModal from "./AboutModal";
+import Download from "./Download";
+import Interests from "./Interests";
 
 export default function About(props) {
   const lewagonLogo = props.darkMode
-    ? 'lewagon-logo-inverted.svg'
-    : 'lewagon-logo.svg';
+    ? "lewagon-logo-inverted.svg"
+    : "lewagon-logo.svg";
   const udemyLogo = props.darkMode
-    ? 'udemy-logo-inverted.svg'
-    : 'udemy-logo.svg';
+    ? "udemy-logo-inverted.svg"
+    : "udemy-logo.svg";
 
   return (
     <section
       id="about"
       className={`transition-all duration-300 md:px-32 xl:px-60 2xl:px-96 lg:pt-16 lg:pb-20 ${
-        props.darkMode ? 'bg-dark-II text-white' : 'bg-white text-black'
+        props.darkMode ? "bg-dark-II text-white" : "bg-white text-black"
       }`}
     >
       <div className="py-14 lg:py-0 px-3 md:px-0">
@@ -42,7 +43,7 @@ export default function About(props) {
           />
           <div className="flex">
             <p className="text-justify">
-              I&apos;m a graduate of{' '}
+              I&apos;m a graduate of{" "}
               <a
                 href="https://www.lewagon.com/london"
                 target="_blank"
@@ -74,7 +75,7 @@ export default function About(props) {
           />
           <p className="text-justify xl:pt-6">
             Before joining Le Wagon, my self-study consisted of Codecademy and
-            Udemy courses. Most recently I completed{' '}
+            Udemy courses. Most recently I completed{" "}
             <a
               href="https://www.udemy.com/course/the-web-developer-bootcamp/"
               target="_blank"
@@ -83,10 +84,10 @@ export default function About(props) {
             >
               Colt Steele&apos;s web development course
             </a>
-            . A full list of my completed courses can be found{' '}
+            . A full list of my completed courses can be found{" "}
             <AboutModal
-              title={'here'}
-              innerTitle={'Certificates'}
+              title={"here"}
+              innerTitle={"Certificates"}
               darkMode={props.darkMode}
               onOpen={props.openModal}
               onClose={props.closeModal}
@@ -101,7 +102,7 @@ export default function About(props) {
         <h2 className="text-2xl font-bold py-4 md:pb-6 lg:pt-0 text-center lg:text-3xl">
           Interests and Hobbies
         </h2>
-        <div className="text-center">
+        {/* <div className="text-center">
           <Modal
             title={'Reading'}
             description={
@@ -143,7 +144,7 @@ export default function About(props) {
             onOpen={props.openModal}
             onClose={props.closeModal}
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
