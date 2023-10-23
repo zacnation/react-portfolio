@@ -16,6 +16,9 @@ export default function Interests({ darkMode }) {
         darkMode ? "bg-dark-II text-white" : "bg-white text-black"
       }`}
     >
+      <h2 className="text-2xl font-bold py-4 md:pb-6 lg:pt-0 text-center lg:text-3xl">
+        Interests and Hobbies
+      </h2>
       <Swiper
         navigation={true}
         modules={[Navigation]}

@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
-import Modal from "./Modal";
 import AboutModal from "./AboutModal";
 import Download from "./Download";
-import Interests from "./Interests";
 
 export default function About(props) {
   const lewagonLogo = props.darkMode
@@ -99,9 +97,6 @@ export default function About(props) {
         <div className="text-center mb-6">
           <Download darkMode={props.darkMode} />
         </div>
-        <h2 className="text-2xl font-bold py-4 md:pb-6 lg:pt-0 text-center lg:text-3xl">
-          Interests and Hobbies
-        </h2>
         {/* <div className="text-center">
           <Modal
             title={'Reading'}

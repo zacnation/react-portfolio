@@ -4,7 +4,7 @@ export default function Slide(props) {
   return (
     <>
       <img src={props.img} alt="" className="lg:hidden md:px-40" />
-      <div className="px-12 md:p-0 md:flex md:align-center md:justify-center">
+      <div className="px-12 md:p-0 md:flex md:items-center md:justify-center">
         <div>
           <h2
             className={`text-3xl font-bold text-center md:pt-0 ${
@@ -22,7 +22,7 @@ export default function Slide(props) {
         <img
           src={props.img}
           alt=""
-          style={{ width: "40%", height: "30%" }}
+          style={{ width: "30%", height: "30%" }}
           className="max-lg:hidden"
         />
       </div>

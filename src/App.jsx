@@ -7,7 +7,6 @@ import Resources from "./components/Resources";
 import "tailwindcss/tailwind.css";
 import { useEffect } from "react";
 import ParentComponent from "./components/ParentComponent";
-import Interests from "./components/Interests";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -48,7 +47,6 @@ export default function App() {
       />
       <Main darkMode={darkMode} />
       <ParentComponent darkMode={darkMode} />
-      {/* <Interests darkMode={darkMode} /> */}
       <WhatNext darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Resources darkMode={darkMode} />
