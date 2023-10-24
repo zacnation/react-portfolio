@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 export default function Slide(props) {
   return (
     <>
-      <img src={props.img} alt="" className="lg:hidden md:px-40" />
-      <div className="px-12 md:p-0 md:flex md:items-center md:justify-center">
+      <div className="px-12 space-x-10 md:p-0 md:flex md:items-center md:justify-center">
         <div>
           <h2
             className={`text-3xl font-bold text-center md:pt-0 ${
@@ -26,6 +25,7 @@ export default function Slide(props) {
           className="max-lg:hidden"
         />
       </div>
+      <img src={props.img} alt="" className="lg:hidden md:px-40" />
     </>
   );
 }
