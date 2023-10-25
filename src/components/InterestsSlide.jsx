@@ -6,7 +6,7 @@ export default function Slide(props) {
       <div className="px-12 space-x-10 md:p-0 md:flex md:items-center md:justify-center">
         <div>
           <h2
-            className={`text-3xl font-bold text-center md:pt-0 ${
+            className={`text-3xl font-bold text-center md:pt-0 lg:pb-1 ${
               props.link && "hover:underline underline-offset-2"
             }`}
           >
@@ -22,7 +22,7 @@ export default function Slide(props) {
           src={props.img}
           alt=""
           style={{ width: "30%", height: "30%" }}
-          className="max-lg:hidden"
+          className="max-lg:hidden pt-6"
         />
       </div>
       <img src={props.img} alt="" className="lg:hidden md:px-40" />
