@@ -4,8 +4,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import InterestsSlide from "./InterestsSlide";
+import InterestsModal from "./InterestsModal";
 
-export default function Interests({ darkMode }) {
+export default function Interests({ darkMode, openModal, closeModal }) {
   const swiperOptions = {
     loop: true,
   };
@@ -57,6 +58,19 @@ export default function Interests({ darkMode }) {
           />
         </SwiperSlide>
       </Swiper>
+      <InterestsModal
+        title={"Reading is a passion of mine, and my book collection..."}
+        description={
+          "Reading is a passion of mine, and my book collection spans a wide range of genres and topics. From personal development works like 'How to Win Friends and Influence People', 'Atomic Habits', and 'Deep Work' to timeless classics like '1984', 'The Trial', and 'The Master and Margarita', I find inspiration in the diverse perspectives that literature offers. These books have not only fueled my creativity and problem-solving skills but have also enriched my understanding of human behavior and interaction."
+        }
+        darkMode={darkMode}
+        urlSrc={
+          "https://www.goodreads.com/review/list/169529187-zac?shelf=read"
+        }
+        linkText={"My previously read"}
+        onOpen={openModal}
+        onClose={closeModal}
+      />
     </div>
   );
 }

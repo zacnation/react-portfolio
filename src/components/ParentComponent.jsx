@@ -17,12 +17,12 @@ export default function ParentComponent({ darkMode }) {
 
   return (
     <div>
-      <About
+      <About darkMode={darkMode} />
+      <Interests
         darkMode={darkMode}
         openModal={openModal}
         closeModal={closeModal}
       />
-      <Interests darkMode={darkMode} />
       {isModalOpen ? "" : <Projects darkMode={darkMode} />}
     </div>
   );
