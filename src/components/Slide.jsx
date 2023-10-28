@@ -1,9 +1,12 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 export default function Slide(props) {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <>
       <img src={props.img} alt="" className="lg:hidden md:px-40" />
@@ -12,7 +15,7 @@ export default function Slide(props) {
           <img
             src={props.img}
             alt=""
-            style={{ width: '550px' }}
+            style={{ width: "550px" }}
             className="max-lg:hidden"
           />
         </div>
@@ -21,12 +24,12 @@ export default function Slide(props) {
             <a
               href={props.link}
               rel="noreferrer"
-              target={'_blank'}
+              target={"_blank"}
               className={`text-xl font-bold md:pt-0 ${
-                props.link && 'hover:underline underline-offset-2'
+                props.link && "hover:underline underline-offset-2"
               }`}
             >
-              {props.title}{' '}
+              {props.title}{" "}
             </a>
             {props.link && (
               <FontAwesomeIcon
@@ -38,8 +41,8 @@ export default function Slide(props) {
               <p
                 className={`px-2 py-1 rounded max-md:text-xs max-md:px-1 ${
                   props.darkMode
-                    ? 'bg-light text-black'
-                    : 'bg-dark-I text-white'
+                    ? "bg-light text-black"
+                    : "bg-dark-I text-white"
                 }`}
               >
                 {props.badge}
@@ -48,7 +51,7 @@ export default function Slide(props) {
           </div>
           <div className="flex items-center justify-center space-x-2 md:flex md:justify-start md:py-3 max-md:py-4">
             {props.techs.map((item, index) => {
-              return item === 'stimulus' ? (
+              return item === "stimulus" ? (
                 <img
                   src="stimulus.png"
                   alt=""
@@ -58,24 +61,38 @@ export default function Slide(props) {
               ) : (
                 <i
                   className={`text-2xl devicon-${item}-${
-                    item === 'express' ? 'original' : 'plain'
+                    item === "express" ? "original" : "plain"
                   }`}
                   key={index}
                 ></i>
               );
             })}
           </div>
-          <p className="w-full md:w-96 overflow-y-auto max-sm:h-80 h-min max-h-60 border rounded py-2 px-4">
-            {props.email && (
+          <div className="flex flex-col">
+            <p className="w-full md:w-96 overflow-y-auto h-min max-h-60 border rounded py-2 px-4">
               <>
-                <strong>{props.email}</strong>
-                <br />
-                <strong>{props.password}</strong>
-                <br />
+                {props.email && (
+                  <>
+                    <strong>{props.email}</strong>
+                    <br />
+                    <strong>{props.password}</strong>
+                    <br />
+                  </>
+                )}
+                {showMore
+                  ? props.description + " "
+                  : props.description.slice(0, 100) + "... "}
               </>
-            )}
-            {props.description}
-          </p>
+
+              {/* {props.description} */}
+            </p>
+            <button
+              className="font-bold pt-2"
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? "Show less" : "Show more"}
+            </button>
+          </div>
         </div>
       </div>
     </>
