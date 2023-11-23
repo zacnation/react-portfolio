@@ -32,7 +32,7 @@ export default function InterestsSlide(props) {
         <img
           src={props.img}
           alt=""
-          style={{ width: "30%", height: "30%" }}
+          style={{ width: "20%" }}
           className="max-lg:hidden py-8"
         />
       </div>
