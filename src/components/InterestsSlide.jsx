@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { useState } from "react";
 
 export default function InterestsSlide(props) {
@@ -40,10 +39,3 @@ export default function InterestsSlide(props) {
     </>
   );
 }
-
-InterestsSlide.propTypes = {
-  darkMode: PropTypes.bool,
-  img: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-};

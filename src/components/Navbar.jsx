@@ -1,13 +1,12 @@
-import PropTypes from 'prop-types';
-import ToggleSwitch from './ToggleSwitch';
+import ToggleSwitch from "./ToggleSwitch";
 
 export default function Navbar(props) {
   return (
     <nav
       className={`transition-all duration-300 fixed w-full shadow-md z-10 ${
         props.darkMode
-          ? 'bg-very-dark text-white'
-          : 'bg-white shadow-gray-100 text-black'
+          ? "bg-very-dark text-white"
+          : "bg-white shadow-gray-100 text-black"
       }`}
     >
       <div className="max-w-full mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
@@ -62,7 +61,7 @@ export default function Navbar(props) {
         </div>
       </div>
 
-      <div className={`md:hidden font-bold ${props.hamburger ? '' : 'hidden'}`}>
+      <div className={`md:hidden font-bold ${props.hamburger ? "" : "hidden"}`}>
         <a href="#main" className="block px-2 py-4 text-sm hover:bg-gray-700">
           Home
         </a>
@@ -85,10 +84,3 @@ export default function Navbar(props) {
     </nav>
   );
 }
-
-Navbar.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  toggleDarkMode: PropTypes.func.isRequired,
-  hamburger: PropTypes.bool.isRequired,
-  toggleHamburger: PropTypes.func.isRequired,
-};

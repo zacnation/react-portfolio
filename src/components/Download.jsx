@@ -1,10 +1,8 @@
-import PropTypes from 'prop-types';
-
 export default function Download(props) {
   function handleDownload() {
-    const downloadLink = document.createElement('a');
-    downloadLink.href = '/zacnation-cv.pdf'; // path
-    downloadLink.download = 'zacnation-cv';
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/zacnation-cv.pdf"; // path
+    downloadLink.download = "zacnation-cv";
     downloadLink.click();
   }
 
@@ -12,8 +10,8 @@ export default function Download(props) {
     <button
       className={`border ${
         props.darkMode
-          ? 'border-gray-400 hover:border-white'
-          : 'border-gray-400 hover:border-dark-I'
+          ? "border-gray-400 hover:border-white"
+          : "border-gray-400 hover:border-dark-I"
       } rounded p-2 text-lg`}
       onClick={handleDownload}
     >
@@ -21,7 +19,3 @@ export default function Download(props) {
     </button>
   );
 }
-
-Download.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-};

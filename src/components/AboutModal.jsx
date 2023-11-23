@@ -1,10 +1,8 @@
-import { useState } from 'react';
-import '../Modal.css';
+import { useState } from "react";
+import "../Modal.css";
 
-import PropTypes from 'prop-types';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutModal(props) {
   const [modal, setModal] = useState(false);
@@ -20,9 +18,9 @@ export default function AboutModal(props) {
   };
 
   if (modal) {
-    document.body.classList.add('active-modal');
+    document.body.classList.add("active-modal");
   } else {
-    document.body.classList.remove('active-modal');
+    document.body.classList.remove("active-modal");
   }
 
   return (
@@ -37,11 +35,11 @@ export default function AboutModal(props) {
         <div className="modal">
           <div
             onClick={toggleModal}
-            className={`${props.darkMode ? 'overlay-dark' : 'overlay'}`}
+            className={`${props.darkMode ? "overlay-dark" : "overlay"}`}
           ></div>
           <div
             className={`modal-content max-h-[60vh] md:max-h-[70vh] overflow-auto ${
-              props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
+              props.darkMode ? "bg-very-dark text-white" : "bg-light"
             }`}
           >
             <h2 className="font-bold text-2xl md:text-3xl mb-5">
@@ -51,7 +49,7 @@ export default function AboutModal(props) {
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               <img src="lewagon.png" alt="" />
               <img
-                src={`${props.darkMode ? 'bcs-inverted.svg' : 'bcs.svg'}`}
+                src={`${props.darkMode ? "bcs-inverted.svg" : "bcs.svg"}`}
                 alt=""
                 className="w-32"
               />
@@ -81,11 +79,3 @@ export default function AboutModal(props) {
     </>
   );
 }
-
-AboutModal.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  title: PropTypes.string.isRequired,
-  innerTitle: PropTypes.string.isRequired,
-  onOpen: PropTypes.func,
-  onClose: PropTypes.func,
-};

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import AboutModal from "./AboutModal";
 import Download from "./Download";
 
@@ -97,56 +96,7 @@ export default function About(props) {
         <div className="text-center mb-6">
           <Download darkMode={props.darkMode} />
         </div>
-        {/* <div className="text-center">
-          <Modal
-            title={'Reading'}
-            description={
-              "Reading is a passion of mine, and my book collection spans a wide range of genres and topics. From personal development works like 'How to Win Friends and Influence People', 'Atomic Habits', and 'Deep Work' to timeless classics like '1984', 'The Trial', and 'The Master and Margarita', I find inspiration in the diverse perspectives that literature offers. These books have not only fueled my creativity and problem-solving skills but have also enriched my understanding of human behavior and interaction."
-            }
-            darkMode={props.darkMode}
-            iconSrc={`${props.darkMode ? 'books-inverted.svg' : 'books.svg'}`}
-            urlSrc={
-              'https://www.goodreads.com/review/list/169529187-zac?shelf=read'
-            }
-            imgSrc={`${props.darkMode ? 'books-inverted.png' : 'books.png'}`}
-            linkText={'My previously read'}
-            onOpen={props.openModal}
-            onClose={props.closeModal}
-          />
-          <Modal
-            title={'BSL'}
-            description={
-              "British Sign Language (BSL): Learning BSL isn't just a personal interest; it's my way of embracing two critical aspects of web development: accessibility and diversity, equity, and inclusion (DEI). BSL is part of the bigger picture of making the digital world more inclusive for those who rely on sign language. This experience has given me valuable insights into the challenges faced by individuals with disabilities, inspiring me to design websites and applications that cater to their needs. It's also a reminder that diversity includes linguistic diversity, which I'm passionate about promoting in the tech industry."
-            }
-            darkMode={props.darkMode}
-            iconSrc={`${
-              props.darkMode
-                ? 'sign-language-inverted.svg'
-                : 'sign-language.svg'
-            }`}
-            onOpen={props.openModal}
-            onClose={props.closeModal}
-          />
-          <Modal
-            title={'Tech skills'}
-            description={
-              'Gaining skills such as being able to work with the terminal, using git and GitHub, and deploying with Netlify / Cyclic has been great. Next, I want to learn more about the cloud and AWS, as well as how to work with Docker and Kubernetes, work with a Raspberry Pi for IoT projects, and continue to learn more about areas such as cybersecurity and data structures and algorithms. I feel even having a foundational understanding of these areas will help me become a better developer.'
-            }
-            darkMode={props.darkMode}
-            iconSrc={`${
-              props.darkMode ? 'raspberry-pi-inverted.svg' : 'raspberry-pi.svg'
-            }`}
-            onOpen={props.openModal}
-            onClose={props.closeModal}
-          />
-        </div> */}
       </div>
     </section>
   );
 }
-
-About.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  openModal: PropTypes.func,
-  closeModal: PropTypes.func,
-};

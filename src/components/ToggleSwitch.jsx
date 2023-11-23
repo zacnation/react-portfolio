@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import Switch from "react-switch";
 
 const ToggleSwitch = ({ checked, onChange }) => {
@@ -19,11 +18,6 @@ const ToggleSwitch = ({ checked, onChange }) => {
       />
     </label>
   );
-};
-
-ToggleSwitch.propTypes = {
-  checked: PropTypes.bool.isRequired,
-  onChange: PropTypes.func.isRequired,
 };
 
 export default ToggleSwitch;

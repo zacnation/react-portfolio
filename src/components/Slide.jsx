@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -98,15 +96,3 @@ export default function Slide(props) {
     </>
   );
 }
-
-Slide.propTypes = {
-  darkMode: PropTypes.bool,
-  img: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  techs: PropTypes.arrayOf(PropTypes.string),
-  link: PropTypes.string,
-  email: PropTypes.string,
-  password: PropTypes.string,
-  badge: PropTypes.string,
-};

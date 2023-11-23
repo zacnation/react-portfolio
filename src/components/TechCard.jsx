@@ -1,12 +1,10 @@
-import PropTypes from 'prop-types';
-
 export default function TechCard(props) {
   return (
     <div className="flex py-4 items-center flex-col mb-3 px-2 max-lg:border max-lg:rounded-md">
       <div className="flex items-center space-x-3 font-bold text-xl">
-        {props.icon === 'godot' ? (
+        {props.icon === "godot" ? (
           <img
-            src={`${props.darkMode ? 'godot-inverted.svg' : 'godot.svg'}`}
+            src={`${props.darkMode ? "godot-inverted.svg" : "godot.svg"}`}
             alt=""
             className="w-10"
           />
@@ -21,10 +19,3 @@ export default function TechCard(props) {
     </div>
   );
 }
-
-TechCard.propTypes = {
-  darkMode: PropTypes.bool,
-  icon: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-};

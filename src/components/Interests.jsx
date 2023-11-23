@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -60,10 +59,3 @@ export default function Interests({ darkMode }) {
     </div>
   );
 }
-
-Interests.propTypes = {
-  darkMode: PropTypes.bool,
-  img: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-};

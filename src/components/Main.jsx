@@ -1,11 +1,9 @@
-import PropTypes from 'prop-types';
-
 export default function Main({ darkMode }) {
   return (
     <main
       id="main"
       className={`transition-all duration-300 pb-20 pt-20 md:pt-40 md:w-screen h-screen ${
-        darkMode ? 'bg-dark-I text-white' : 'bg-light text-black'
+        darkMode ? "bg-dark-I text-white" : "bg-light text-black"
       }`}
     >
       <div className="pt-32">
@@ -45,7 +43,3 @@ export default function Main({ darkMode }) {
     </main>
   );
 }
-
-Main.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-};

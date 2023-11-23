@@ -1,13 +1,11 @@
-import { useState } from 'react';
-import '../Modal.css';
+import { useState } from "react";
+import "../Modal.css";
 
-import PropTypes from 'prop-types';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTimes,
   faArrowUpRightFromSquare,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Modal(props) {
   const [modal, setModal] = useState(false);
@@ -23,9 +21,9 @@ export default function Modal(props) {
   };
 
   if (modal) {
-    document.body.classList.add('active-modal');
+    document.body.classList.add("active-modal");
   } else {
-    document.body.classList.remove('active-modal');
+    document.body.classList.remove("active-modal");
   }
 
   return (
@@ -34,8 +32,8 @@ export default function Modal(props) {
         <div
           className={`flex items-center space-x-2 border py-2 px-6 rounded ${
             props.darkMode
-              ? 'border-gray-400 hover:border-white'
-              : 'border-gray-400 hover:border-dark-I'
+              ? "border-gray-400 hover:border-white"
+              : "border-gray-400 hover:border-dark-I"
           }`}
         >
           <img src={props.iconSrc} alt="" className="w-8 md:w-10" />
@@ -47,11 +45,11 @@ export default function Modal(props) {
         <div className="modal max-md:text-center text-justify">
           <div
             onClick={toggleModal}
-            className={`${props.darkMode ? 'overlay-dark' : 'overlay'}`}
+            className={`${props.darkMode ? "overlay-dark" : "overlay"}`}
           ></div>
           <div
             className={`modal-content max-h-96 md:max-h-full overflow-auto ${
-              props.darkMode ? 'bg-very-dark text-white' : 'bg-light'
+              props.darkMode ? "bg-very-dark text-white" : "bg-light"
             }`}
           >
             <h2 className="font-bold text-2xl md:text-3xl">{props.title}</h2>
@@ -89,15 +87,3 @@ export default function Modal(props) {
     </>
   );
 }
-
-Modal.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  iconSrc: PropTypes.string.isRequired,
-  urlSrc: PropTypes.string,
-  imgSrc: PropTypes.string,
-  linkText: PropTypes.string,
-  onOpen: PropTypes.func,
-  onClose: PropTypes.func,
-};

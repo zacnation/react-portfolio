@@ -1,14 +1,13 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import '../ContactCard.css';
+import "../ContactCard.css";
 
 export default function ContactCard(props) {
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
-    navigator.clipboard.writeText('zac.nation.work@outlook.com');
+    navigator.clipboard.writeText("zac.nation.work@outlook.com");
     setCopied(true);
 
     setTimeout(() => {
@@ -17,8 +16,8 @@ export default function ContactCard(props) {
   };
 
   const handleOpenMailApp = () => {
-    const email = 'zac.nation.work@icloud.com';
-    const subject = 'Hello there!';
+    const email = "zac.nation.work@icloud.com";
+    const subject = "Hello there!";
 
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(
       subject
@@ -27,17 +26,17 @@ export default function ContactCard(props) {
 
   return (
     <>
-      {props.title === 'Email' ? (
+      {props.title === "Email" ? (
         <>
           <div
             onClick={handleCopyClick}
             onDoubleClick={handleOpenMailApp}
             className={`email transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
               props.darkMode
-                ? 'bg-dark-I text-white border-gray-400 hover:border-white'
-                : 'bg-white text-black border-gray-400 hover:border-dark-I'
+                ? "bg-dark-I text-white border-gray-400 hover:border-white"
+                : "bg-white text-black border-gray-400 hover:border-dark-I"
             }`}
-            data-tooltip={'Single click to copy, double click to open mail app'}
+            data-tooltip={"Single click to copy, double click to open mail app"}
           >
             {copied ? (
               <p className="text-lg select-none">Copied!</p>
@@ -45,10 +44,10 @@ export default function ContactCard(props) {
               <>
                 <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />
                 <p className="text-lg select-none">
-                  {copied ? 'Copied!' : 'Email'}
+                  {copied ? "Copied!" : "Email"}
                 </p>
                 <img
-                  src={props.darkMode ? 'link-inverted.svg' : 'link.svg'}
+                  src={props.darkMode ? "link-inverted.svg" : "link.svg"}
                   className="w-7 pl-1 animate-pulse select-none"
                   alt=""
                 />
@@ -68,21 +67,14 @@ export default function ContactCard(props) {
           rel="noreferrer"
           className={`transition-all duration-150 flex items-center justify-center border rounded w-40 h-14 hover:cursor-pointer  ${
             props.darkMode
-              ? 'bg-dark-I text-white border-gray-400 hover:border-white'
-              : 'bg-white text-black border-gray-400 hover:border-dark-I'
+              ? "bg-dark-I text-white border-gray-400 hover:border-white"
+              : "bg-white text-black border-gray-400 hover:border-dark-I"
           }`}
         >
-          <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />{' '}
+          <FontAwesomeIcon icon={props.icon} className="w-7 h-7 pr-2" />{" "}
           <p className="text-lg select-none">{props.title}</p>
         </a>
-      )}{' '}
+      )}{" "}
     </>
   );
 }
-
-ContactCard.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  title: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired,
-  url: PropTypes.string,
-};

@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 export default function ResourceCard(props) {
   return (
     <div className="flex flex-col items-center justify-center py-4 px-1 text-center">
@@ -16,8 +14,3 @@ export default function ResourceCard(props) {
     </div>
   );
 }
-
-ResourceCard.propTypes = {
-  imageSrc: PropTypes.string.isRequired,
-  listItems: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
